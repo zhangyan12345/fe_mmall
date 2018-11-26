@@ -9,10 +9,6 @@
     "dist": "WEBPACK_ENV=online webpack -p",
     "dist_win": "set WEBPACK_ENV=online && webpack -p"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@git.oschina.net:happymmall/mmall-fe.git"
-  },
   "author": "zy",
   "license": "ISC",
   "devDependencies": {
