@@ -8,7 +8,7 @@
 'use strict';
 var Hogan = require('hogan.js');
 var conf = {
-    serverHost : '://qiongmaomall.com'
+    serverHost : '://qiongmaomall.top'
 };
 var _mm = {
     // 网络请求
