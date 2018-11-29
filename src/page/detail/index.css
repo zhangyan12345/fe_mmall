@@ -1,84 +1,102 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-28 19:45:57
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-29 16:43:56
-*/
-/* 图片区 */
-.intro-wrap{
+
+.intro-wrap {
     overflow: hidden;
 }
-.intro-wrap .p-img-con{
-    float: left;
+
+/*图片区*/
+.intro-wrap .p-img-con {
     width: 420px;
+    float: left;
+
 }
-/* 主图 */
-.intro-wrap .p-img-con .main-img-con{
+
+/*主图*/
+.intro-wrap .p-img-con .main-img-con {
     height: 400px;
     border: 1px solid #ddd;
 }
-.intro-wrap .p-img-con .main-img-con .main-img{
+
+.intro-wrap .p-img-con .main-img-con .main-img {
     height: 100%;
     width: 100%;
 }
+
 /* 缩略图 */
-.intro-wrap .p-img-con .p-img-list{
+.intro-wrap .p-img-con .p-img-list {
     overflow: hidden;
-    height: 76px;
-    margin-top: 5px;
+    height: 90px;
+    margin-top: 3px;
     margin-right: -10px;
 }
-.intro-wrap .p-img-con .p-img-item{
+
+.intro-wrap .p-img-con .p-img-item {
     float: left;
+    margin-top: 10px;
     margin-right: 10px;
-    width: 72px;
-    height: 72px;
+    width: 68px;
+    height: 68px;
     border: 2px solid #eee;
+    padding: 2px;
     cursor: pointer;
 }
-.intro-wrap .p-img-con .p-img-item:hover{
+
+.intro-wrap .p-img-con .p-img-item.select {
     border: 2px solid #c60023;
 }
-.intro-wrap .p-img-con .p-img-item .p-img{
+
+.intro-wrap .p-img-con .p-img-item:hover {
+    border: 2px solid #c60023;
+}
+
+.intro-wrap .p-img-con .p-img-item .p-img {
     width: 100%;
     height: 100%;
 }
+
 /* 商品信息 */
-.intro-wrap .p-info-con{
+.intro-wrap .p-info-con {
     float: left;
     width: 640px;
     margin-left: 20px;
 }
-.intro-wrap .p-info-con .p-name{
+
+.intro-wrap .p-info-con .p-name {
     font-size: 20px;
     color: #333;
+    font-weight: bold;
 }
-.intro-wrap .p-info-con .p-subtitle{
+
+.intro-wrap .p-info-con .p-subtitle {
     font-size: 15px;
     color: #c60023;
     line-height: 30px;
 }
-.intro-wrap .p-info-con .p-info-item{
+
+.intro-wrap .p-info-con .p-info-item {
     position: relative;
     padding: 0 10px;
     margin-top: 20px;
 }
-.intro-wrap .p-info-con .p-info-item .label{
+
+.intro-wrap .p-info-con .p-info-item .label {
     display: inline-block;
     width: 50px;
     color: #999;
 }
-/* 价格部分 */
-.intro-wrap .p-info-con .p-price-con{
-    background: #eee;
+
+/*商品价格*/
+.intro-wrap .p-info-con .p-price-con {
+    background: #eeeeee;
     padding: 10px;
 }
-.intro-wrap .p-info-con .p-price-con .info{
+
+.intro-wrap .p-info-con .p-price-con .info {
     color: #c60023;
     font-size: 18px;
 }
-/* 数量部分 */
-.intro-wrap .p-info-con .p-count-con .p-count{
+
+/*商品数量*/
+.intro-wrap .p-info-con .p-count-con .p-count {
     height: 36px;
     line-height: 36px;
     font-size: 15px;
@@ -87,40 +105,51 @@
     outline: none;
     border: 1px solid #aaa;
 }
-.intro-wrap .p-info-con .p-count-con .p-count-btn{
+
+.intro-wrap .p-info-con .p-count-con .p-count-btn {
     position: absolute;
     left: 115px;
     display: block;
+    line-height: 15px;
     width: 20px;
     height: 15px;
-    line-height: 15px;
     text-align: center;
     font-size: 10px;
     border: 1px solid #aaa;
     background: #fff;
     cursor: pointer;
-    -moz-user-select : none;
-    -webkit-user-select : none;
-    -ms-user-select : none;
-    user-select : none;
+    /*取消用户选择，适配*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-.intro-wrap .p-info-con .p-count-con .p-count-btn.plus{
+.intro-wrap .p-info-con .p-count-con .p-count-btn.full {
+    border: 1px solid #eee;
+    color: #ccc;
+}
+
+.intro-wrap .p-info-con .p-count-con .p-count-btn.plus {
     top: 0;
 }
-.intro-wrap .p-info-con .p-count-con .p-count-btn.minus{
+
+.intro-wrap .p-info-con .p-count-con .p-count-btn.minus {
     bottom: 0;
 }
-/* 商品详细信息 */
-.detail-wrap{
+
+/*商品详细信息*/
+.detail-wrap {
     margin-top: 15px;
 }
-.detail-wrap .tab-list{
+
+.detail-wrap .tab-list {
     background: #eee;
     border: 1px solid #ddd;
     overflow: hidden;
-    border-bottom: 1px solid #c60023;
+    border-bottom: 2px solid #c60023;
 }
-.detail-wrap .tab-list .tab-item{
+
+.detail-wrap .tab-list .tab-item {
     float: left;
     width: 100px;
     height: 50px;
@@ -129,25 +158,31 @@
     text-align: center;
     cursor: pointer;
 }
-.detail-wrap .tab-list .tab-item.active{
+
+.detail-wrap .tab-list .tab-item.active {
     background: #c60023;
     color: #fff;
 }
-.detail-wrap .detail-con{
-    padding-top: 20px;
+
+.detail-wrap .detail-con {
+    padding: 20px;
     background: #fff;
 }
-.detail-wrap .detail-con img{
+
+/*对于富文本要居中显示*/
+.detail-wrap .detail-con img {
     display: block;
     margin: 0 auto;
 }
-/* 错误信息 */
-.err-tip{
-    height: 60px;
-    line-height: 60px;
-    color: #f60;
-    font-size: 16px;
-    font-weight: bold;
+
+/*错误信息*/
+.err-tip {
+    height: 70px;
+    line-height: 70px;
+    color: #e7380d;
     text-align: center;
     background: #eee;
+    font-weight: bold;
+    font-size: 18px;
 }
+

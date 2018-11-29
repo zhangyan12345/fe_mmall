@@ -45,9 +45,19 @@
             </td>
             <td class="cart-cell cell-price">￥{{productPrice}}</td>
             <td class="cart-cell cell-count">
+                {{#hasPrevious}}
                 <span class="count-btn minus">-</span>
-                <input class="count-input" value="{{quantity}}" data-max="{{productStock}}"/>  
+                {{/hasPrevious}}
+                {{^hasPrevious}}
+                <span class="count-btn minus useless">-</span>
+                {{/hasPrevious}}
+                <input class="count-input" value="{{quantity}}" data-max="{{productStock}}"/>
+                {{#hasNext}}
                 <span class="count-btn plus">+</span>
+                {{/hasNext}}
+                {{^hasNext}}
+                <span class="count-btn plus useless">+</span>
+                {{/hasNext}}
             </td>
             <td class="cart-cell cell-total">￥{{productTotalPrice}}</td>
             <td class="cart-cell cell-opera">
@@ -84,7 +94,8 @@
 {{/notEmpty}}
 {{^notEmpty}}
 <p class="err-tip">
-    <span>您的购物车空空如也，</span>
-    <a href="./index.html">立即去购物</a>
+   <span>您的购物车空空哒~
+       <a style="text-decoration: none" href="./index.html">立即去购物</a>
+   </span>
 </p>
 {{/notEmpty}}

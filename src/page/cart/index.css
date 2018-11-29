@@ -1,127 +1,164 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-30 16:51:30
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-06-02 11:38:22
-*/
 
- .cart-table{
+.cart-table {
     width: 100%;
+    /*边距重合的地方，变成一个边距*/
     border-collapse: collapse;
-    border: 1px solid #ebebeb;
+    border: 1px solid #dedede;
     margin-bottom: 10px;
 }
-/* header */
-.cart-header{
+
+/*header*/
+.cart-header {
     background: #eee;
 }
-.cart-header .cart-cell{
+
+.cart-header .cart-cell {
     height: 40px;
     line-height: 40px;
 }
-.cart-table .cell-check{
-    width: 6%;
+
+/*选择框*/
+.cart-table .cell-check {
     text-align: left;
     padding-left: 20px;
+    width: 6%;
 }
-.cart-table .cell-img{
-    width: 10%;
+
+/*商品图片*/
+.cart-table .cell-img {
     text-align: left;
+    width: 10%;
 }
-.cart-table .cell-img .p-img{
-    margin: 10px 0;
+
+.cart-table .cell-img .p-img {
     width: 80px;
     height: 80px;
     border: 1px solid #ddd;
+    margin: 10px 0;
 }
-.cart-table .cell-info{
-    width: 35%;
+
+/*商品信息*/
+.cart-table .cell-info {
     text-align: left;
+    width: 35%;
 }
-.cart-header .cell-info{
+
+.cart-header .cart-table .cell-info {
     width: 45%;
-    padding-left: 106px;
+    padding-left: 110px;
 }
-.cart-table .cell-price{
+
+/*商品价格*/
+.cart-table .cell-price {
+    text-align: center;
     width: 10%;
-    text-align: center;
 }
-.cart-table .cell-count{
+
+/*商品数量*/
+.cart-table .cell-count {
+    text-align: center;
     width: 15%;
-    text-align: center;
 }
-.cart-table .cell-count .count-input{
+
+.cart-table .cell-count .count-input {
     width: 60px;
     height: 28px;
     line-height: 28px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     text-align: center;
     vertical-align: middle;
     outline: none;
     color: #333;
 }
-.cart-table .cell-count .count-btn{
+
+.cart-table .cell-count .count-btn {
     display: inline-block;
     width: 20px;
     height: 28px;
     line-height: 28px;
-    border: 1px solid #ddd;
+    border: 1px solid #aaa;
     vertical-align: middle;
+    text-align: center;
     cursor: pointer;
     background: #fff;
-    -moz-user-select : none;
-    -webkit-user-select : none;
-    -ms-user-select : none;
-    user-select : none;
-}
-.cart-table .cell-total{
-    width: 14%;
-    text-align: center;
-    font-weight: bold;
-}
-.cart-table .cell-opera{
-    width: 10%;
-    text-align: center;
+    color: #444;
+
+    /*取消用户选择，适配*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-/* footer */
-.cart-footer{
+.cart-table .cell-count .count-btn.useless {
+    border: 1px solid #eee;
+    color: #ccc;
+    cursor: auto;
+}
+
+/*商品总价*/
+.cart-table .cell-total {
+    text-align: center;
+    width: 14%;
+    font-weight: bold;
+}
+
+/*操作删除*/
+.cart-table .cell-opera {
+    text-align: center;
+    width: 10%;
+}
+
+/*footer*/
+.cart-footer {
     position: relative;
     line-height: 50px;
     background: #eee;
     overflow: hidden;
 }
-.cart-footer .select-con{
+
+.cart-footer .select-con {
     float: left;
     padding-left: 20px;
 }
-.cart-footer .delete-con{
+
+.cart-footer .delete-con {
     float: left;
     margin-left: 20px;
 }
-.cart-footer .submit-con{
+
+.cart-footer .submit-con {
     float: right;
+
 }
-.cart-footer .submit-con .submit-total{
+
+.cart-footer .submit-con .submit-total {
     font-size: 18px;
     color: #c60023;
     font-weight: bold;
     margin-right: 30px;
     vertical-align: middle;
 }
-.cart-footer .submit-con .btn-submit{
+
+.cart-footer .submit-con .btn-submit {
     width: 80px;
-    text-align: center;
     height: 50px;
     line-height: 50px;
+    text-align: center;
 }
-/* 错误信息 */
-.err-tip{
-    height: 60px;
-    line-height: 60px;
-    color: #f60;
-    font-size: 16px;
-    font-weight: bold;
+
+/*错误信息*/
+.err-tip {
+    height: 70px;
+    line-height: 70px;
+    color: #e7380d;
     text-align: center;
     background: #eee;
+    font-weight: bold;
+    font-size: 18px;
 }
+
+
+
+
+

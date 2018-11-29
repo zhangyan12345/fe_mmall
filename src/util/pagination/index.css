@@ -1,39 +1,40 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-28 11:58:18
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-28 15:38:37
-*/
-.pg-content{
+.pg-content {
     text-align: center;
     color: #333;
 }
-.pg-content .pg-item{
+
+.pg-content .pg-item {
     display: inline-block;
     height: 36px;
-    line-height: 36px;
+    margin: 0px 10px 10px 0px;
     padding: 0 15px;
-    margin: 0 2px;
+    line-height: 36px;
+    font-size: 13px;
+    cursor: pointer;
     border: 1px solid #ccc;
     background: #eee;
-    cursor: pointer;
+    /*取消用户选择，适配*/
     -moz-user-select : none;
     -webkit-user-select : none;
     -ms-user-select : none;
     user-select : none;
 }
-.pg-content .pg-item.disabled{
+
+.pg-content .pg-item.disabled {
+    background: none;
     color: #ccc;
-    background: none;
     cursor: auto;
 }
-.pg-content .pg-item.active{
-    border: 1px solid #f6f6f6;
-    background: none;
-    cursor: auto;
+
+.pg-content .pg-item.active {
+    background: #c60023;
+    color: #fff;
 }
-.pg-content .pg-total{
-    margin-left: 10px;
+
+.pg-content .pg-total {
+    font-weight: bold;
+    font-size: 13px;
     background: none;
     cursor: auto;
+    margin-left: 20px;
 }

@@ -1,52 +1,49 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-18 19:30:12
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-27 19:46:42
-*/
+/**
+ * @author Rayhahah
+ * @blog http://rayhahah.com
+ * @time 2017/10/31
+ * @fuction
+ */
 
-'use strict';
 require('./index.css');
-var _mm     = require('util/mm.js');
-// 通用页面头部
+var _sticky = require('util/sticky-search/index.js');
+var _rm = require('util/rm.js');
 var header = {
-    init : function(){
-        this.onLoad();
+    init: function () {
         this.bindEvent();
+        this.onload();
     },
-    onLoad : function(){
-        var keyword = _mm.getUrlParam('keyword');
-        // keyword存在，则回填输入框
-        if(keyword){
+    onload: function () {
+        var keyword = _rm.getUrlParam('keyword');
+        if (keyword) {
             $('#search-input').val(keyword);
-        };
+        }
     },
-    bindEvent : function(){
+    bindEvent: function () {
         var _this = this;
-        // 点击搜索按钮以后，做搜索提交
-        $('#search-btn').click(function(){
-            _this.searchSubmit();
+        $('#search-btn').click(function () {
+            var keyword = $.trim($('#search-input').val());
+            _this.searhSubmit(keyword);
         });
-        // 输入会车后，做搜索提交
-        $('#search-input').keyup(function(e){
-            // 13是回车键的keyCode
-            if(e.keyCode === 13){
-                _this.searchSubmit();
+        // 输入回车做搜索提交
+        $('#search-input').keyup(function (e) {
+            if (e.keyCode === 13) {
+                var keyword = $.trim($('#search-input').val());
+                _this.searhSubmit(keyword);
             }
+        });
+        _sticky.initSticky('请输入要商品名称', _rm.getUrlParam('keyword'), '.header', function (key) {
+            _this.searhSubmit(key);
         });
     },
     // 搜索的提交
-    searchSubmit : function(){
-        var keyword = $.trim($('#search-input').val());
-        // 如果提交的时候有keyword,正常跳转到list页
-        if(keyword){
+    searhSubmit: function (keyword) {
+        if (keyword) {
             window.location.href = './list.html?keyword=' + keyword;
-        }
-        // 如果keyword为空，直接返回首页
-        else{
-            _mm.goHome();
+        } else {
+            _rm.goHome();
         }
     }
 };
-
+// 不需要提供给外部调用,所有不用exports
 header.init();

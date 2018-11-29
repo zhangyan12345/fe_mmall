@@ -7,4 +7,4 @@
 {{/isActive}}
     <a class="link" href="{{href}}">{{desc}}</a>
 </li>
-{{/navList}} 
+{{/navList}}

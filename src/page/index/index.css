@@ -1,55 +1,58 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-09 17:16:19
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-26 19:25:17
-*/
-
-/* keywords-list */
-.keywords-list{
+/*关键字列表*/
+.keywords-list {
     float: left;
     width: 240px;
-    height: 350px;
     padding: 10px 0;
     margin-right: 10px;
     background: #666;
     color: #fff;
+    height: 350px;
 }
-.keywords-list .keywords-item{
+
+.keywords-list .keywords-item {
     padding-left: 10px;
     height: 35px;
     line-height: 35px;
     font-size: 14px;
 }
-.keywords-list .keywords-item:hover{
+
+.keywords-list .keywords-item:hover {
     background: #999;
 }
-.keywords-list .keywords-item .link{
-    margin-right: 6px;
+
+.keywords-list .keywords-item .link {
+    margin-right: 5px;
     color: #fff;
 }
-.keywords-list .keywords-item .link:hover{
+
+.keywords-list .keywords-item .link:hover {
     color: #c60023;
 }
 
-/* banner-con */
-.banner-con{
+/*轮播图*/
+.banner-con {
     width: 830px;
     float: left;
-    height: 370px;
     background: #eee;
+    height: 370px;
 }
-.banner-con .loading{
+
+.banner-con .loading {
     margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
 }
-.banner-con .banner-img{
+
+.banner-con .banner-img {
+    /*unslider不设置的话默认使用图片的原始高度和宽度*/
     width: 100%;
     height: 370px;
 }
-/* banner的前一张和后一张按钮 */
-.banner-con .banner-arrow{
-    position: absolute; 
-    top:160px;
+
+/*轮播图前一张和后一张*/
+.banner-con .banner-arrow {
+    position: absolute;
+    top: 160px;
     width: 30px;
     height: 50px;
     line-height: 50px;
@@ -57,50 +60,65 @@
     font-size: 30px;
     color: #fff;
     background: #ccc;
-    background: rgba(0,0,0,.2);
+    /*不支持IE8*/
+    background: rgba(0, 0, 0, .2);
     cursor: pointer;
 }
-.banner-con .banner-arrow:hover{
+
+.banner-con .banner-arrow:hover {
     background: #aaa;
-    background: rgba(0,0,0,.5);
+    /*不支持IE8*/
+    background: rgba(0, 0, 0, .5);
 }
-.banner-con .banner-arrow.prev{
-    left: 0;
+
+.banner-con .banner-arrow.prev {
+    left: 0px;
 }
-.banner-con .banner-arrow.next{
-    right: 0;
+
+.banner-con .banner-arrow.next {
+    right: 0px;
 }
-/* floor */
-.floor-wrap .floor-title{
+
+/*floor*/
+.floor-wrap .floor-title {
     height: 50px;
     line-height: 50px;
-    color: #d58717;
-    font-weight: normal;
+    color: #c6945c;
     font-size: 20px;
-    border-bottom: 1px solid #d58717;
+    font-weight: normal;
+    border-bottom: 2px solid #c6945c;
 }
-/* 更改各楼层标题颜色 */
-.floor-wrap:nth-child(2) .floor-title{
-    color: #3b838c;
-    border-bottom: 1px solid #3b838c;
+
+/*nth-child表示标签下的重复第几个元素*/
+.floor-wrap:nth-child(2) .floor-title {
+    color: #4780c6;
+    border-bottom: 2px solid #4780c6;
 }
-.floor-wrap:nth-child(3) .floor-title{
-    color: #a93931;
-    border-bottom: 1px solid #a93931;
+
+.floor-wrap:nth-child(3) .floor-title {
+    color: #38c67e;
+    border-bottom: 2px solid #38c67e;
 }
-.floor-wrap:nth-child(4) .floor-title{
-    color: #488bad;
-    border-bottom: 1px solid #488bad;
+
+.floor-wrap:nth-child(4) .floor-title {
+    color: #ab55c6;
+    border-bottom: 2px solid #ab55c6;
 }
-.floor-wrap:nth-child(5) .floor-title{
-    color: #642663;
-    border-bottom: 1px solid #642663;
+
+.floor-wrap:nth-child(5) .floor-title {
+    color: #c6444d;
+    border-bottom: 2px solid #c6444d;
 }
-.floor-wrap .floor-list{
+
+.floor-wrap .floor-list {
+    /*因为宽度不够所以撑开20px*/
     margin-right: -20px;
+    /*清除浮动，让list可以撑开高度*/
     overflow: hidden;
 }
-.floor-wrap .floor-list .floor-item{
+
+.floor-wrap .floor-list .floor-item {
+    /*为了让它里面的内容以它为基础做定位*/
     position: relative;
     width: 200px;
     height: 220px;
@@ -109,21 +127,25 @@
     cursor: pointer;
     background: #fff;
 }
-.floor-wrap .floor-list .floor-item:hover{
-    box-shadow: 1px 1px 7px #ddd;
+
+.floor-wrap .floor-list .floor-item:hover {
+    /*盒子阴影，不兼容IE8*/
+    box-shadow: 2px 2px 7px #ddd;
 }
-.floor-wrap .floor-list .floor-item .floor-text{
+
+.floor-wrap .floor-list .floor-item .floor-text {
     position: absolute;
     top: 12px;
     left: 20px;
     font-size: 16px;
     color: #555;
 }
-.floor-wrap .floor-list .floor-item .floor-img{
+
+.floor-wrap .floor-list .floor-item .floor-img {
     position: absolute;
-    right: 15px;
     bottom: 10px;
+    right: 15px;
     width: 80%;
-    height: 75%;
-    border: none;
+    font-size: 16px;
+    color: #555;
 }

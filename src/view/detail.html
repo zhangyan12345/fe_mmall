@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <%= require('html-loader!./layout/head-common.html')  %>
-        <title><%= htmlWebpackPlugin.options.title%> - 穷猫电商平台</title>
-    </head>
-    <body>
-        <%= require('html-loader!./layout/nav.html')  %>
-        <%= require('html-loader!./layout/header.html')  %>
-        <div class="crumb">
-            <div class="w">
-                <div class="crumb-con">
-                    <a class="link" href="./index.html">QMall</a>
-                    <span>></span>
-                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
-                </div>
-            </div>
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title%> - Qmall</title>
+</head>
+<body>
+<%= require('html-loader!./layout/nav.html') %>
+<%= require('html-loader!./layout/header.html') %>
+<div class="crumb">
+    <div class="w">
+        <div class="crumb-con">
+            <a href="./index.html" class="link">Qmall</a>
+            <span> ></span>
+            <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
         </div>
-        <div class="page-wrap w">
-        
-        </div>
-        <%= require('html-loader!./layout/footer.html')  %>
-    </body>
+    </div>
+</div>
+<div class="page-wrap w">
+</div>
+<%= require('html-loader!./layout/footer.html') %>
+</body>
 </html>

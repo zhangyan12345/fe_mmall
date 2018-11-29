@@ -1,30 +1,37 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-08 15:19:12
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-26 19:36:18
-*/
-
-'use strict';
+/**
+ * Created by leizh on 2017/10/25.
+ */
 require('./index.css');
 require('page/common/nav/index.js');
 require('page/common/header/index.js');
+var templateBanner = require('./banner.string');
 require('util/slider/index.js');
-var navSide         = require('page/common/nav-side/index.js');
-var templateBanner  = require('./banner.string');
-var _mm             = require('util/mm.js');
+var _rm = require('util/rm.js');
 
-$(function() {
-    // 渲染banner的html
-    var bannerHtml  = _mm.renderHtml(templateBanner);
+
+$(function () {
+    _rm.showLoading('.banner-con');
+    // 渲染banner的HTML
+    var bannerHtml = _rm.renderHtml(templateBanner);
     $('.banner-con').html(bannerHtml);
-    // 初始化banner
-    var $slider     = $('.banner').unslider({
-        dots: true
+    // 轮播图初始化
+    var $slider = $('.banner').unslider({
+        speed: 500,   // 轮播图速度
+        delay: 3000,  //轮播图间隔
+        dots: true //导航小圆点
     });
-    // 前一张和后一张操作的事件绑定
-    $('.banner-con .banner-arrow').click(function(){
+    $('.banner-con .banner-arrow').click(function () {
         var forward = $(this).hasClass('prev') ? 'prev' : 'next';
+        //unslider给出的使用方法，动态根据字符串来确定function
         $slider.data('unslider')[forward]();
     });
 });
+
+
+
+
+
+
+
+
+

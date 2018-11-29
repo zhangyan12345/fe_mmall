@@ -1,18 +1,20 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-19 21:52:46
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-19 23:01:25
-*/
+/**
+ * @author Rayhahah
+ * @blog http://rayhahah.com
+ * @time 2017/10/31
+ * @fuction
+ */
 
-'use strict';
 require('./index.css');
 require('page/common/nav-simple/index.js');
-var _mm = require('util/mm.js');
+var _rm = require('util/rm.js');
 
-$(function(){
-    var type        = _mm.getUrlParam('type') || 'default',
-        $element    = $('.' + type + '-success');
-    // 显示对应的提示元素
-    $element.show();
-})
+$(function () {
+    var type = _rm.getUrlParam('type') || 'default',
+        $element = $('.' + type + '-success').show();
+    if (type === 'payment') {
+        var orderNumber = _rm.getUrlParam('orderNumber') || '',
+            $orderNumber = $element.find('.order-number');
+        $orderNumber.attr('href', $orderNumber.attr('href') + orderNumber);
+    }
+});

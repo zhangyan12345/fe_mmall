@@ -1,34 +1,35 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-27 18:26:52
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-29 16:54:03
-*/
+/**
+ * @author Rayhahah
+ * @blog http://rayhahah.com
+ * @time 2017/11/6
+ * @fuction
+ */
 
-'use strict';
-
-var _mm = require('util/mm.js');
-
+var _rm = require('util/rm.js');
 var _product = {
-    // 获取商品列表
-    getProductList : function(listParam, resolve, reject){
-        _mm.request({
-            url     : _mm.getServerUrl('/product/list.do'),
-            data    : listParam,
-            success : resolve,
-            error   : reject
+    //获取产品列表
+    getProductList: function (listParams, resolve, reject) {
+        _rm.request({
+            url: _rm.getServerUrl('/product/list.do'),
+            //直接指定传参的属性就是key
+            data: listParams,
+            method: 'POST',
+            success: resolve,
+            error: reject
         });
     },
-    // 获取商品详细信息
-    getProductDetail : function(productId, resolve, reject){
-        _mm.request({
-            url     : _mm.getServerUrl('/product/detail.do'),
-            data    : {
-                productId : productId
+    //获取产品详情
+    getProductDetail: function (productId, resolve, reject) {
+        _rm.request({
+            url: _rm.getServerUrl('/product/detail.do'),
+            //直接指定传参的属性就是key
+            data: {
+                productId: productId
             },
-            success : resolve,
-            error   : reject
+            method: 'POST',
+            success: resolve,
+            error: reject
         });
     }
-}
+};
 module.exports = _product;

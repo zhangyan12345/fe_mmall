@@ -1,11 +1,13 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-26 18:19:14
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-26 18:20:00
-*/
+/**
+ * @author Rayhahah
+ * @blog http://rayhahah.com
+ * @time 2017/11/5
+ * @fuction
+ */
 
-'use strict';
+// 将第三方插件模块化
+// 极小的轮播图插件
+//http://www.bootcss.com/p/unslider/
 
 require('./index.css');
-require('./unslider.js');
+require('./unslider');

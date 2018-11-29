@@ -1,17 +1,17 @@
 <div class="banner">
-    <ul>
+   <ul>
         <li>
-            <a href="./list.html?categoryId=100004" target="_blank">
+            <a href="./list.html?categoryId=100021" target="_blank">
                 <img class="banner-img" src="../../image/banner/banner1.jpg" />
             </a>
         </li>
         <li>
-            <a href="./list.html?categoryId=100005" target="_blank">
+            <a href="./list.html?categoryId=100030" target="_blank">
                 <img class="banner-img" src="../../image/banner/banner2.jpg" />
             </a>
         </li>
         <li>
-            <a href="./list.html?categoryId=100003" target="_blank">
+            <a href="./list.html?categoryId=100016" target="_blank">
                 <img class="banner-img" src="../../image/banner/banner3.jpg" />
             </a>
         </li>
@@ -21,7 +21,7 @@
             </a>
         </li>
         <li>
-            <a href="./list.html?categoryId=100002" target="_blank">
+            <a href="./list.html?categoryId=100021" target="_blank">
                 <img class="banner-img" src="../../image/banner/banner5.jpg" />
             </a>
         </li>
@@ -31,5 +31,6 @@
     </div>
     <div class="banner-arrow next">
         <i class="fa fa-angle-right"></i>
-    </div>
+</div>
+
 </div>
