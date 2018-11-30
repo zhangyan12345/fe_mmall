@@ -4,11 +4,13 @@
     top: 0;
     left: 0;
     right: 0;
+    background: #fff;
+    border-bottom: 2px solid rgba(198,0,35,.9);
 }
 
 .sticky-search-wrap .sticky-search-con {
     position: relative;
-    margin-top: 0px;
+    margin: 4px 0 10px 0px!important;
     text-align: center;
     opacity: 0;
 }
