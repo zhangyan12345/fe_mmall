@@ -13,8 +13,8 @@
     opacity: 0;
 }
 .sticky-search-wrap .sticky-search-con .sticky-logo{
-    position: absolute;
-    left: 470px;
+    position: relative;
+    top: 6px;
     font-weight: bold;
     font-size: 28px;
     color: #c60023;
