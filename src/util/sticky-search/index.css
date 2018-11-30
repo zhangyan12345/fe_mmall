@@ -38,7 +38,8 @@
 
 .sticky-search-wrap .sticky-search-con .sticky-btn {
     display: inline-block;
-    position: absolute;
+    position: relative;
+    top: -2px;
     height: 39px;
     width: 40px;
     background:#c60023;
