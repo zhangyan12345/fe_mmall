@@ -6,7 +6,7 @@ var Hogan = require('hogan.js');
 var _dialog = require('util/dialog/index.js');
 //服务器主机地址配置
 var conf = {
-    serverHost: '//qiongmaomall.top'
+    serverHost: '//www.qiongmaomall.top'
 };
 var _rm = {
     //异步网络请求
