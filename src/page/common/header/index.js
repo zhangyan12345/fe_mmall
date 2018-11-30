@@ -1,9 +1,3 @@
-/**
- * @author Rayhahah
- * @blog http://rayhahah.com
- * @time 2017/10/31
- * @fuction
- */
 
 require('./index.css');
 var _sticky = require('util/sticky-search/index.js');

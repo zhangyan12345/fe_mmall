@@ -1,9 +1,3 @@
-/**
- * @author Rayhahah
- * @blog http://rayhahah.com
- * @time 2017/11/8
- * @fuction
- */
 
 var _rm = require('util/rm.js');
 var _cities = require('util/cities/index.js');

@@ -1,9 +1,3 @@
-/**
- * @author Rayhahah
- * @blog http://rayhahah.com
- * @time 2017/11/6
- * @fuction
- */
 
 var _elseutil = {
     //批量下载图片资源

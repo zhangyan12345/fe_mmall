@@ -1,16 +1,4 @@
-/**
- * @author Rayhahah
- * @blog http://rayhahah.com
- * @time 2017/11/7
- * @fuction
- */
 
-/**
- * @author Rayhahah
- * @blog http://rayhahah.com
- * @time 2017/11/6
- * @fuction
- */
 
 var _rm = require('util/rm.js');
 var _payment = {

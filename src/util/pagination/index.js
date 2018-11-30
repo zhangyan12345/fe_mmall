@@ -1,9 +1,4 @@
-/**
- * @author Rayhahah
- * @blog http://rayhahah.com
- * @time 2017/11/6
- * @fuction
- */
+
 
 require('./index.css');
 var _rm = require('util/rm.js');

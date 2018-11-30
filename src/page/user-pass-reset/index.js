@@ -1,9 +1,3 @@
-/**
- * @author Rayhahah
- * @blog http://rayhahah.com
- * @time 2017/11/3
- * @fuction
- */
 
 require('./index.css');
 require('page/common/nav-simple/index.js');
