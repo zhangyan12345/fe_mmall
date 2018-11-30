@@ -2,6 +2,9 @@
 require('./index.css');
 var _sticky = require('util/sticky-search/index.js');
 var _rm = require('util/rm.js');
+
+
+
 var header = {
     init: function () {
         this.bindEvent();

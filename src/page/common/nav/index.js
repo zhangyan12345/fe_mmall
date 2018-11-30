@@ -5,6 +5,9 @@ require('./index.css');
 var _rm = require('util/rm.js');
 var _user = require('service/user-service.js');
 var _cart = require('service/cart-service.js');
+
+
+
 var nav = {
     init: function () {
         this.bindEvent();

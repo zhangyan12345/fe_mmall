@@ -9,6 +9,7 @@ var templateAddress = require('./address-list.string');
 var templateProduct = require('./product-list.string');
 var addressModal = require('./address-modal.js');
 
+
 var page = {
     data: {
         selectedAddressId: null

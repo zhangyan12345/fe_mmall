@@ -4,6 +4,7 @@ require('./index.css');
 var Hogan = require('hogan');
 var templateDialog = require('./index.string');
 
+
 var searchSticky = {
     data: {
         tips: '请输入...',

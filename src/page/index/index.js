@@ -8,7 +8,6 @@ var templateBanner = require('./banner.string');
 require('util/slider/index.js');
 var _rm = require('util/rm.js');
 
-
 $(function () {
     _rm.showLoading('.banner-con');
     // 渲染banner的HTML

@@ -7,6 +7,7 @@ var _cart = require('service/cart-service.js');
 var _rm = require('util/rm.js');
 var templateHtml = require('./index.string');
 
+
 var page = {
     data: {
         productId: _rm.getUrlParam('productId') || ''

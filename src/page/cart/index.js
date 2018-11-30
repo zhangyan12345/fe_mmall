@@ -6,6 +6,7 @@ var _rm = require('util/rm.js');
 var _cart = require('service/cart-service.js');
 var templateHtml = require('./index.string');
 
+
 var page = {
     data: {},
     init: function () {

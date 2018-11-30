@@ -7,6 +7,7 @@ var navSide = require('page/common/nav-side/index.js');
 var _rm = require('util/rm.js');
 var templateHtml = require('./index.string');
 
+
 var page = {
     data: {
         orderNumber: _rm.getUrlParam('orderNumber')

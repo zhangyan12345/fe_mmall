@@ -3,10 +3,12 @@
  */
 
 var Hogan = require('hogan.js');
+var jQuery = $;
+
 var _dialog = require('util/dialog/index.js');
 //服务器主机地址配置
 var conf = {
-    serverHost: '//www.qiongmaomall.top'
+    serverHost: 'https://www.qiongmaomall.top'
 };
 var _rm = {
     //异步网络请求
