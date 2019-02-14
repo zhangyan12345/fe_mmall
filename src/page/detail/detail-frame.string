@@ -1,0 +1,101 @@
+<!--
+  ~ @Author: Avenda
+  ~ @Date: 2018/10/14
+  -->
+
+<div class="detail-title clearfix">
+    <!--左侧图片-->
+    <div class="gallery">
+        <div class="img-main">
+        </div>
+        <div class="img-big"></div>
+        <div class="img-thumb">
+            <div class="img-wrap">
+                {{#subImages}}
+                <img class="img-thumb-item" src="{{imageHost}}{{.}}" title="{{name}}" alt="图片"/>
+                {{/subImages}}
+            </div>
+        </div>
+        <div class="share"></div>
+    </div>
+    <!--右侧属性区-->
+    <div class="property-list">
+        <div class="property-item title">
+            {{name}}
+        </div>
+        <div class="property-item subtitle">
+            {{subtitle}}
+        </div>
+        <div class="property-item price-org">
+            <span>价格</span>
+            <span>&nbsp&yen&nbsp<span id="price-org">-</span>&nbsp&nbsp</span>
+        </div>
+        <div class="property-item price">
+            <span>活动价</span>
+            <span>&yen</span>
+            <span id="price-con">{{price}}</span>
+        </div>
+        <!--评论-->
+        <div class="property-item comment clearfix">
+            <a href="#comments-total-bottom" id="comments-total-goto-bottom">
+                <div class="comment-item value">累计评价<span class="comments-total">-</span></div>
+            </a>
+            <div class="comment-item integral">送积分 <span class="integral-A">-</span></div>
+        </div>
+        <!--品型-->
+        <div class="property-item type ">
+            <!--型号item-->
+            <div class="type-list">
+                <!--模板生成-->
+            </div>
+        </div>
+        <!--库存与增加购买数量-->
+        <div class="property-item num">
+            <span>数量</span>
+            <input id="num-count" class="search-input" readonly="readonly" value="1"/>
+            <div class="arr-btn">
+                <span class="arr-item num-up" id="num-up"><i class="fa fa-chevron-up"></i></span>
+                <span class="arr-item num-down" id="num-down"><i class="fa fa-chevron-down"></i></span>
+            </div>
+            <span class="inventory">库存 <span id="inventory-num">{{stock}}</span> 件</span>
+        </div>
+        <!--立即购买与购物车模块-->
+        <div class="property-item buy-line">
+            <a class="btn" id="submit-buy">立即购买</a>
+            <a class="btn-red" id="add-to-cart">加入购物车</a>
+        </div>
+        <div class="property-item promise">
+            <span >服务承诺</span>
+            <span>七天无理由退换</span>
+            <span>赠运费险</span>
+            <span>急速退款</span>
+            <span>正品保障</span>
+        </div>
+    </div>
+</div>
+<div class="detail-content">
+    <div class="product-tab-container">
+        <div class="tab-title clearfix">
+            <span class="tab-title-item active" data-content="tab-con1" id="tab-product-detail">商品详情</span>
+            <span class="tab-title-item" data-content="tab-con2">累计评价<strong class="comments-total" id="comments-total-bottom"></strong></span>
+            <span class="tab-title-item" data-content="tab-con3" id="tab-service">专享服务</span>
+        </div>
+        <div class="tab-content">
+            <div class="tab-content-item" id="tab-con1">
+                {{{detail}}}
+            </div>
+            <div class="tab-content-item" id="tab-con2" style="display: none;">
+                <div class="testCont">
+                    <div class="title">评论加载中...</div>
+                    <div class="loading"></div>
+                </div>
+            </div>
+            <div class="tab-content-item"  id="tab-con3" style="display: none;">
+                <div class="testCont">
+                    <div class="title">服务加载中...</div>
+                    <div class="loading"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+
+
+<div class="banner-slider">
+    <ul>
+        <li>
+            <a href="./list.html?categoryId=100021" target="_blank">
+               <img class="banner-img" src="../../image/banner/banner-main-1.jpg" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100023" target="_blank">
+                <img class="banner-img" src="../../image/banner/banner-main-2.jpg" alt="" />
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100023" target="_blank">
+                <img class="banner-img" src="../../image/banner/banner-main-3.jpg" alt="" />
+            </a>
+        </li>
+    </ul>
+    <a href="#" class="unslider-arrow prev">
+        <i class="fa fa-angle-left"></i>
+    </a>
+    <a href="#" class="unslider-arrow next">
+        <i class="fa fa-angle-right"></i>
+    </a>
+</div>

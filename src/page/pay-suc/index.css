@@ -1,0 +1,106 @@
+/*
+ * @Author: Avenda
+ * @Date: 2018/10/24
+ */
+.paySuc {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.paySuc .title {
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    color: #e9611e;
+    font-weight: 900;
+    text-align: center;
+
+}
+.paySuc .content {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.paySuc .content .content-warp {
+    height: 1000px;
+    position: relative;
+    -webkit-transition: top 0.6s;
+    -moz-transition: top 0.6s;
+    -ms-transition: top 0.6s;
+    -o-transition: top 0.6s;
+    transition: top 0.6s;
+    top: 0;
+}
+.paySuc .content .content-warp:hover {
+    top: -70px;
+}
+.paySuc .content .content-warp:hover  .h1{
+    opacity: 0.5;
+}
+.paySuc .content .content-warp:hover  .sub-h1 {
+    opacity: 0.5;
+}
+.paySuc .con-item {
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+}
+.paySuc .con-item:nth-of-type(1) {
+    margin-right: 60px;
+}
+.paySuc .con-item .h1 {
+    margin-top: 10px;
+    height: 160px;
+    font-size: 110px;
+    font-weight: 900;
+    color: #585858;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -ms-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+
+}
+.paySuc .con-item .sub-h1 {
+
+    background: #585858;
+    color: #f5f5f5;
+    width: 210px;
+    margin: 0 auto;
+    height: 40px;
+    line-height:  40px;
+    font-size: 16px;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -ms-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+.paySuc .con-item .oper {
+    cursor: pointer;
+    margin-top: 40px;
+    display: inline-block;
+    color: #585858;
+    border: 1px solid #cccccc;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+.paySuc .con-item .oper:hover {
+    border: 1px solid #f76a1e;
+    color: #f76a1e;
+}
+.paySuc .con-item:hover {
+    border: 1px solid #f76a1e;
+    background: white;
+}

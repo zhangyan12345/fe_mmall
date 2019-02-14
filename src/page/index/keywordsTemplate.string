@@ -1,0 +1,8 @@
+{{#content}}
+<span></span>
+<li class="keywords-item {{class}} clearfix" id="{{id}}">
+    {{#tagA}}
+    <a href="{{href}}" id="{{id}}" class="link">{{name}}</a>
+    {{/tagA}}
+</li>
+{{/content}}

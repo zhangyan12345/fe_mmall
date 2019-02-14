@@ -1,0 +1,65 @@
+
+<div class="title">
+    <a href="./list.html?keyword=精品家具 " class="btn btn-mini">精品家具 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=家装建材 " class="btn btn-mini">家装建材 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=国际厨具 " class="btn btn-mini">国际厨具 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=五金电工 " class="btn btn-mini">五金电工 <i class="fa fa-arrow-right" ></i></a>
+
+</div>
+<div class="content ">
+    <div class="content-item link-text">
+        <span class="hd link">厨具 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=水具酒具" class="link">水具酒具</a> |
+        <a href="./list.html?keyword=烹饪锅具" class="link">烹饪锅具</a> |
+        <a href="./list.html?keyword=炒锅" class="link">炒锅</a> |
+        <a href="./list.html?keyword=餐具" class="link">餐具</a> |
+        <a href="./list.html?keyword=厨房配件" class="link">厨房配件</a> |
+        <a href="./list.html?keyword=刀剪菜板" class="link">刀剪菜板</a> |
+        <a href="./list.html?keyword=锅具套装" class="link">锅具套装</a> |
+        <a href="./list.html?keyword=茶具" class="link">茶具</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">灯具 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=吸顶灯" class="link">吸顶灯</a> |
+        <a href="./list.html?keyword=吊灯" class="link">吊灯</a> |
+        <a href="./list.html?keyword=台灯" class="link">台灯</a> |
+        <a href="./list.html?keyword=筒灯射灯" class="link">筒灯射灯</a> |
+        <a href="./list.html?keyword=庭院灯" class="link">庭院灯</a> |
+        <a href="./list.html?keyword=装饰灯" class="link">装饰灯</a> |
+        <a href="./list.html?keyword=LED灯" class="link">LED灯</a> |
+        <a href="./list.html?keyword=氛围照明" class="link">氛围照明</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">厨房卫浴 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=水槽" class="link">水槽</a> |
+        <a href="./list.html?keyword=龙头" class="link">龙头</a> |
+        <a href="./list.html?keyword=淋雨花洒" class="link">淋雨花洒</a> |
+        <a href="./list.html?keyword=马桶" class="link">马桶</a> |
+        <a href="./list.html?keyword=智能马桶" class="link">智能马桶</a> |
+        <a href="./list.html?keyword=智能马桶盖" class="link">智能马桶盖</a> |
+        <a href="./list.html?keyword=厨卫挂件" class="link">厨卫挂件</a> |
+        <a href="./list.html?keyword=浴室柜" class="link">浴室柜</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">五金电工 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=指纹锁" class="link">指纹锁</a> |
+        <a href="./list.html?keyword=电动工具" class="link">电动工具</a> |
+        <a href="./list.html?keyword=手动工具" class="link">手动工具</a> |
+        <a href="./list.html?keyword=测量工具" class="link">测量工具</a> |
+        <a href="./list.html?keyword=工具箱" class="link">工具箱</a> |
+        <a href="./list.html?keyword=劳防用品" class="link">劳防用品</a> |
+        <a href="./list.html?keyword=开关插座" class="link">开关插座</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">建筑材料 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=油漆涂料" class="link">油漆涂料</a> |
+        <a href="./list.html?keyword=涂刷辅料" class="link">涂刷辅料</a> |
+        <a href="./list.html?keyword=瓷砖" class="link">瓷砖</a> |
+        <a href="./list.html?keyword=地板" class="link">地板</a> |
+        <a href="./list.html?keyword=壁纸" class="link">壁纸</a> |
+        <a href="./list.html?keyword=强化地板" class="link">强化地板</a> |
+        <a href="./list.html?keyword=美缝剂" class="link">美缝剂</a> |
+        <a href="./list.html?keyword=防水涂料" class="link">防水涂料</a> |
+    </div>
+
+</div>

@@ -1,0 +1,51 @@
+<!--
+  ~ @Author: Avenda
+  ~ @Date: 2018/10/14
+  -->
+
+<div class="login-window hide">
+    <div class="bg" id="login-alert-bg">
+        <div class="alert-box">
+            <div class="box-wrap">
+                <div class="title">
+                    <a>登 录</a>
+                    <div class="close" id="login-close">
+                        <i class="fa fa-close"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <a id="login-open-alert"></a>
+                        <div class="user-box">
+                            <div class="logo">~主人请先登录~</div>
+                            <!--账号-->
+                            <div class="user-item">
+                                <input type="text" class="input-default" id="username" placeholder="请输入用户名" autocomplete="off"/>
+                                <label for="username" class="label-default-ico"><i class="fa fa-user-circle"></i></label>
+                            </div>
+                            <!--提示信息-->
+                            <div class="error-item username-err" >
+                                <i class="fa fa-minus-circle">&nbsp&nbsp&nbsp</i><span id="username-err"></span>
+                            </div>
+                            <!--========================================================================================================-->
+                            <div class="user-item">
+                                <input type="password" class="input-default" id="password" placeholder="请输入密码" autocomplete="off"/>
+                                <label for="password" class="label-default-ico"><i class="fa fa-certificate"></i></label>
+                            </div>
+                            <!--提示信息-->
+                            <div class="error-item password-err" >
+                                <i class="fa fa-minus-circle">&nbsp&nbsp&nbsp</i><span id="password-err"></span>
+                            </div>
+
+                            <div class="user-item">
+                                <button class="btn" id="submit">登录</button>
+                            </div>
+                            <div class="link-item">
+                                <a  class="link" target="_blank" id="reset-password">忘记密码</a>
+                                <a href="./user-register.html" class="link high-light" >立即注册</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

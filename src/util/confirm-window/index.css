@@ -1,0 +1,123 @@
+/*
+ * @Author: Avenda
+ * @Date: 2018/10/6
+ */
+
+.confirm-window.hide {
+    display: none;
+}
+
+.confirm-window {
+}
+.confirm-window .bg {
+    position: fixed;
+    z-index: 2222;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.47);
+}
+.confirm-window .alert-box {
+    border: 1px solid #ff9838;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 400px;
+    height: 200px;
+    background: white;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.confirm-window .alert-box .box-wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.confirm-window .title {
+    text-align: left;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background: #ff9838;
+    vertical-align: bottom;
+    overflow: hidden;
+    /*border-bottom: 1px solid #bbb;*/
+    border-top: 1px solid #ffbc79;
+}
+.confirm-window .title .close {
+    margin-top: 5px;
+    cursor: pointer;
+    position: absolute;
+    right:0;
+    top: 0;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 5px;
+
+}
+.confirm-window .title .close i {
+    margin-top: 1px;
+    margin-left: 4px;
+    display: inline-block;
+
+    font-size: 16px;
+    color: #f76a1e;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+
+}
+.confirm-window .title .close:hover i {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.confirm-window .title>a {
+    padding-top: 3px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: #fdefe3;
+    margin-left: 10px;
+}
+.confirm-window .content {
+
+    padding: 15px;
+    font-size: 12px;
+}
+.confirm-window .content .context{
+    margin-top:10px;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+    width: 370px;
+    height: 60px;
+}
+.confirm-window .oper {
+    margin-right: -80px;
+    position: absolute;
+    margin-left: 45px;
+
+
+}
+.confirm-window .oper .oper-item {
+    margin-right: 80px;
+    padding: 0 40px !important;
+    font-weight: 900;
+    /*-webkit-box-shadow: none;*/
+    /*-moz-box-shadow: none;*/
+    /*box-shadow: none;*/
+}
+

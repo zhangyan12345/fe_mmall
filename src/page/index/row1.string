@@ -1,0 +1,62 @@
+<div class="title">
+    <a href="./list.html?keyword=手机" class="btn btn-mini">玩3C <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=手机" class="btn btn-mini">手机频道 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=网上营业厅 " class="btn btn-mini">网上营业厅 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=配件选购中心 " class="btn btn-mini">配件选购中心 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=智能数码 " class="btn btn-mini">智能数码 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=影音Club " class="btn btn-mini">影音Club <i class="fa fa-arrow-right" ></i></a>
+</div>
+<div class="content ">
+    <div class="content-item link-text">
+        <span class="hd link">手机通讯 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=手机" class="link">手机</a> |
+        <a href="./list.html?keyword=游戏手机" class="link">游戏手机</a> |
+        <a href="./list.html?keyword=老人机" class="link">老人机</a> |
+        <a href="./list.html?keyword=对讲机" class="link">对讲机</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">运营商 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=合约机" class="link">合约机</a> |
+        <a href="./list.html?keyword=选号码" class="link">选号码</a> |
+        <a href="./list.html?keyword=固话宽带" class="link">固话宽带</a> |
+        <a href="./list.html?keyword=办套餐" class="link">办套餐</a> |
+        <a href="./list.html?keyword=充话费" class="link">充话费/流量</a> |
+        <a href="./list.html?keyword=中国电信" class="link">中国电信</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">手机配件 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=手机壳" class="link">手机壳</a> |
+        <a href="./list.html?keyword=贴膜" class="link">贴膜</a> |
+        <a href="./list.html?keyword=手机储存卡" class="link">手机储存卡</a> |
+        <a href="./list.html?keyword=数据线" class="link">数据线</a> |
+        <a href="./list.html?keyword=充电器" class="link">充电器</a> |
+        <a href="./list.html?keyword=手机耳机" class="link">手机耳机</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">摄影摄像 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=数码相机" class="link">数码相机</a> |
+        <a href="./list.html?keyword=微单相机" class="link">微单相机</a> |
+        <a href="./list.html?keyword=拍立得" class="link">拍立得</a> |
+        <a href="./list.html?keyword=运动相机" class="link">运动相机</a> |
+        <a href="./list.html?keyword=摄像机" class="link">摄像机</a> |
+        <a href="./list.html?keyword=镜头" class="link">镜头</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">影音娱乐 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=耳机" class="link">耳机/耳麦</a> |
+        <a href="./list.html?keyword=音箱" class="link">音箱/音响</a> |
+        <a href="./list.html?keyword=智能音响" class="link">智能音响</a> |
+        <a href="./list.html?keyword=便携" class="link">便携/无线音箱</a> |
+        <a href="./list.html?keyword=麦克风" class="link">麦克风</a> |
+        <a href="./list.html?keyword=mp3" class="link">mp3/m4</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">智能设备 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=智能手环" class="link">智能手环</a> |
+        <a href="./list.html?keyword=智能手表" class="link">智能手表</a> |
+        <a href="./list.html?keyword=智能眼镜" class="link">智能眼镜</a> |
+        <a href="./list.html?keyword=智能机器人" class="link">智能机器人</a> |
+        <a href="./list.html?keyword=运动跟踪器" class="link">运动跟踪器</a> |
+        <a href="./list.html?keyword=健康监测" class="link">健康监测</a> |
+    </div>
+</div>

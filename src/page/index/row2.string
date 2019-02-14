@@ -1,0 +1,107 @@
+<!--
+  ~ @Author: Avenda
+  ~ @Date: 2018/10/8
+  -->
+
+<div class="title">
+    <a href="./list.html?keyword=家电" class="btn btn-mini">家电馆 <i class="fa fa-arrow-right"></i></a>
+    <a href="./list.html?keyword=乡镇专卖店" class="btn btn-mini">乡镇专卖店 <i class="fa fa-arrow-right"></i></a>
+    <a href="./list.html?keyword=家电服务" class="btn btn-mini">家电服务 <i class="fa fa-arrow-right"></i></a>
+    <a href="./list.html?keyword=家电企业购" class="btn btn-mini">家电企业购 <i class="fa fa-arrow-right"></i></a>
+    <a href="./list.html?keyword=商用电器" class="btn btn-mini">商用电器 <i class="fa fa-arrow-right"></i></a>
+</div>
+<div class="content ">
+    <div class="content-item link-text">
+        <span class="hd link">电脑整机 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=笔记本" class="link">笔记本</a> |
+        <a href="./list.html?keyword=游戏本" class="link">游戏本</a> |
+        <a href="./list.html?keyword=平板" class="link">平板</a> |
+        <a href="./list.html?keyword=平板电脑配件" class="link">平板电脑配件</a> |
+        <a href="./list.html?keyword=台式机" class="link">台式机</a> |
+        <a href="./list.html?keyword=一体机" class="link">一体机</a> |
+        <a href="./list.html?keyword=服务器" class="link">服务器/工作站</a> |
+        <a href="./list.html?keyword=笔记本配件" class="link">笔记本配件</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">电脑配件 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=显示器" class="link">显示器</a> |
+        <a href="./list.html?keyword=CPU" class="link">CPU</a> |
+        <a href="./list.html?keyword=主板" class="link">主板</a> |
+        <a href="./list.html?keyword=显卡" class="link">显卡</a> |
+        <a href="./list.html?keyword=硬盘" class="link">硬盘</a> |
+        <a href="./list.html?keyword=内存" class="link">内存</a> |
+        <a href="./list.html?keyword=机箱" class="link">机箱</a> |
+        <a href="./list.html?keyword=电源" class="link">电源</a> |
+        <a href="./list.html?keyword=散热器" class="link">散热器</a> |
+        <a href="./list.html?keyword=刻录机" class="link">刻录机/光驱</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">外设产品 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=鼠标" class="link">鼠标</a> |
+        <a href="./list.html?keyword=键盘" class="link">键盘</a> |
+        <a href="./list.html?keyword=键鼠套装" class="link">键鼠套装</a> |
+        <a href="./list.html?keyword=网络仪表仪器" class="link">网络仪表仪器</a> |
+        <a href="./list.html?keyword=U盘" class="link">U盘</a> |
+        <a href="./list.html?keyword=移动硬盘" class="link">移动硬盘</a> |
+        <a href="./list.html?keyword=鼠标垫" class="link">鼠标垫</a> |
+        <a href="./list.html?keyword=摄像头" class="link">摄像头</a> |
+        <a href="./list.html?keyword=线缆" class="link">线缆</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">游戏设备 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=游戏机" class="link">游戏机</a> |
+        <a href="./list.html?keyword=游戏耳机" class="link">游戏耳机</a> |
+        <a href="./list.html?keyword=手柄" class="link">手柄/方向盘</a> |
+        <a href="./list.html?keyword=游戏软件" class="link">游戏软件</a> |
+        <a href="./list.html?keyword=游戏周建" class="link">游戏周建</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">网络产品 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=路由器" class="link">路由器/耳麦</a> |
+        <a href="./list.html?keyword=网络机顶盒" class="link">网络机顶盒</a> |
+        <a href="./list.html?keyword=交换机" class="link">交换机</a> |
+        <a href="./list.html?keyword=网络存储" class="link">网络存储</a> |
+        <a href="./list.html?keyword=网卡" class="link">网卡</a> |
+        <a href="./list.html?keyword=4G" class="link">4G/3G上网</a> |
+        <a href="./list.html?keyword=网线" class="link">网线</a> |
+        <a href="./list.html?keyword=网络配件" class="link">网络配件</a> |
+
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">办公设备 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=投影机" class="link">投影机</a> |
+        <a href="./list.html?keyword=投影配件" class="link">投影配件</a> |
+        <a href="./list.html?keyword=多功能一体机" class="link">多功能一体机</a> |
+        <a href="./list.html?keyword=打印机" class="link">打印机</a> |
+        <a href="./list.html?keyword=传真设备" class="link">传真设备</a> |
+        <a href="./list.html?keyword=验钞" class="link">验钞/点钞机</a> |
+        <a href="./list.html?keyword=扫描设备" class="link">扫描设备</a> |
+        <a href="./list.html?keyword=复合机" class="link">复合机</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">文具 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=笔类" class="link">笔类</a> |
+        <a href="./list.html?keyword=投影配件" class="link">投影配件</a> |
+        <a href="./list.html?keyword=多功能一体机" class="link">多功能一体机</a> |
+        <a href="./list.html?keyword=打印机" class="link">打印机</a> |
+        <a href="./list.html?keyword=传真设备" class="link">传真设备</a> |
+        <a href="./list.html?keyword=验钞" class="link">验钞/点钞机</a> |
+        <a href="./list.html?keyword=扫描设备" class="link">扫描设备</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">耗材 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=墨粉" class="link">墨粉</a> |
+        <a href="./list.html?keyword=墨盒" class="link">墨盒</a> |
+        <a href="./list.html?keyword=色带" class="link">色带</a> |
+        <a href="./list.html?keyword=纸类" class="link">纸类</a> |
+        <a href="./list.html?keyword=刻录光盘" class="link">刻录光盘./list.html?keyword=耳机/a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">耗材 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=墨粉" class="link">墨粉</a> |
+        <a href="./list.html?keyword=墨盒" class="link">墨盒</a> |
+        <a href="./list.html?keyword=色带" class="link">色带</a> |
+        <a href="./list.html?keyword=纸类" class="link">纸类</a> |
+        <a href="./list.html?keyword=刻录光盘" class="link">刻录光盘</a> |
+    </div>
+</div>

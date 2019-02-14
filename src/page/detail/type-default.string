@@ -1,0 +1,18 @@
+<!--
+  ~ @Author: Avenda
+  ~ @Date: 2018/10/14
+  -->
+
+<div class="type-line" >
+    <div class="key">
+        规格
+    </div>
+    <span class="type-item size active">默认</span>
+</div>
+<div class="type-line" >
+    <div class="key">
+        颜色
+    </div>
+    <span class="type-item color active">默认</span>
+
+</div>

@@ -1,0 +1,110 @@
+<!--
+  ~ @Author: Avenda
+  ~ @Date: 2018/10/8
+  -->
+
+<!--
+  ~ @Author: Avenda
+  ~ @Date: 2018/10/8
+  -->
+
+
+<div class="title">
+    <a href="./list.html?keyword=玩3C " class="btn btn-mini">玩3C <i class="fa fa-arrow-right"></i></a>
+    <a href="./list.html?keyword=本周热卖 " class="btn btn-mini">本周热卖 <i class="fa fa-arrow-right"></i></a>
+    <a href="./list.html?keyword=企业采购 " class="btn btn-mini">企业采购 <i class="fa fa-arrow-right"></i></a>
+    <a href="./list.html?keyword=GAME" class="btn btn-mini">GAME+ <i class="fa fa-arrow-right"></i></a>
+    <a href="./list.html?keyword=装机大师 " class="btn btn-mini">装机大师 <i class="fa fa-arrow-right"></i></a>
+    <a href="./list.html?keyword=私人定制 " class="btn btn-mini">私人定制 <i class="fa fa-arrow-right"></i></a>
+</div>
+<div class="content ">
+    <div class="content-item link-text">
+        <span class="hd link">电视 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=曲面电视" class="link">曲面电视</a> |
+        <a href="./list.html?keyword=超薄电视" class="link">超薄电视</a> |
+        <a href="./list.html?keyword=OLED电视" class="link">OLED电视</a> |
+        <a href="./list.html?keyword=4K超清电视" class="link">4K超清电视</a> |
+        <a href="./list.html?keyword=55英寸" class="link">55英寸</a> |
+        <a href="./list.html?keyword=65英寸" class="link">65英寸</a> |
+        <a href="./list.html?keyword=电视配件" class="link">电视配件</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">空调 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=壁挂式空调" class="link">壁挂式空调</a> |
+        <a href="./list.html?keyword=柜式空调" class="link">柜式空调</a> |
+        <a href="./list.html?keyword=中央空调" class="link">中央空调</a> |
+        <a href="./list.html?keyword=一级能效空调" class="link">一级能效空调</a> |
+        <a href="./list.html?keyword=变频空调" class="link">变频空调</a> |
+        <a href="./list.html?keyword=1" class="link">1.5匹空调</a> |
+        <a href="./list.html?keyword=以旧换新" class="link">以旧换新</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">洗衣机 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=滚筒洗衣机" class="link">滚筒洗衣机</a> |
+        <a href="./list.html?keyword=洗烘一体机" class="link">洗烘一体机</a> |
+        <a href="./list.html?keyword=波轮洗衣机" class="link">波轮洗衣机</a> |
+        <a href="./list.html?keyword=迷你洗衣机" class="link">迷你洗衣机</a> |
+        <a href="./list.html?keyword=洗衣机配件" class="link">洗衣机配件</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">冰箱 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=多门" class="link">多门</a> |
+        <a href="./list.html?keyword=多开门" class="link">多开门</a> |
+        <a href="./list.html?keyword=三门" class="link">三门</a> |
+        <a href="./list.html?keyword=双门" class="link">双门</a> |
+        <a href="./list.html?keyword=冷柜" class="link">冷柜/冰吧</a> |
+        <a href="./list.html?keyword=冷柜" class="link">冷柜/酒柜</a> |
+        <a href="./list.html?keyword=冰箱配件" class="link">冰箱配件</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">厨卫大电 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=油烟机" class="link">油烟机</a> |
+        <a href="./list.html?keyword=燃气灶" class="link">燃气灶</a> |
+        <a href="./list.html?keyword=烟灶套装" class="link">烟灶套装</a> |
+        <a href="./list.html?keyword=集成灶" class="link">集成灶</a> |
+        <a href="./list.html?keyword=消毒柜" class="link">消毒柜</a> |
+        <a href="./list.html?keyword=洗碗机" class="link">洗碗机</a> |
+        <a href="./list.html?keyword=电热水器" class="link">电热水器</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">厨卫小电 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=破壁机" class="link">破壁机</a> |
+        <a href="./list.html?keyword=电烤箱" class="link">电烤箱</a> |
+        <a href="./list.html?keyword=电饭煲" class="link">电饭煲</a> |
+        <a href="./list.html?keyword=电压力锅" class="link">电压力锅</a> |
+        <a href="./list.html?keyword=咖啡机" class="link">咖啡机</a> |
+        <a href="./list.html?keyword=豆浆机" class="link">豆浆机</a> |
+        <a href="./list.html?keyword=料理机" class="link">料理机</a> |
+        <a href="./list.html?keyword=电炖锅" class="link">电炖锅</a> |
+        <a href="./list.html?keyword=电饼铛" class="link">电饼铛</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">生活电器 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=吸尘器" class="link">吸尘器/除螨仪</a> |
+        <a href="./list.html?keyword=空气净化器" class="link">空气净化器</a> |
+        <a href="./list.html?keyword=取暖电器" class="link">取暖电器</a> |
+        <a href="./list.html?keyword=扫地机器人" class="link">扫地机器人</a> |
+        <a href="./list.html?keyword=整齐拖把" class="link">整齐拖把</a> |
+        <a href="./list.html?keyword=干衣机" class="link">干衣机</a> |
+        <a href="./list.html?keyword=电话机" class="link">电话机</a> |
+    </div>
+
+    <div class="content-item link-text">
+        <span class="hd link">家庭影音 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=家庭影院" class="link">家庭影院</a> |
+        <a href="./list.html?keyword=KTV音响" class="link">KTV音响</a> |
+        <a href="./list.html?keyword=迷你音响" class="link">迷你音响</a> |
+        <a href="./list.html?keyword=DVD" class="link">DVD</a> |
+        <a href="./list.html?keyword=功放" class="link">功放</a> |
+        <a href="./list.html?keyword=回音壁" class="link">回音壁</a> |
+        <a href="./list.html?keyword=影音配件" class="link">影音配件</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">耗材 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=墨粉" class="link">墨粉</a> |
+        <a href="./list.html?keyword=墨盒" class="link">墨盒</a> |
+        <a href="./list.html?keyword=色带" class="link">色带</a> |
+        <a href="./list.html?keyword=纸类" class="link">纸类</a> |
+        <a href="./list.html?keyword=刻录光盘" class="link">刻录光盘</a> |
+    </div>
+</div>

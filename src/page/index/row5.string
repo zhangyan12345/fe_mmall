@@ -1,0 +1,108 @@
+
+<div class="title">
+    <a href="./list.html?keyword=生鲜 " class="btn btn-mini">生鲜 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=食品饮料 " class="btn btn-mini">食品饮料 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=酒类 " class="btn btn-mini">酒类 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=地方特产 " class="btn btn-mini">地方特产 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=全球美食购 " class="btn btn-mini">全球美食购 <i class="fa fa-arrow-right" ></i></a>
+</div>
+<div class="content ">
+    <div class="content-item link-text">
+        <span class="hd link">生鲜水果 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=苹果" class="link">苹果</a> |
+        <a href="./list.html?keyword=橙子" class="link">橙子</a> |
+        <a href="./list.html?keyword=奇异果" class="link">奇异果/猕猴桃</a> |
+        <a href="./list.html?keyword=奇异果" class="link">奇异果/火龙果</a> |
+        <a href="./list.html?keyword=榴莲" class="link">榴莲</a> |
+        <a href="./list.html?keyword=芒果" class="link">芒果</a> |
+        <a href="./list.html?keyword=椰子" class="link">椰子</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">蔬菜蛋品 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=蛋品" class="link">蛋品</a> |
+        <a href="./list.html?keyword=叶菜类" class="link">叶菜类</a> |
+        <a href="./list.html?keyword=根茎类" class="link">根茎类</a> |
+        <a href="./list.html?keyword=葱姜蒜椒" class="link">葱姜蒜椒</a> |
+        <a href="./list.html?keyword=鲜菌菇" class="link">鲜菌菇</a> |
+        <a href="./list.html?keyword=茄果瓜类" class="link">茄果瓜类</a> |
+        <a href="./list.html?keyword=半加工蔬菜" class="link">半加工蔬菜</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">精选肉类 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=猪肉" class="link">猪肉</a> |
+        <a href="./list.html?keyword=牛肉" class="link">牛肉</a> |
+        <a href="./list.html?keyword=羊肉" class="link">羊肉</a> |
+        <a href="./list.html?keyword=鸡肉" class="link">鸡肉</a> |
+        <a href="./list.html?keyword=鸭肉" class="link">鸭肉</a> |
+        <a href="./list.html?keyword=冷鲜肉" class="link">冷鲜肉</a> |
+        <a href="./list.html?keyword=特色肉类" class="link">特色肉类</a> |
+        <a href="./list.html?keyword=内脏类" class="link">内脏类</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">海鲜水产 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=鱼类" class="link">鱼类</a> |
+        <a href="./list.html?keyword=虾类" class="link">虾类</a> |
+        <a href="./list.html?keyword=蟹类" class="link">蟹类</a> |
+        <a href="./list.html?keyword=贝类" class="link">贝类</a> |
+        <a href="./list.html?keyword=海参" class="link">海参</a> |
+        <a href="./list.html?keyword=鱿鱼" class="link">鱿鱼/章鱼</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">冷冻食品 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=水饺" class="link">水饺/馄饨</a> |
+        <a href="./list.html?keyword=汤圆" class="link">汤圆/元宵</a> |
+        <a href="./list.html?keyword=面点" class="link">面点</a> |
+        <a href="./list.html?keyword=烘焙半成品" class="link">烘焙半成品</a> |
+        <a href="./list.html?keyword=奶酪" class="link">奶酪/黄油</a> |
+        <a href="./list.html?keyword=方便速食" class="link">方便速食</a> |
+        <a href="./list.html?keyword=火锅丸串" class="link">火锅丸串</a> |
+        <a href="./list.html?keyword=冰淇淋" class="link">冰淇淋</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">中外名酒 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=白酒" class="link">白酒</a> |
+        <a href="./list.html?keyword=葡萄酒" class="link">葡萄酒</a> |
+        <a href="./list.html?keyword=洋酒" class="link">洋酒</a> |
+        <a href="./list.html?keyword=啤酒" class="link">啤酒</a> |
+        <a href="./list.html?keyword=黄酒" class="link">黄酒/养生酒</a> |
+        <a href="./list.html?keyword=收藏酒" class="link">收藏酒/陈年老酒</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">进口食品 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=牛奶" class="link">牛奶</a> |
+        <a href="./list.html?keyword=饼干蛋糕" class="link">饼干蛋糕</a> |
+        <a href="./list.html?keyword=糖" class="link">糖/巧克力</a> |
+        <a href="./list.html?keyword=零食" class="link">零食</a> |
+        <a href="./list.html?keyword=水" class="link">水</a> |
+        <a href="./list.html?keyword=饮料" class="link">饮料</a> |
+        <a href="./list.html?keyword=咖啡粉" class="link">咖啡粉</a> |
+        <a href="./list.html?keyword=冲调品" class="link">冲调品</a> |
+        <a href="./list.html?keyword=油" class="link">油</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">地方特产 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=北京" class="link">北京</a> |
+        <a href="./list.html?keyword=上海" class="link">上海</a> |
+        <a href="./list.html?keyword=新疆" class="link">新疆</a> |
+        <a href="./list.html?keyword=陕西" class="link">陕西</a> |
+        <a href="./list.html?keyword=湖南" class="link">湖南</a> |
+        <a href="./list.html?keyword=云南" class="link">云南</a> |
+        <a href="./list.html?keyword=山东" class="link">山东</a> |
+        <a href="./list.html?keyword=江西" class="link">江西</a> |
+        <a href="./list.html?keyword=成都" class="link">成都</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">茗茶 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=铁观音" class="link">铁观音</a> |
+        <a href="./list.html?keyword=普洱" class="link">普洱</a> |
+        <a href="./list.html?keyword=龙井" class="link">龙井</a> |
+        <a href="./list.html?keyword=绿茶" class="link">绿茶</a> |
+        <a href="./list.html?keyword=红茶" class="link">红茶</a> |
+        <a href="./list.html?keyword=乌龙茶" class="link">乌龙茶</a> |
+        <a href="./list.html?keyword=茉莉花茶" class="link">茉莉花茶</a> |
+        <a href="./list.html?keyword=花草茶" class="link">花草茶</a> |
+        <a href="./list.html?keyword=花果茶" class="link">花果茶</a> |
+        <a href="./list.html?keyword=黑茶" class="link">黑茶</a> |
+        <a href="./list.html?keyword=白茶" class="link">白茶</a> |
+    </div>
+</div>

@@ -1,0 +1,21 @@
+{{#list}}
+<div class="addr-item" data-shippingid="{{id}}">
+    <div class="item-title">
+        <span class="province">{{receiverProvince}}</span>
+        <span class="city">{{receiverCity}}</span>(
+        <span class="name">{{receiverName}}</span>
+        <span > 收)</span>
+        <span class="postcode">{{receiverZip}}</span>
+    </div>
+    <div class="item-con">
+        <div >
+            <span class="personal-detail" >{{receiverAddress}}</span>
+        </div>
+        <div class="phone-number">{{receiverPhone}}{{receiverMobile}}</div>
+    </div>
+    <div class="item-oper">
+        <span class="oper-item  modify">修改</span>
+        <span class="oper-item  delete">删除</span>
+    </div>
+</div>
+{{/list}}

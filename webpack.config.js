@@ -196,7 +196,7 @@ var devConfig       = {
     output: {
         // path        :path.resolve(__dirname,'./dist/'),
         path        :__dirname+'/dist/',
-        publicPath  :'/dist/',
+        publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '//s.qiongmaomall.top/fe_mmall/dist/',
         // publicPath  :'/dist/',
         // 关键的命名[name]
         filename    : 'js/[name].js',

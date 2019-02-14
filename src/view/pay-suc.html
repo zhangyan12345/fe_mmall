@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title%> - 穷猫商城</title>
+</head>
+<body>
+<%= require('html-loader!../util/alert-window/index.html') %>
+<%= require('html-loader!./layout/nav.html') %>
+<div class="page-wrap">
+    <div class="paySuc w">
+        <div class="title">支付成功</div>
+        <div class="content">
+            <div class="con-item">
+                <div class="content-warp">
+                    <div class="h1">查</div>
+                    <div class="sub-h1">订单号: 12312312312</div>
+                    <div class="oper" id="to-order-detail">订单详情</div>
+                </div>
+            </div>
+            <div class="con-item">
+                <div class="content-warp">
+                    <div class="h1">购</div>
+                    <div class="sub-h1">继续购物</div>
+                    <div class="oper" id="to-home">返回首页</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<%= require('html-loader!./layout/footer.html') %>
+</body>
+
+</html>
+
+

@@ -1,0 +1,26 @@
+
+<ul class="product-wrap">
+        {{#list}}
+    <li class="product-item">
+        <!--图片和标题-->
+        <a href="./detail.html?productId={{id}}">
+            <img src="{{imageHost}}{{mainImage}}" class="product-img" />
+        </a>
+        <!--价格-->
+        <span class="product-title price">
+                       ¥{{price}}
+                  <span class="product-tag">包邮</span>
+            </span>
+        <!--主标题-->
+        <a href="./detail.html?productId={{id}}">
+                 <span class="product-title title-main">
+                           {{name}}
+                       </span>
+        </a>
+        <!--副标题-->
+        <p class="product-title">
+            {{subtitle}}
+        </p>
+    </li>
+    {{/list}}
+</ul>

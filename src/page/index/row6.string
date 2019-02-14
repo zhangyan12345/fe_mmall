@@ -1,0 +1,111 @@
+
+<div class="title">
+    <a href="./list.html?keyword=清洁用品 " class="btn btn-mini">清洁用品 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=美妆馆 " class="btn btn-mini">美妆馆 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=个护馆 " class="btn btn-mini">个护馆 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=妆比社 " class="btn btn-mini">妆比社 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=全球购 " class="btn btn-mini">全球购 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=宠物馆 " class="btn btn-mini">宠物馆 <i class="fa fa-arrow-right" ></i></a>
+</div>
+<div class="content ">
+    <div class="content-item link-text">
+        <span class="hd link">面部护肤 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=礼盒" class="link">礼盒</a> |
+        <a href="./list.html?keyword=美白" class="link">美白</a> |
+        <a href="./list.html?keyword=防晒" class="link">防晒</a> |
+        <a href="./list.html?keyword=面膜" class="link">面膜</a> |
+        <a href="./list.html?keyword=洁面" class="link">洁面</a> |
+        <a href="./list.html?keyword=爽肤水" class="link">爽肤水</a> |
+        <a href="./list.html?keyword=净化" class="link">净化</a> |
+        <a href="./list.html?keyword=眼霜" class="link">眼霜</a> |
+        <a href="./list.html?keyword=卸妆" class="link">卸妆</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">香水彩妆 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=隔离" class="link">隔离</a> |
+        <a href="./list.html?keyword=遮瑕" class="link">遮瑕</a> |
+        <a href="./list.html?keyword=气垫BB" class="link">气垫BB</a> |
+        <a href="./list.html?keyword=粉底" class="link">粉底</a> |
+        <a href="./list.html?keyword=腮红" class="link">腮红</a> |
+        <a href="./list.html?keyword=口红" class="link">口红/唇膏</a> |
+        <a href="./list.html?keyword=睫毛膏" class="link">睫毛膏</a> |
+        <a href="./list.html?keyword=香水" class="link">香水</a> |
+        <a href="./list.html?keyword=彩妆" class="link">彩妆</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">男士护肤 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=控油" class="link">控油</a> |
+        <a href="./list.html?keyword=洁面" class="link">洁面</a> |
+        <a href="./list.html?keyword=乳液" class="link">乳液/面霜</a> |
+        <a href="./list.html?keyword=乳液" class="link">乳液/爽肤水</a> |
+        <a href="./list.html?keyword=剃须" class="link">剃须</a> |
+        <a href="./list.html?keyword=精华" class="link">精华</a> |
+        <a href="./list.html?keyword=防晒" class="link">防晒</a> |
+        <a href="./list.html?keyword=套装" class="link">套装/礼盒</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">洗发护发 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=洗发水" class="link">洗发水</a> |
+        <a href="./list.html?keyword=护发素" class="link">护发素</a> |
+        <a href="./list.html?keyword=发膜" class="link">发膜/精油</a> |
+        <a href="./list.html?keyword=造型" class="link">造型</a> |
+        <a href="./list.html?keyword=染发" class="link">染发</a> |
+        <a href="./list.html?keyword=烫发" class="link">烫发</a> |
+        <a href="./list.html?keyword=假发" class="link">假发</a> |
+        <a href="./list.html?keyword=美发工具" class="link">美发工具</a> |
+        <a href="./list.html?keyword=洗护套装" class="link">洗护套装</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">洗发护发 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=洗发水" class="link">洗发水</a> |
+        <a href="./list.html?keyword=护发素" class="link">护发素</a> |
+        <a href="./list.html?keyword=发膜" class="link">发膜/精油</a> |
+        <a href="./list.html?keyword=造型" class="link">造型</a> |
+        <a href="./list.html?keyword=染发" class="link">染发</a> |
+        <a href="./list.html?keyword=烫发" class="link">烫发</a> |
+        <a href="./list.html?keyword=假发" class="link">假发</a> |
+        <a href="./list.html?keyword=美发工具" class="link">美发工具</a> |
+        <a href="./list.html?keyword=洗护套装" class="link">洗护套装</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">口腔护理 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=牙膏" class="link">牙膏</a> |
+        <a href="./list.html?keyword=牙粉" class="link">牙粉</a> |
+        <a href="./list.html?keyword=牙贴" class="link">牙贴</a> |
+        <a href="./list.html?keyword=牙刷" class="link">牙刷</a> |
+        <a href="./list.html?keyword=牙线" class="link">牙线</a> |
+        <a href="./list.html?keyword=漱口水" class="link">漱口水</a> |
+        <a href="./list.html?keyword=口喷" class="link">口喷</a> |
+        <a href="./list.html?keyword=套装" class="link">套装</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">女性护理 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=卫生巾" class="link">卫生巾</a> |
+        <a href="./list.html?keyword=卫生棉条" class="link">卫生棉条</a> |
+        <a href="./list.html?keyword=卫生护垫" class="link">卫生护垫</a> |
+        <a href="./list.html?keyword=私处护理" class="link">私处护理</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">身体护理 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=沐浴露" class="link">沐浴露</a> |
+        <a href="./list.html?keyword=香皂" class="link">香皂</a> |
+        <a href="./list.html?keyword=洗手液" class="link">洗手液</a> |
+        <a href="./list.html?keyword=护手霜" class="link">护手霜</a> |
+        <a href="./list.html?keyword=浴盐" class="link">浴盐</a> |
+        <a href="./list.html?keyword=润肤" class="link">润肤</a> |
+        <a href="./list.html?keyword=精油" class="link">精油</a> |
+        <a href="./list.html?keyword=花露水" class="link">花露水</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">纸品清洁 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=抽纸" class="link">抽纸</a> |
+        <a href="./list.html?keyword=卷纸" class="link">卷纸</a> |
+        <a href="./list.html?keyword=湿巾" class="link">湿巾</a> |
+        <a href="./list.html?keyword=厨房用纸" class="link">厨房用纸</a> |
+        <a href="./list.html?keyword=湿厕纸" class="link">湿厕纸</a> |
+        <a href="./list.html?keyword=洗衣凝珠" class="link">洗衣凝珠</a> |
+        <a href="./list.html?keyword=洗衣液" class="link">洗衣液</a> |
+        <a href="./list.html?keyword=洗衣粉" class="link">洗衣粉/皂</a> |
+    </div>
+
+</div>

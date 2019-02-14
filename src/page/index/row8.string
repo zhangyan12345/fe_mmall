@@ -1,0 +1,75 @@
+
+<div class="title">
+    <a href="./list.html?keyword=自营鞋靴 " class="btn btn-mini">自营鞋靴 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=自营箱包 " class="btn btn-mini">自营箱包 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=时尚鞋包 " class="btn btn-mini">时尚鞋包 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=国际珠宝馆 " class="btn btn-mini">国际珠宝馆 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=奢侈品 " class="btn btn-mini">奢侈品 <i class="fa fa-arrow-right" ></i></a>
+    <a href="./list.html?keyword=收藏投资 " class="btn btn-mini">收藏投资 <i class="fa fa-arrow-right" ></i></a>
+</div>
+<div class="content ">
+    <div class="content-item link-text">
+        <span class="hd link">时尚鞋 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=新品推荐" class="link">新品推荐</a> |
+        <a href="./list.html?keyword=单鞋" class="link">单鞋</a> |
+        <a href="./list.html?keyword=休闲鞋" class="link">休闲鞋</a> |
+        <a href="./list.html?keyword=帆布鞋" class="link">帆布鞋</a> |
+        <a href="./list.html?keyword=妈妈鞋" class="link">妈妈鞋</a> |
+        <a href="./list.html?keyword=布鞋" class="link">布鞋/绣花鞋</a> |
+        <a href="./list.html?keyword=女鞋" class="link">女鞋</a> |
+        <a href="./list.html?keyword=马丁靴" class="link">马丁靴</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">潮流女包 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=真皮包" class="link">真皮包</a> |
+        <a href="./list.html?keyword=单肩包" class="link">单肩包</a> |
+        <a href="./list.html?keyword=手提包" class="link">手提包</a> |
+        <a href="./list.html?keyword=斜挎包" class="link">斜挎包</a> |
+        <a href="./list.html?keyword=双肩包" class="link">双肩包</a> |
+        <a href="./list.html?keyword=钱包" class="link">钱包</a> |
+        <a href="./list.html?keyword=手拿包" class="link">手拿包</a> |
+        <a href="./list.html?keyword=防水台" class="link">防水台</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">精品难包 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=男士钱包" class="link">男士钱包</a> |
+        <a href="./list.html?keyword=双肩包" class="link">双肩包</a> |
+        <a href="./list.html?keyword=单肩" class="link">单肩/斜跨包</a> |
+        <a href="./list.html?keyword=商务公文包" class="link">商务公文包</a> |
+        <a href="./list.html?keyword=男士手包" class="link">男士手包</a> |
+        <a href="./list.html?keyword=卡包名片夹" class="link">卡包名片夹</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">功能箱包 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=拉杆箱" class="link">拉杆箱</a> |
+        <a href="./list.html?keyword=旅行包" class="link">旅行包</a> |
+        <a href="./list.html?keyword=电脑包" class="link">电脑包</a> |
+        <a href="./list.html?keyword=休闲运动包" class="link">休闲运动包</a> |
+        <a href="./list.html?keyword=书包" class="link">书包</a> |
+        <a href="./list.html?keyword=登山包" class="link">登山包</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">奢侈品 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=箱包" class="link">箱包</a> |
+        <a href="./list.html?keyword=钱包" class="link">钱包</a> |
+        <a href="./list.html?keyword=服饰" class="link">服饰</a> |
+        <a href="./list.html?keyword=腰带" class="link">腰带</a> |
+        <a href="./list.html?keyword=鞋靴" class="link">鞋靴</a> |
+        <a href="./list.html?keyword=太阳镜" class="link">太阳镜</a> |
+        <a href="./list.html?keyword=饰品" class="link">饰品</a> |
+        <a href="./list.html?keyword=配件" class="link">配件</a> |
+    </div>
+    <div class="content-item link-text">
+        <span class="hd link">珠宝首饰 <span class="fa fa-arrow-circle-right"></span></span> |
+        <a href="./list.html?keyword=黄金" class="link">黄金</a> |
+        <a href="./list.html?keyword=K金" class="link">K金</a> |
+        <a href="./list.html?keyword=时尚饰品" class="link">时尚饰品</a> |
+        <a href="./list.html?keyword=钻石" class="link">钻石</a> |
+        <a href="./list.html?keyword=翡翠玉石" class="link">翡翠玉石</a> |
+        <a href="./list.html?keyword=银饰" class="link">银饰</a> |
+        <a href="./list.html?keyword=水晶玛瑙" class="link">水晶玛瑙</a> |
+        <a href="./list.html?keyword=珍珠" class="link">珍珠</a> |
+    </div>
+
+
+</div>

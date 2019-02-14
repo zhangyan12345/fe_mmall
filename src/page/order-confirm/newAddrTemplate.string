@@ -1,0 +1,20 @@
+
+<div class="addr-item" data-shippingid="{{id}}">
+    <div class="item-title">
+        <span class="province">{{province}} </span>
+        <span class="city">{{city}}( </span>
+        <span class="name">{{name}}</span>
+        <span > 收)</span>
+        <span class="postcode">{{postcode}}</span>
+    </div>
+    <div class="item-con">
+        <div >
+            <span class="personal-detail" >{{area}}{{addrDetail}}</span>
+        </div>
+        <div class="phone-number">{{phone}}</div>
+    </div>
+    <div class="item-oper">
+        <span class="oper-item  modify">修改</span>
+        <span class="oper-item  delete">删除</span>
+    </div>
+</div>
