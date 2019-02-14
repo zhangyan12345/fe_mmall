@@ -1,5 +1,10 @@
-<p class="payment-tips">订单提交成功，请尽快支付！定单号：{{orderNo}}</p>
-<p class="payment-tips enhance">请使用支付宝App扫描如下二维码进行支付：</p>
-<div class="img-con">
-    <img class="qr-code" src="{{qrUrl}}" alt="支付二维码" />
+<div class="pay-tips">
+    <div class="tips-title">支付订单</div>
+    <div class="tips-con">订单号: {{orderNo}}  &nbsp&nbsp&nbsp(超时自动取消)</div>
+</div>
+<div class="pay-img">
+    <img class="ar-code" src="{{qrUrl}}" alt="">
+</div>
+<div class="pay-tips-bottom">
+    请用支付宝APP进行扫码支付
 </div>

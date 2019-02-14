@@ -2,34 +2,21 @@
 <html lang="en">
 <head>
     <%= require('html-loader!./layout/head-common.html') %>
-    <title><%= htmlWebpackPlugin.options.title%> - Qmall</title>
+    <title><%= htmlWebpackPlugin.options.title%> - 穷猫商城</title>
 </head>
 <body>
+<%= require('html-loader!../util/alert-window/index.html') %>
 <%= require('html-loader!./layout/nav.html') %>
-<%= require('html-loader!./layout/header.html') %>
-<div class="crumb">
-    <div class="w">
-        <div class="crumb-con">
-            <a href="./index.html" class="link">Qmall</a>
-            <span> ></span>
-            <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
-        </div>
-    </div>
-</div>
 <div class="page-wrap w">
-    <%= require('html-loader!./layout/nav-side.html') %>
-    <div class="content with-nav">
-        <div class="panel">
-            <div class="panel-title"><%= htmlWebpackPlugin.options.title%></div>
-            <div class="panel-body">
-                <div class="about-line">
-                    <span class="about-text">简述：</span>
-                    <span class="about-text enhance">此商城所有商品为非卖品，不能构成真实交易</span>
-                </div>
-            </div>
-        </div>
-    </div>
+   <div class="main" >
+      <div> 此商城所有商品为非卖品，不能构成真实交易</div>
+       <a href="./index.html" class="back-to-home btn-red btn-mini">返回首页</a>
+   </div>
+
 </div>
 <%= require('html-loader!./layout/footer.html') %>
 </body>
+
 </html>
+
+

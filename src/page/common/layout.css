@@ -1,139 +1,438 @@
-/*
-统一的结构样式
- */
-/*css reset*/
-/*去除DOM树中默认的属性*/
+/*cssReset----------------------------------------*/
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    color: #171717;
+    /*border: 1px solid rgba(247, 84, 17, 0.18);*/
 }
-
+html { overflow: scroll; }
 body {
-    background: #f6f6f6;
-    /*字体大小 行间距 字体*/
-    font: 12px/1.5 tahoma, arial, Microsoft YaHei, sans-serif;
+    background: #f5f5f5;
+    /*字体标准  12px/1.5倍行距 常用字体, 从前往后匹配*/
+    font: 12px/1.5 Tahoma, Arial, Microsoft YaHei,sans-serif ;
+    /*正确显示人民币符号*/
+   /*font-family:  Arial,Microsoft YaHei,sans-serif ;*/
 }
-
+h1, h2, h3, h4 ,h5, h6 {
+    color: #444444;
+}
 li {
     list-style: none;
 }
-
 img {
     display: block;
     border: none;
 }
-
 label {
-    /*手指的图标*/
     cursor: pointer;
 }
-
 input[type='checkbox'] {
     cursor: pointer;
 }
+a {
+    text-decoration: none;
+}
 
-/*定宽布局*/
-.w {
+table,table tr th, table tr td { border:1px solid #eeeeee; }
+table {  min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;}
+.search-input {
+    outline: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+.search-input:focus {
+    border: 1px solid #ff9838;
+}
+.search-input::placeholder {
+    color: #bbb;
+}
+    /*定宽布局, 窍门: 只要定义一个固定宽度的class就好---------------------------------*/
+/*此方法兼容ie, 如果用多媒体查询, 一些旧的浏览器就都不能用*/
+.w{
     width: 1080px;
+    /*居中*/
     margin: 0 auto;
-    /*有需要绝对定位的就以当前为相对基准*/
+    /*对内限制*/
     position: relative;
-    /*清除浮动，超出边界不显示*/
+    /*清除浮动*/
     overflow: hidden;
 }
-
-/*容器*/
-.panel {
-    padding: 10px;
-    margin-bottom: 10px;
-    background: #fff;
+.w-sub {
+    position: relative;
+    width: 1080px;
+    /*居中*/
+    margin: 0 auto;
+    z-index: 9;
 }
-
-.panel .panel-title {
-    padding: 10px;
-    font-size: 14px;
-    color: #666;
-    font-weight: bold;
-    border-bottom: 1px solid #eee;
+.fixed {
+    position: fixed;
+    z-index: 9999;
 }
-
-.panel .panel-body {
-    padding: 10px;
+.clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
     overflow: hidden;
+    visibility: hidden;
 }
-
-/*适配大屏*/
-.large .w {
+.large .w{
+    /*兼容大屏幕*/
     width: 1600px;
 }
-
 /*全局通用样式*/
-/*隐藏*/
+/*隐藏类*/
 .hide {
     display: none;
 }
-
-/*超链样式*/
+/*超链接样式*/
 .link {
-    color: #999999;
+    /*小技巧, #999 三个一样的话就是从黑到白的渐变, 数字越大表示越亮,#fff是白色 */
+    color: #666;
     cursor: pointer;
-    /*去除下划线*/
     text-decoration: none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
 }
-
-/*指上去就变色*/
 .link:hover {
-    color: #e80012;
+    color: #ff9838;
 }
-
-.link-text {
-    color: #999999;
+.link-f {
+    /*小技巧, #999 三个一样的话就是从黑到白的渐变, 数字越大表示越亮,#fff是白色 */
+    color: #666 !important;
+    cursor: pointer;
     text-decoration: none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
 }
-
-/*通用按钮样式*/
+.link-f:hover {
+    color: #ff9838 !important;
+}
+.link-text {
+    color: #666666;
+    text-decoration: none;
+    cursor: initial;
+}
+.hd {
+    font-weight: 900;
+}
+.link-sub {
+    color: #999;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.link-sub:hover{
+    color: #ff9838;
+}
+.high-light {
+    color: #ff9838;
+}
 .btn {
     display: inline-block;
     padding: 0 20px;
-    height: 40px;
-    line-height: 40px;
+    height: 32px;
+    line-height: 32px;
+    /*防止其他样式冲突*/
     vertical-align: middle;
-    border: none;
-    background: #c60023;
-    font-size: 17px;
-    font-weight: bold;
-    color: #ffffff;
-    outline: none;
+    background: #ff9838;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
     cursor: pointer;
-    text-decoration: none;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 0px 3px  10px #ff7a29;
+    -moz-box-shadow: 0px 3px 10px #ff7a29;
+    box-shadow: 0px 3px  10px #ff7a29;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
 }
-
+.btn:hover {
+    background: #ffc620;
+    -webkit-box-shadow: 0px 5px  10px #fab01e;
+    -moz-box-shadow: 0px 5px 10px #fab01e;
+    box-shadow: 0px 5px  10px #fab01e;
+}
+.btn:active {
+    position: relative;
+    top:1px;
+    background: #f7722b;
+    -webkit-box-shadow: 0px 0px  0px #e65f1e;
+    -moz-box-shadow: 0px 0px 0px #e65f1e;
+    box-shadow: 0px 0px  0px #e65f1e;
+}
+.btn:disabled {
+    background: #aaa;
+    cursor: default;
+    -webkit-box-shadow: 0px 0px  0px #ff9d2b;
+    -moz-box-shadow: 0px 0px 0px #ff9d2b;
+    box-shadow: 0px 0px  0px #ff9d2b;
+}
+.btn-red {
+    display: inline-block;
+    padding: 0 20px;
+    height: 32px;
+    line-height: 32px;
+    /*防止其他样式冲突*/
+    vertical-align: middle;
+    background: #e65d63;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 0px 3px  10px #e65d63;
+    -moz-box-shadow: 0px 3px 10px #e65d63;
+    box-shadow: 0px 3px  10px #e65d63;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+.btn-red:hover {
+    background: #fe794f;
+    -webkit-box-shadow: 0px 5px  10px #fe6453;
+    -moz-box-shadow: 0px 5px 10px #fe6453;
+    box-shadow: 0px 5px  10px #fe6453;
+}
+.btn-red:active {
+    position: relative;
+    top:1px;
+    background: #d23740;
+    -webkit-box-shadow: 0px 0px  0px #d23740;
+    -moz-box-shadow: 0px 0px 0px #d23740;
+    box-shadow: 0px 0px  0px #d23740;
+}
+.btn-red:disabled {
+    background: #aaa;
+    cursor: default;
+    -webkit-box-shadow: 0px 0px  0px #ff9d2b;
+    -moz-box-shadow: 0px 0px 0px #ff9d2b;
+    box-shadow: 0px 0px  0px #ff9d2b;
+}
+.btn-ab {
+    display: inline-block;
+    padding: 0 20px;
+    height: 32px;
+    line-height: 32px;
+    /*防止其他样式冲突*/
+    vertical-align: middle;
+    background: #ff9838;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 0px 3px  10px #ff7a29;
+    -moz-box-shadow: 0px 3px 10px #ff7a29;
+    box-shadow: 0px 3px  10px #ff7a29;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+.btn-ab:hover {
+    background: #ffb441;
+    -webkit-box-shadow: 0px 5px  10px #ff9d2b;
+    -moz-box-shadow: 0px 5px 10px #ff9d2b;
+    box-shadow: 0px 5px  10px #ff9d2b;
+}
+.btn-ab:active {
+    background: #f7722b;
+    -webkit-box-shadow: 0px 0px  0px #e65f1e;
+    -moz-box-shadow: 0px 0px 0px #e65f1e;
+    box-shadow: 0px 0px  0px #e65f1e;
+}
+.btn-ab:disabled {
+    background: #aaa;
+    border: 1px solid #aaa;
+    cursor: default;
+}
+.btn-white {
+    display: inline-block;
+    padding: 0 20px;
+    height: 32px;
+    line-height: 32px;
+    /*防止其他样式冲突*/
+    vertical-align: middle;
+    background: #f7f7f7;
+    font-size: 14px;
+    color: #666;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 0px 3px  10px #ccc;
+    -moz-box-shadow: 0px 3px 10px #ccc;
+    box-shadow: 0px 3px  10px #ccc;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+.btn-white:hover {
+    color: #ff9838;
+    background: white;
+    -webkit-box-shadow: 0px 5px  10px #ccc;
+    -moz-box-shadow: 0px 5px 10px #ccc;
+    box-shadow: 0px 5px  10px #ccc;
+}
+.btn-white:hover * {
+    color: #ff9838;
+}
+.btn-white:active {
+    position: relative;
+    top:1px;
+    background: #eeeeee;
+    -webkit-box-shadow: 0px 0px  5px white;
+    -moz-box-shadow: 0px 0px 5px white;
+    box-shadow: 0px 0px  5px white;
+}
+.btn-white:disabled {
+    background: #aaa;
+    border: 1px solid #aaa;
+    cursor: default;
+}
 .btn-mini {
     height: 25px;
     line-height: 25px;
     font-size: 12px;
     padding: 0 10px;
 }
-
-/*加载中动画*/
+.btn-search {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    white-space: nowrap;
+    background: #ff9838;
+    color: white;
+}
+.btn-search:hover {
+    background: #ffb13e;
+}
+.btn-search:active {
+    background: #e78345;
+}
 .loading {
+    /*一般会把位置写在前面*/
     margin: 10px auto;
     display: block;
     width: 65px;
     height: 65px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background: url("../../image/icon/loading.gif") no-repeat;
-    opacity: .6;
+    background: url(../../image/icons/loading.gif) no-repeat;
+    opacity: 0.5;
+    margin-bottom: 30px;
 }
-
-/*错误信息*/
-.err-tip {
-    height: 70px;
-    line-height: 70px;
-    color: #e7380d;
+.loading2 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 45%;
+    display: block;
+    width: 65px;
+    height: 65px;
+    background: url(../../image/icons/loading-black.gif) center;
+    opacity: 0.5;
+}
+.empty-hint {
+    background:  url("../../image/empty-hint.png")  no-repeat round;
+    height: 150px;
+}
+/*对齐方式----------------------*/
+.center-text {
     text-align: center;
+}
+.center-block {
+    margin: 0 auto;
+}
+/*表单-------------------------*/
+.input-default {
+    width: 250px;
+    padding-left: 10px;
+    height: 32px;
     background: #eee;
-    font-weight: bold;
-    font-size: 18px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+.input-default::placeholder {
+    color: #aaa;
+}
+.input-default:focus {
+    background: white;
+    border: 1px solid #ff9838;
+    color: #666666;
+}
+.input-default:focus ::placeholder {
+    color: #ff9838!important;
+}
+.label-default-ico {
+    position: absolute;
+    display: inline-block;
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    white-space: nowrap;
+    margin-left: -30px;
+
+}
+.label-default-ico *{
+    color: #ff9838;
+}
+/*提示样式*/
+.error-item {
+    padding: 1px 5px 1px 5px;
+    border-radius: 2px;
+}
+.error-item *{
+    color: #ff7c76;
+}
+.success-item,.success-item *{
+    color: #9bddff;
+}
+.border-err {
+    border: 1px solid #ff625f;
+    background: #fde8e6;
+    color: #ff625f;
+}
+.border-suc {
+    border: 1px solid #9bddff;
+    background: #e0f8ff;
+}
+.user-item {
+    white-space: nowrap;
+}
+/*面包屑导航*/
+.crumb {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    height: 32px;
+    line-height: 32px;
+    background: #eee;
+    color: #888;
+}
+/*check样式*/
+
+.input-check{
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: -2px;
+    background: url(../../image/icons/unCheck.gif) round;
+}
+.input-check.check{
+    background: url(../../image/icons/check.gif) round;
+}
+.input-check.select {
+    background: url(../../image/icons/check.gif) round;
+}
+/*人民币样式字体类*/
+.yen {
+    font-family:  Arial,Microsoft YaHei,sans-serif ;
 }

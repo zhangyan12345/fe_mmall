@@ -2,22 +2,30 @@
 <html lang="en">
 <head>
     <%= require('html-loader!./layout/head-common.html') %>
-    <title><%= htmlWebpackPlugin.options.title%> - Qmall</title>
+    <title><%= htmlWebpackPlugin.options.title%> - 穷猫商城 - 物美价廉, 你指的拥有</title>
 </head>
 <body>
 <%= require('html-loader!./layout/nav.html') %>
 <%= require('html-loader!./layout/header.html') %>
-<div class="crumb">
-    <div class="w">
-        <div class="crumb-con">
-            <a href="./index.html" class="link">Qmall</a>
-            <span> ></span>
-            <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+<%= require('html-loader!../util/alert-window/index.html') %>
+<%= require('html-loader!../util/login-window/index.html') %>
+<div class="page-main">
+    <div class="w-sub">
+        <div class="fixed-tab clearfix">
+            <a href="#tab-product-detail" class="fixed-tab-item detail">商品详情</a>
+            <a href="#comments-total-bottom" class="fixed-tab-item comment">累计评价</a>
+            <a href="#tab-service" class="fixed-tab-item service">专享服务</a>
+            <a href="#hook-top" class="fixed-tab-item return-top" >返回顶部</a>
         </div>
     </div>
+    <div class="w">
+        <div class="loading"></div>
+    </div>
 </div>
-<div class="page-wrap w">
-</div>
+
+
 <%= require('html-loader!./layout/footer.html') %>
 </body>
 </html>
+
+

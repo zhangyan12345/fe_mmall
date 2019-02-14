@@ -1,12 +1,36 @@
-.nav-simple{
-    height: 60px;
-    line-height: 60px;
-    border-bottom: 1px solid #ddd;
-    background: #fff;
-}
-.nav-simple .logo{
-    font-size: 26px;
-    font-weight: bold;
-    color: #c60023;
+a {
     text-decoration: none;
 }
+
+.nav-simple {
+    height: 60px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+    background: #eee
+}
+.nav-simple .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+
+}
+.nav-simple .logo-wrap {
+    cursor: pointer;
+    width: 80px;
+}
+
+.nav-simple .sub-logo {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    font-size: 12px;
+    font-weight: lighter;
+    padding: 0 3px;
+    border-top: 1px solid #444;
+    color: #666;
+}
+
+.fa-drupal:before{
+    color: #ff9838;
+}
+

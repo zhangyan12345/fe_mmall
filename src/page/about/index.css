@@ -1,19 +1,14 @@
-.panel-body .about-line {
-    height: 40px;
-    line-height: 40px;
-}
+/*
+ * @Author: Avenda
+ * @Date: 2018/10/25
+ */
 
-.panel-body .about-line .about-text {
-    font-size: 14px;
-    color: #666;
-}
+.main {
+    text-align: center;
+    font-size: 25px;
+    margin: 30px 0;
 
-.panel-body .about-line .about-text.enhance{
-    color: #e7380d;
-    font-weight: bold;
 }
-.panel-body .about-line .link{
-    font-size: 14px;
+.main div:nth-of-type(1) {
+    color: #aaaaaa;
 }
-
-

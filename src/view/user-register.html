@@ -2,85 +2,105 @@
 <html lang="en">
 <head>
     <%= require('html-loader!./layout/head-common.html') %>
-    <title><%= htmlWebpackPlugin.options.title%> - Qmall</title>
+    <title><%= htmlWebpackPlugin.options.title%> - 穷猫商城</title>
 </head>
+
 <body>
+<%= require('html-loader!../util/alert-window/index.html') %>
 <%= require('html-loader!./layout/nav-simple.html') %>
-<div class="page-wrap">
-    <!--定宽布局-->
+<div class="register-page">
     <div class="w">
-        <!--用户操作框体-->
-        <div class="user-con">
-            <div class="user-title">用户注册</div>
-            <div class="user-box">
-                <!--错误提示-->
-                <div class="error-item">
-                    <i class="fa fa-minus-circle error-icon"></i>
-                    <p class="err-msg">Error</p>
-                </div>
-                <!--用户名输入框体-->
-                <div class="user-item">
-                    <label for="username" class="user-label">
-                        <i class="fa fa-user"></i>
-                    </label>
-                    <input class="user-content" id="username" placeholder="请输入用户名" autocomplete="off">
-                </div>
-                <!--密码输入框-->
-                <div class="user-item">
-                    <label for="password" class="user-label">
-                        <i class="fa fa-lock"></i>
-                    </label>
-                    <input type="password" class="user-content" id="password" placeholder="请输入密码" autocomplete="off">
-                </div>
-                <!--确认密码输入框体-->
-                <div class="user-item">
-                    <label for="password-confirm" class="user-label">
-                        <i class="fa fa-lock"></i>
-                    </label>
-                    <input type="password" class="user-content" id="password-confirm" placeholder="请再次确认密码" autocomplete="off">
+        <!--主体-->
+        <div class="user-main">
+            <!--用户登录-->
+            <h3 class="">新用户注册</h3>
+
+                <div class="user-box">
+                    <!--===================================================账号组件=====================================================-->
+                    <div class="user-item">
+                        <input type="text" class="input-default" id="username" placeholder="请输入用户名" autocomplete="off"/>
+                        <label for="username" class="label-default-ico"><i class="fa fa-user-circle"></i></label>
+                    </div>
+                    <div class="error-item username-err" >
+                        <i class="fa fa-minus-circle">&nbsp&nbsp&nbsp</i><span id="username-err">xxx</span>
+                    </div>
+                    <div class="success-item username-suc"><i class="fa fa-check"></i></div>
+                    <!--===================================================密码组件=====================================================-->
+                    <div class="user-item">
+                        <input type="password" class="input-default" id="password" placeholder="请输入密码" autocomplete="off"/>
+                        <label for="password"  class="label-default-ico"><i class="fa fa-certificate"></i></label>
+                    </div>
+                    <div class="error-item password-err" >
+                        <i class="fa fa-minus-circle">&nbsp&nbsp&nbsp</i><span id="password-err">xxx</span>
+                    </div>
+                    <div class="success-item password-suc"><i class="fa fa-check"></i></div>
+                    <!--====================================================密码确认====================================================-->
+
+                    <div class="user-item">
+                        <input type="password" class="input-default" id="passwordConfirm" placeholder="请再次输入密码" autocomplete="off"/>
+                        <label for="passwordConfirm" class="label-default-ico"><i class="fa fa-certificate"></i></label>
+                    </div>
+                    <div class="error-item passwordConfirm-err" >
+                        <i class="fa fa-minus-circle">&nbsp&nbsp&nbsp</i><span id="passwordConfirm-err">xxx</span>
+                    </div>
+                    <div class="success-item passwordConfirm-suc"><i class="fa fa-check"></i></div>
+                    <!--=====================================================手机号===================================================-->
+
+                    <div class="user-item">
+                        <input type="text" class="input-default" id="phoneNumber" placeholder="请输入手机号" autocomplete="tel"/>
+                        <label for="phoneNumber" class="label-default-ico"><i class="fa fa-phone"></i></label>
+                    </div>
+                    <div class="error-item phoneNumber-err" >
+                        <i class="fa fa-minus-circle">&nbsp&nbsp&nbsp</i><span id="phoneNumber-err">xxx</span>
+                    </div>
+                    <div class="success-item phoneNumber-suc"><i class="fa fa-check"></i></div>
+                    <!--======================================================邮箱==================================================-->
+                    <div class="user-item">
+                        <input type="email" class="input-default" id="email" placeholder="请输入邮箱" autocomplete="email"/>
+                        <label for="email" class="label-default-ico"><i class="fa fa-envelope"></i></label>
+                    </div>
+                    <div class="error-item email-err" >
+                        <i class="fa fa-minus-circle">&nbsp&nbsp&nbsp</i><span id="email-err">xxx</span>
+                    </div>
+                    <div class="success-item email-suc"><i class="fa fa-check"></i></div>
+                    <!--======================================================密码提示问题==================================================-->
+                    <div class="user-item">
+                        <input type="text" class="input-default" id="passwordQuestion" placeholder="请输入密码提示问题" autocomplete="off"/>
+                        <label for="passwordQuestion" class="label-default-ico"><i class="fa fa-question"></i></label>
+                    </div>
+                    <div class="error-item passwordQuestion-err" >
+                        <i class="fa fa-minus-circle">&nbsp&nbsp&nbsp</i><span id="passwordQuestion-err">xxx</span>
+                    </div>
+                    <div class="success-item passwordQuestion-suc"><i class="fa fa-check"></i></div>
+                    <!--=======================================================密码提示答案=================================================-->
+
+                    <div class="user-item">
+                        <input type="text" class="input-default" id="passwordAnswer" placeholder="请输入密码提示答案" autocomplete="off"/>
+                        <label for="passwordAnswer" class="label-default-ico"><i class="fa fa-key"></i></label>
+                    </div>
+                    <div class="error-item passwordAnswer-err" >
+                        <i class="fa fa-minus-circle">&nbsp&nbsp&nbsp</i><span id="passwordAnswer-err">xxx</span>
+                    </div>
+                    <div class="success-item passwordAnswer-suc"><i class="fa fa-check"></i></div>
+                    <!--========================================================================================================-->
+
+                    <div class="user-item">
+                        <input type="button" class="btn" id="submit"  value="立即注册" />
+                    </div>
+                    <div class="link-item">
+                        <a href="" class="link-text" >已有账号?</a>
+                        <a class="link high-light" href="./user-login.html">立即登录</a>
+                    </div>
                 </div>
 
-                <!--手机输入框体-->
-                <div class="user-item">
-                    <label for="phone" class="user-label">
-                        <i class="fa fa-phone"></i>
-                    </label>
-                    <input class="user-content" id="phone" placeholder="请输入手机" autocomplete="off">
-                </div>
-
-                <!--邮箱输入框体-->
-                <div class="user-item">
-                    <label for="email" class="user-label">
-                        <i class="fa fa-envelope"></i>
-                    </label>
-                    <input class="user-content" id="email" placeholder="请输入邮箱" autocomplete="off">
-                </div>
-
-                <!--问题输入框体-->
-                <div class="user-item">
-                    <label for="question" class="user-label">
-                        <i class="fa fa-question"></i>
-                    </label>
-                    <input class="user-content" id="question" placeholder="请输入密码提示问题" autocomplete="off">
-                </div>
-
-                <!--答案输入框体-->
-                <div class="user-item">
-                    <label for="answer" class="user-label">
-                        <i class="fa fa-key"></i>
-                    </label>
-                    <input class="user-content" id="answer" placeholder="请输入密码提示答案" autocomplete="off">
-                </div>
-
-                <!--登陆按钮-->
-                <a class="btn btn-submit" id="submit">立即注册</a>
-                <div class="link-item">
-                    <a href="./user-login.html" class="link" >已有账号，去登陆>></a>
-                </div>
-            </div>
         </div>
+
     </div>
+
 </div>
 <%= require('html-loader!./layout/footer.html') %>
 </body>
+
 </html>
+
+

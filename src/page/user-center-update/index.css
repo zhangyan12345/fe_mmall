@@ -1,20 +1,48 @@
-.form-line{
-    height: 30px;
-    line-height: 30px;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-.form-line .label{
-    width: 60px;
-    /*span标签没有宽度，需要设置为inline-block*/
-    display: inline-block;
-    text-align: center;
+/*
+ * @Author: Avenda
+ * @Date: 2018/10/6
+ */
+.content.with-nav {
+    background: white;
+    white-space: nowrap;
 
 }
-/*input是不能继承父标签的属性的*/
-.form-line .input{
-    height: 25px;
-    line-height: 25px;
-    font-size: 14px;
-    width: 200px;
+.panel .panel-title {
+    border-bottom: 1px solid #eee;
+    padding: 10px 10px;
+    font-weight: 900;
+    color: #666;
+}
+.panel .panel-content {
+    padding: 10px 0 ;
+    position: relative;
+}
+.user-panel .btn {
+    display: block;
+    margin: -20px auto 0 auto;
+
+}
+.panel .form-line {
+    text-align: center;
+    margin-left: -110px;
+    margin-bottom: 25px;
+}
+.panel .form-line>label {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: right;
+    color: #666;
+    width: 100px;
+}
+.panel-content .err-wrap{
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+.panel-content .error-item {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 330px;
+    width: 240px;
+    display: none;
 }

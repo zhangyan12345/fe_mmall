@@ -2,36 +2,55 @@
 <html lang="en">
 <head>
     <%= require('html-loader!./layout/head-common.html') %>
-    <title><%= htmlWebpackPlugin.options.title%> - Qmall</title>
+    <title><%= htmlWebpackPlugin.options.title%> - 穷猫商城 - 物美价廉, 你指的拥有</title>
 </head>
 <body>
 <%= require('html-loader!./layout/nav.html') %>
 <%= require('html-loader!./layout/header.html') %>
+<%= require('html-loader!../util/alert-window/index.html') %>
+<div class="top-search">
+    <div class="w">
+        <div class="logo-top">
+            <span>Q</span>mall
+        </div>
+        <div class="search">
+            <input type="text" class="search-input" id="search-input-top" placeholder="请输入商品名称">
+            <button class="btn-search" id="btn-search-top">搜 索</button>
+        </div>
+    </div>
+</div>
 <div class="crumb">
     <div class="w">
         <div class="crumb-con">
             <a href="./index.html" class="link">Qmall</a>
-            <span> ></span>
+            <span>></span>
             <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+            <span>></span>
+            <span id="crumb-key" class="link-text"></span>
+
         </div>
     </div>
 </div>
-<div class="page-wrap w">
-    <!--排序选择条-->
-    <ul class="sort-con">
-        <li class="sort-item active" data-type="default">默认排序</li>
-        <li class="sort-item " data-type="price">
-            <span>价格</span>
-            <i class="fa fa-sort-asc"></i>
-            <i class="fa fa-sort-desc"></i>
-        </li>
-    </ul>
-    <!--列表内容-->
-    <ul class="p-list-con">
-    </ul>
-    <!--分页容器-->
-    <div class="pagination"></div>
+<div class="page-main">
+    <div class="w">
+        <ul class="sort-con">
+            <li class="sort-item btn" data-type="default">推荐排序</li>
+            <li class="sort-item btn-white" data-type="price" id="sort-price">价格排序
+            </li>
+        </ul>
+        <!--list容器-->
+        <div class="list-con">
+
+        </div>
+        <!--分页容器-->
+        <div class="pagination">
+
+        </div>
+    </div>
+
 </div>
 <%= require('html-loader!./layout/footer.html') %>
 </body>
 </html>
+
+

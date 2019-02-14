@@ -1,46 +1,90 @@
-/*通用头布局的样式*/
+.header {
+    height: 110px;
+}
 .header .logo {
-    /*绝对定位（脱离文档流），使用搜索框来撑开文档*/
-    /*以上一个元素的末尾作为起始位置*/
-    position: absolute;
-    left: 60px;
-    top: 34px;
     display: block;
-    font-size: 36px;
-    color: #c60023;
+    float: left;
+    font-size: 50px;
+    line-height: 100px;
     font-weight: bold;
-    text-decoration: none;
+    margin-right: 20px;
+    color: #ff9838;
 }
-
-.header .search-con {
-    /*上右下左*/
-    padding: 40px 0 30px 250px;
-}
-
-.header .search-con .search-input {
-    width: 550px;
-    height: 40px;
-    line-height: 40px;
-    padding-left: 10px;
-    font-size: 15px;
-    border: 2px solid #c60023;
-    /*选中状态下的蓝色框体*/
-    outline: none;
-}
-
-.header .search-con .search-btn {
+.header .logo-channel {
     position: absolute;
-    height: 44px;
-    width: 90px;
+    bottom:  10px;
+    font-weight: 900;
+    left: 0;
+    display: none;
+}
+.header .logo-channel .fa {
+    margin-left: 10px;
+    color: #f76a1e;
+}
+.header .logo-channel .logo-channel-content {
+    color: #666666;
+}
+.header .logo .logo-plus {
+    color: #444444;
+}
+.header .search {
+    display: block;
+    float: left;
+    margin-top: 2.5rem;
+    position: relative;
+    margin-left: 100px;
+}
+.header .search .search-input {
+    float: left;
+    /* padding: 7px 0 7px 15px; */
+    padding-left: 15px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 1rem 0 0 1rem;
+    width: 500px;
+    color: #ff9838;
+
+}
+.header .search .keywords {
+    margin: 35px 0 0 10px;
+
+}
+.header .search .btn-search {
+    /* padding: 7px 15px; */
+    text-align: center;
+    width: 30px;
+    height: 22px;
+    line-height: 22px;
+    margin-left: -2px;
+    float: left;
+    border-radius: 0 1rem  1rem 0;
+}
+.header .focus-me {
+    margin: 5px 0 0 110px;
+    position: relative;
+    float: left;
+    width: auto;
+    height: auto;
+    border: 1px solid #ff9838;
+    padding: 0 5px 5px 5px;
+    background: white;
+    border-radius: 5px;
+}
+.header .focus-me .focus-me-close{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+}
+.header .focus-me .focus-me-close:hover .fa-times-rectangle:before {
+    color: #666666;
+}
+.header .QA {
+    background: url("../../../image/icons/QR-myOwn.png") round;
+    width: 70px;
+    height: 70px;
+}
+.header .fa-times-rectangle:before {
+    color: #ff9838;
 }
 
-.crumb{
-    height: 50px;
-    line-height: 50px;
-    background: #eee;
-    color: #888;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    border-top: 1px solid #c60023;
-}

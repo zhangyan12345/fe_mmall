@@ -1,35 +1,41 @@
-<div class="nav">
+<div id="hook-top"></div>
+<div class="nav" >
     <div class="w">
+        <!--用户信息-->
         <div class="user-info">
-            <span class="user no-login">
-                <span class="link js-login">登陆</span>
-                <span class="link js-register">注册</span>
-            </span>
-            <span class="user login">
-                <span class="link-text">
-                    欢迎,
-                    <span class="username">
+            <div class="user not-login">
+                <span class="link js-login">请登录</span>
+                <a  class="link js-register">免费注册</a>
+            </div>
+            <div class="user login">
+                <span class="link-text ">欢迎,
+                    <span class="username high-light"></span>
                 </span>
-                    <span class="link js-logout">退出</span>
-                </span>
-            </span>
+                <span class="link js-logout">退出</span>
+            </div>
         </div>
+        <!--购物车-->
         <ul class="nav-list">
-            <li class="nav-item">
-                <a href="./cart.html" class="link">
-                    <i class="fa fa-shopping-cart"></i>
-                    购物车(<span class="cart-count">0</span>)
+            <li class="nav-item cart">
+                <a href="./cart.html" id="nav-goto-card" class="link cart">
+                    <i class=" fa fa-shopping-cart "></i>
+                    <span class="cart-text-main">&nbsp&nbsp&nbsp&nbsp购物车</span>
+                    <span class="cart-text">-</span>
+                    <span class="cart-count"></span>
+                    <span class="cart-text"></span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="link" href="./order-list.html">我的订单</a>
+            <li class="nav-item order-list">
+                <a href="./order-list.html" class="link" >我的订单</a>
             </li>
-            <li class="nav-item">
-                <a class="link" href="./user-center.html">我的Qmall</a>
+            <li class="nav-item user-center">
+                <a id="go-personal-center" class="link">我的Qmail</a>
             </li>
-            <li class="nav-item">
-                <a class="link" href="./about.html">关于Qmall</a>
+            <li class="nav-item about" >
+                <a href="./about.html" class="link"><i class="fa fa-leaf"></i>关于Qmail</a>
             </li>
         </ul>
     </div>
 </div>
+
+

@@ -1,23 +1,42 @@
-<div class="user-info">
-    <div class="form-line">
-        <span class="label">用户名：</span>
-        <span class="text">{{username}}</span>
-    </div>
-    <div class="form-line">
-        <span class="label">电  话：</span>
-       <input class="input" id="phone" autocomplete="off" value="{{phone}}"></input>
-    </div>
-    <div class="form-line">
-        <span class="label">邮  箱：</span>
-        <input class="input" id="email" autocomplete="off" value="{{email}}"></input>
-    </div>
-    <div class="form-line">
-        <span class="label">问  题：</span>
-        <input class="input" id="question" autocomplete="off" value="{{question}}"></input>
-    </div>
-    <div class="form-line">
-        <span class="label">答  案：</span>
-        <input class="input" id="answer" autocomplete="off" value="{{answer}}"></input>
-    </div>
-        <span class="btn btn-submit">提 交</span>
+<div class="form-line">
+    <label for="username">Id</label>
+    <input type="text" class="input-default" id="userId" value="{{id}}" autocomplete="off" disabled />
 </div>
+<div class="form-line">
+    <label for="username">用户名</label>
+    <input type="text" class="input-default " id="username" value="{{username}}" autocomplete="off" disabled/>
+</div>
+<div class="form-line">
+    <label for="username">手机号</label>
+    <input type="text" class="input-default border-suc" id="phoneNew" placeholder="{{phone}}" autocomplete="off"/>
+</div>
+<div class="err-wrap">
+    <div class="error-item phoneNew-err" >
+        <i class="fa fa-minus-circle">&nbsp&nbsp&nbsp</i><span id="phoneNew-err">xxx</span>
+    </div>
+</div>
+<div class="form-line">
+    <label for="username">邮箱</label>
+    <input type="text" class="input-default border-suc" id="email" placeholder="{{email}}" autocomplete="off"/>
+</div>
+<div class="err-wrap">
+    <div class="error-item email-err" >
+        <i class="fa fa-minus-circle">&nbsp&nbsp&nbsp</i><span id="email-err">xxx</span>
+    </div>
+</div>
+<div class="form-line">
+    <label for="username">密码提示问题</label>
+    <input type="text" class="input-default" id="question" placeholder="{{question}}" autocomplete="off" />
+</div>
+<div class="error-item question-err" >
+    <i class="fa fa-minus-circle">&nbsp&nbsp&nbsp</i><span id="question-err">xxx</span>
+</div>
+
+<div class="form-line">
+    <label for="username">密码提示答案</label>
+    <input type="text" class="input-default" id="answer" placeholder="*****" autocomplete="off" />
+</div>
+<div class="error-item answer-err" >
+    <i class="fa fa-minus-circle">&nbsp&nbsp&nbsp</i><span id="answer-err">xxx</span>
+</div>
+<button class="btn center-block" id="submit">提交</button>

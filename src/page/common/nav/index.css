@@ -1,34 +1,130 @@
 .nav {
-    background: #eee;
     height: 30px;
     line-height: 30px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    background: #eee
 }
-
-/*用户部分*/
+/*用户部分--------------------------------------------------*/
 .nav .user {
     float: left;
+    display: none;
 }
-
-/*有空格表示class里面的class*/
-/*没有空格直接连接，表示同时拥有两个class*/
-.nav .user .link {
+.user>.login-logo {
+    float: left;
+    display: block;
     margin-right: 10px;
-}
+    height: 40px;
+    width: 40px;
+    background: url('../../../image/icons/user-logo.jpg') round;
+    border-radius: 50%;
+   border-bottom: 4px solid #dddddd;
+    position: relative;
+    z-index: 99;
 
+}
+/*同一个标签的子样式和主样式要连写*/
 .nav .user.login {
     display: none;
 }
-
-.nav .user.no-login {
-
+.nav .js-login{
+    color: #ff9838;
 }
 
-/*导航部分*/
+.nav .user .link {
+    display: inline-block;
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+}
+/*导航链接部分------------------------------------------------*/
 .nav .nav-list {
     float: right;
 }
 
-.nav .nav-list .nav-item {
-    display: inline-block;
-    margin-right: 5px;
+.nav-list .nav-item .link {
+    display: block;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
 }
+.nav .nav-item-sub a {
+    text-align: center;
+    display: block;
+}
+    /*图标修改*/
+.nav .fa-shopping-cart {
+    position: absolute;
+    color: #ff9838;
+    margin-top: 9px;
+
+}
+
+.nav .fa-leaf:before {
+    color: #61c840;
+}
+.nav .nav-list .cart .cart-count {
+    position: absolute;
+    color: #ff9838;
+    margin-left: 2px;
+    font-weight: 900;
+}
+.nav-list .nav-item.cart {
+    width: 98px;
+    text-align: left;
+    color: #666666;
+}
+.nav-list .nav-item.cart .cart-text {
+
+    color: #82ddff;
+    font-size: 10px;
+}
+.nav-list .nav-item.cart .cart-text-main {
+    color: #666666;
+}
+.nav-list .nav-item.about {
+    width: 90px;
+}
+.nav .nav-list .nav-item.cart .cart-count{
+    padding-left: 3px;
+}
+.nav .nav-list .nav-item {
+   display: block;
+    float: left;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+
+
+}
+.nav .nav-list .tab-wrapper{
+
+}
+.nav .nav-list .nav-item:hover{
+    background: #f5f5f5;
+    height: 31px;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+
+}
+.nav .nav-list .nav-item.active {
+    background: #f5f5f5;
+    height: 31px;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.nav .nav-list .cart-wrapper:active {
+    background: #f76a1e;
+
+}
+
+

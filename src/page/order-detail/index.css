@@ -1,90 +1,166 @@
-.text-line {
-    height: 30px;
-    line-height: 30px;
-}
+table,table tr th, table tr td { border:none; }
+table {  min-height: initial; line-height: initial; text-align: left; border-collapse: collapse;}
 
-.text-line .text {
-    margin-right: 30px;
-    font-size: 13px;
+.order-info-wrap {
+    background: #fff7eb;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px dashed #ff9670;
+    position: relative;
 }
-
-.order-info .btn {
-    margin-top: 10px;
-    width: 70px;
-    height: 30px;
-    line-height: 30px;
-    margin-right: 10px;
+.order-info-wrap span {
+    color: #444444;
+}
+.order-info-wrap .th    {
+    color: #ee564d;
+}
+.content.with-nav  table * {
+    color: #666666;
     font-size: 14px;
+}
+.content.with-nav {
+    background: white;
+}
+.content.with-nav .content-title {
     text-align: center;
+    color: #f76a1e;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 10px;
 }
+.order-info-wrap .order-info {
 
-/*商品清单*/
-.product-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: #fafafa;
-    margin-bottom: 20px;
 }
+.order-info-wrap .order-info .info-item {
+    height: 40px;
+    line-height:  40px;
 
-.product-table .cell-th {
-    background: #efefef;
-    border-bottom: 1px solid #eee;
 }
-
-.product-table .cell {
-    padding: 10px 0;
-    color: #666;
+.order-info-wrap .order-info  .th {
+    font-weight: 900;
+    display: inline-block;
+    width: 60px;
 }
-
-.product-table .product-info {
-    border-bottom: 1px solid #eee;
+.order-info-wrap .order-info  .info-item.create .data {
+    margin-left: 50px;
 }
+.order-info-wrap .price-total {
+    position: absolute;
+    right: 30px;
+    top: 30px;
 
-/*订单条目列表*/
-.product-table .cell-img {
-    width: 10%;
-    text-align: center;
-    padding: 10px;
 }
-
-.product-table .cell-img .p-img {
-    width: 80px;
-    height: 80px;
-    border: 1px solid #ddd;
-}
-
-.product-table .cell-info {
-    width: 45%;
-    text-align: left;
-}
-
-.product-table .cell-price {
-    width: 15%;
-    text-align: center;
-}
-
-.product-table .cell-count {
-    width: 15%;
-    text-align: center;
-}
-
-.product-table .cell-total {
-    width: 15%;
-    text-align: center;
-}
-
-.total {
+.order-info-wrap .price-total .th {
     text-align: right;
     font-size: 14px;
-    color: #333;
-    height: 35px;
-    line-height: 35px;
+    font-weight: 900;
+    color: #f76a1e;
+}
+.order-info-wrap .price-total .total-val {
+
+    padding: 0 10px;
+    background: #f76a1e;
+}
+.order-info-wrap .price-total .total-val *{
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+}
+.order-info-wrap .order-info .oper {
+
+}
+.order-info-wrap  .oper {
+    position: absolute;
+    right:30px;
+    bottom: 10px;
+    border: 1px dashed #cccccc;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.order-info-wrap  .oper .btn,.order-info-wrap .oper .btn-white {
+    color: white ;
+    font-weight: 900;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
     margin-right: 10px;
-    border-bottom: 1px solid #c60023;
+}
+.order-info-wrap .oper .btn-white {
+    border: 1px solid #dddddd;
+    color: #666666;
+}
+.order-prod {
+
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+.prod-list {
+    width: 100%;
+}
+.prod-list tr {
+
+}
+.prod-list tr td {
+    border: 1px solid #eeeeee;
+}
+.prod-list .prod-title {
+    border-radius: 10px 10px 0 0 ;
+    background: #eeeeee;
+}
+.order-prod .prod-title th {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
 }
 
-.total .total-price {
-    color: #c60023;
-    font-weight: bold;
-    font-size: 18px;
+.order-prod .prod-title th:nth-of-type(1){
+    width: 320px;
+    max-width: 320px;
+}
+.order-prod .prod-title th:nth-of-type(2){
+    width: 120px;
+    max-width: 120px;
+}
+.order-prod .prod-title th:nth-of-type(3){
+    width: 120px;
+    max-width: 120px;
+}
+.order-prod .prod-title th:nth-of-type(4){
+    width: 90px;
+    max-width: 90px;
+}
+.order-prod .prod-title th:nth-of-type(5){
+    width: 60px;
+    max-width: 60px;
+}
+.order-prod .prod-title th:nth-of-type(6){
+    width: 110px;
+    max-width: 110px;
+}
+.order-prod .prod-title th:nth-of-type(7){
+
+}
+.prod-item {
+    text-align: center;
+}
+.prod-item * {
+    font-size: 12px!important;
+}
+.prod-item .prod-info {
+
+}
+.prod-item .prod-info .img {
+    width: 80px;
+    height: 80px;
+    background: #dddddd;
+    float: left;
+    margin: 10px;
+}
+.prod-item .prod-info .title {
+    float: left;
+    margin-top: 10px;
+    text-align: left;
+    width: 210px;
 }

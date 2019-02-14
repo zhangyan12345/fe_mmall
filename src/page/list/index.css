@@ -1,106 +1,250 @@
-/*排序按钮*/
+
+html { overflow: scroll; }
+.top-search {
+    position:fixed;
+    top: -50px;
+    width: 100%;
+    height: 49px;
+    background: #eeeeee;
+    border-bottom: 1px solid #dddddd;
+    z-index: 100;
+    -webkit-transition: top 0.2s;
+    -moz-transition: top 0.2s;
+    -ms-transition: top 0.2s;
+    -o-transition: top 0.2s;
+    transition: top 0.2s;
+}
+.top-search .logo-top {
+    margin-top: -10px;
+    margin-left: 160px;
+    position: absolute;
+    color: #ff9838;
+    font-weight: 900;
+    font-size: 30px;
+}
+.top-search .logo-top span {
+    color: #444444;
+}
+.top-search .search .search-input {
+    float: left;
+    padding: 7px 0 7px 15px;
+    border-radius: 1rem 0 0 1rem;
+    width: 500px;
+    color: #ff9838;
+    margin-left: 300px;
+}
+.top-search .search .btn-search {
+    padding: 7px 15px;
+    margin-left: -1px;
+    float: left;
+    border-radius: 0 1rem  1rem 0;
+}
+.top-search .w {
+    margin-top: 10px;
+}
 .sort-con {
     overflow: auto;
+    padding-bottom: 10px;
 }
-
 .sort-con .sort-item {
     float: left;
     display: inline-block;
     position: relative;
-    padding: 0 8px;
-    height: 24px;
-    line-height: 24px;
-    border: 1px solid #ccc;
-    color: #333;
-    cursor: pointer;
-    margin-right: -1px;
-    background: #fff;
+    height: 21px;
+    line-height: 21px;
+    margin-left: 10px;
+    padding: 0 10px;
+    border-radius: 4px;
+    font-size: 12px;
+
+}
+.sort-con .sort-item.btn-white {
+    border: 1px solid #eeeeee;
+}
+.sort-con .sort-item.btn-white.active  {
+    border: 1px solid #ff9838;
 }
 
-.sort-con .sort-item.active {
-    background: #c60023;
-    border: 1px solid #c60023;
-    color: #fff;
-}
-
-.sort-con .sort-item .fa-sort-desc {
-    /*移动向下图标到向上图标的下面*/
-    position: absolute;
-    top: 8px;
-    right: 8px;
-}
-
-/*设置排序图片的深浅*/
 .sort-con .sort-item.asc .fa-sort-desc {
-    opacity: .6;
+    opacity: 0.4;
 }
-
 .sort-con .sort-item.desc .fa-sort-asc {
-    opacity: .6;
+    opacity: 0.4;
 }
-
-/*列表容器*/
-.p-list-con {
-    margin-top: 15px;
-    /*空出多余的宽*/
+.sort-con .sort-item .fa-sort-desc {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+.page-main .w {
+    overflow: hidden;
+}
+.list-con {
+    margin-top: -15px;
+    overflow: hidden;
+    width: 1080px;
     margin-right: -20px;
-    overflow: hidden;
+    padding-bottom: 20px;
 }
+.product-wrap {
+    width: 1100px;
+    margin-right: -20px;
+}
+.product-wrap .product-item {
+    width: 200px;
+    height: 300px;
+    margin-top: 20px;
+    margin-right: 20px;
 
-/*列表条目*/
-.p-list-con .p-item {
-    position: relative;
-    width: 180px;
     float: left;
-    padding: 10px;
-    margin: 0 20px 20px 0;
-    background: #fff;
-}
+    background:white;
+    top: 0;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid white;
+    -webkit-transition: box-shadow 0.3s,top 0.3s, border 0.2s;
+    -moz-transition: box-shadow 0.3s,top 0.3s, border 0.2s;
+    -ms-transition: box-shadow 0.3s,top 0.3s, border 0.2s;
+    -o-transition: box-shadow 0.3s,top 0.3s, border 0.2s;
+    transition: box-shadow 0.3s,top 0.3s, border 0.2s;
+    -webkit-box-shadow: 0 0 0  rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 0  rgba(0,0,0,.1);
+    box-shadow: 0 0 0  rgba(0,0,0,.1);
 
-.p-list-con .p-item:hover {
-    /*盒子阴影，不兼容IE8*/
-    box-shadow: 2px 2px 7px #ddd;
 }
+.product-wrap .product-item:hover {
+    top: -5px;
+    border: 1px solid #ff9838;
+    -webkit-box-shadow: 0 10px 20px  rgba(0,0,0,.1);
+    -moz-box-shadow: 0 10px 20px  rgba(0,0,0,.1);
+    box-shadow: 0 10px 20px  rgba(0,0,0,.1);
 
-.p-list-con .p-item .p-img-con {
-    width: 180px;
-    height: 200px;
 }
-
-.p-list-con .p-item .p-img-con .p-img {
+.product-wrap .product-item .product-tag {
+    margin-top: 3px;
+    margin-left: 5px;
+    font-size: 12px;
+    color: white;
+    padding: 0 5px 0 5px;
+    position: absolute;
+    background: #ff9838;
+}
+.product-wrap .product-item .product-img {
+    height: 197px;
+    width: 197px;
+    margin-left: 1px;
+    background: #eeeeee round;
+}
+.product-wrap .product-item .product-title {
+    display: block;
     width: 100%;
-    height: 100%;
 }
-
-.p-list-con .p-item .p-price-con {
-    height: 30px;
-    line-height: 30px;
-}
-
-.p-list-con .p-item .p-price-con .p-price {
-    font-size: 16px;
-    color: #e7380d;
-    font-weight: bold;
-}
-
-.p-list-con .p-item .p-name-con {
+.product-wrap .product-item .product-title.title-main {
+    text-align: left;
+    font-size: 12px;
+    color: #333;
+    width: 188px;
     height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: block;
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
     overflow: hidden;
 }
-
-.p-list-con .p-item .p-name-con .p-name {
-    line-height: 20px;
-    margin-bottom: 10px;
-    color: #666;
-    text-decoration: none;
+.product-wrap .product-item .product-title.title-main:hover {
+    color: #ff9838;
 }
-/*错误信息*/
-.err-tip {
-    height: 70px;
-    line-height: 70px;
-    color: #e7380d;
+/*副标题*/
+.product-wrap .product-item  p {
+    margin-top: 5px;
     text-align: center;
-    background: #eee;
-    font-weight: bold;
-    font-size: 18px;
+    color: #bbbbbb;
+    width: 188px!important;
+    margin-left: 10px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/*价格*/
+.product-wrap .product-item span {
+    font-size: 14px;
+    color: #ff6700;
+}
+.product-wrap .product-item .product-title.price {
+    margin-top: 5px;
+    text-align: left;
+    margin-left: 12px;
+    font-size: 16px;
+}
+.list-con .empty-hint {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 280px;
+}
+.list-con .empty-hint .empty-content {
+    color: #888;
+    font-size: 25px;
+    margin-left: 150px;
+    font-weight: 500;
+    line-height:120px;
+}
+.list-con .empty-hint .empty-return {
+    position: absolute;
+    bottom: 10px;
+    left: 250px;
+}
+.list-con .empty-hint .empty-return.btn:active {
+    position: absolute!important;
+}
+/*分页区*/
+.pg-content {
+    width: 100%;
+}
+.pg-wrap {
+    margin-left: 430px;
+    height: 37px;
+}
+.pg-item {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight:900 ;
+    color: #666666;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+.pg-item.active {
+    color: #ff9838;
+    font-size: 16px;
+}
+.pg-total {
+    color: #999;
+    margin-left: -10px;
+}
+.pg-content .pg-btn {
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    font-size: 12px;
+    padding: 0 10px ;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.pg-content .pg-btn.disabled {
+
+    background: #aaa;
+
+    cursor: default;
+    -webkit-box-shadow: 0px 0px  0px #ff9d2b;
+    -moz-box-shadow: 0px 0px 0px #ff9d2b;
+    box-shadow: 0px 0px  0px #ff9d2b;
+}
+.pg-content .pg-btn.disabled:active {
+    top: 0;
+}
+.pg-content .pg-item.active {
+    cursor: default;
 }

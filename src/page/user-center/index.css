@@ -1,13 +1,38 @@
-.form-line{
-    height: 30px;
-    line-height: 30px;
-    font-size: 14px;
+/*
+ * @Author: Avenda
+ * @Date: 2018/10/6
+ */
+.content.with-nav {
+    background: white;
+    white-space: nowrap;
+}
+.panel .panel-title {
+    border-bottom: 1px solid #eee;
+    padding: 10px 10px;
+    font-weight: 900;
+    color: #666;
+}
+.panel .panel-content {
+    padding: 10px 0 ;
+}
+.user-panel  table {
+    margin: 0 auto;
 
 }
-.form-line .label{
-    width: 60px;
-    /*span标签没有宽度，需要设置为inline-block*/
-    display: inline-block;
-    text-align: center;
+.user-panel  table th {
+    max-width: 100px;
+    padding:5px 40px ;
+    text-align: right;
+    color: #888;
+}
+.user-panel table td {
+    padding: 0 50px;
+    width: 300px;
+    max-width: 400px;
+    color: #ff9838;
+}
 
+.user-panel .btn {
+    display: block;
+    margin: 0 auto;
 }

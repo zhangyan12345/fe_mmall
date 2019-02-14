@@ -1,48 +1,77 @@
-
+/*
+ * @Author: Avenda
+ * @Date: 2018/10/6
+ */
 
 require('./index.css');
-require('page/common/nav/index.js');
-require('page/common/header/index.js');
-var _payment = require('service/payment-service.js');
-var _rm = require('util/rm.js');
-var templateHtml = require('./index.string');
-
-var page = {
-    data: {
-        orderNumber: ''
+var _nav = require('page/common/nav/index.js');
+var _mm                 = require('util/mm.js');
+var _user               = require('service/user-service.js');
+var _alert              = require('util/alert-window/index.js');
+var _confirmWin         = require('util/confirm-window/index.js');
+var _paymentService     = require('service/payment-service.js');
+var template            = require('./index.string');
+// 常量池
+var consts              = {
+    paymentCon:'.payment-con'
+};
+// 缓存池
+var cache               = {
+    orderNo:'',
+    timer:''
+};
+// 功能池
+var mfuncs              = {
+    getOrderNo:function () {
+        cache.orderNo = _mm.getUrlParam('orderNo');
     },
-    init: function () {
-        this.data.orderNumber = _rm.getUrlParam('orderNumber');
-        this.loadPaymentInfo();
-    },
-    //获取支付信息
-    loadPaymentInfo: function () {
-        var _this = this,
-            paymentHtml = '',
-            $pageWrap = $('.page-wrap');
-        _rm.showLoading($pageWrap);
-        _payment.getPaymentInfo(this.data.orderNumber, function (res) {
+    loadPaymentCon:function () {
+        // 请求接口得到二维码
+        _paymentService.payment(cache.orderNo,function (res) {
+            var html = '';
+            html = _mm.renderHtml(template, res);
             console.log(res);
-            paymentHtml = _rm.renderHtml(templateHtml, res);
-            $pageWrap.html(paymentHtml);
-            _this.listenOrderStatus();
-        }, function (errMsg) {
-            _rm.showErrorMessage($pageWrap, errMsg);
+            $(consts.paymentCon).hide().html(html).fadeIn(300);
+        },function (err) {
+            _alert.show(err.status || err);
         });
     },
-    //监听订单状态
-    listenOrderStatus: function () {
-        var _this = this;
-        window.setInterval(function () {
-            _payment.getPaymentStatus(_this.data.orderNumber, function (res) {
-                if (res == true) {
-                    window.location.href = './result.html?type=payment&orderNumber=' + _this.data.orderNumber;
+    listenPayback:function () {
+        clearInterval(cache.timer);
+        cache.timer = setInterval(function () {
+            _paymentService.getPaymentStatus(cache.orderNo,function (res) {
+                if (res) {
+                    window.location.href = './pay-suc.html?orderNo=' + cache.orderNo;
                 }
+            },function (err) {
+                _alert.show(err.status || err);
             });
-        }, 5000)
-
+        },5000);
     }
 };
-$(function () {
-    page.init();
-});
+// 主逻辑
+var payment        = {
+    init            : function () {
+        this.preLoad();
+        this.doCheck();
+        this.onLoad();
+        this.bindEvent();
+        this.runtime();
+    },
+    preLoad         : function () {
+        //拿到页面传来的orderNo
+        mfuncs.getOrderNo();
+    },
+    doCheck         : function () {
+    },
+    onLoad          : function () {
+        mfuncs.loadPaymentCon();
+        mfuncs.listenPayback();
+    },
+    bindEvent       : function () {
+
+    },
+    runtime         : function () {}
+};
+// 初始化左侧信息
+payment.init();

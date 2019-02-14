@@ -1,30 +1,33 @@
-
-
-var _rm = require('util/rm.js');
-var _payment = {
-    //获取支付信息
-    getPaymentInfo: function (orderNumber, resolve, reject) {
-        _rm.request({
-            url: _rm.getServerUrl('/order/pay.do'),
-            data: {
-                orderNo: orderNumber
-            },
+var _mm = require('util/mm.js');
+var payment = {
+    // 创
+    payment: function (orderNo, resolve, reject) {
+        _mm.request({
+            url: _mm.getServerUrl('/order/pay.do'),
             method: 'POST',
+            // 接受一个方法
+            data:{
+                orderNo:orderNo
+            },
             success: resolve,
+            // 接受一个方法
             error: reject
-        });
+        })
     },
-    //获取订单支付状态
-    getPaymentStatus: function (orderNumber, resolve, reject) {
-        _rm.request({
-            url: _rm.getServerUrl('/order/query_order_pay_status.do'),
-            data: {
-                orderNo: orderNumber
-            },
+    getPaymentStatus: function (orderNo, resolve, reject) {
+        _mm.request({
+            url: _mm.getServerUrl('/order/query_order_pay_status.do'),
             method: 'POST',
+            // 接受一个方法
+            data:{
+                orderNo:orderNo
+            },
             success: resolve,
+            // 接受一个方法
             error: reject
-        });
-    }
+        })
+    },
+
+
 };
-module.exports = _payment;
+module.exports = payment;

@@ -1,17 +1,20 @@
-.footer{
+/*
+* Copyright © 2018 avenda2333.cn All Right Reserved
+                   */
+.footer {
+    padding-top: 20px;
     padding-bottom: 10px;
 }
-
-.footer .links{
+.links {
     text-align: center;
-    color: #666;
+    color: #888888;
     line-height: 30px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
 }
-.footer .links .link{
-    padding: 0 10px;
-}
-.footer .copyright{
+.copyright {
     text-align: center;
-    color: #666;
+    color: #888888;
     line-height: 30px;
+    margin-bottom: 20px;
 }

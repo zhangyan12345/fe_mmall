@@ -2,34 +2,96 @@
 <html lang="en">
 <head>
     <%= require('html-loader!./layout/head-common.html') %>
-    <title><%= htmlWebpackPlugin.options.title%> - Qmall</title>
+    <title><%= htmlWebpackPlugin.options.title%> - 穷猫商城</title>
 </head>
 <body>
+<%= require('html-loader!../util/confirm-window/index.html') %>
+<%= require('html-loader!../util/alert-window/index.html') %>
+<%= require('html-loader!../util/addr-window/index.html') %>
 <%= require('html-loader!./layout/nav.html') %>
-<%= require('html-loader!./layout/header.html') %>
-<div class="crumb">
-    <div class="w">
-        <div class="crumb-con">
-            <a href="./index.html" class="link">Qmall</a>
-            <span> ></span>
-            <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+<div class="page-wrap">
+    <div class="header">
+        <div class="w clearfix">
+            <a class="logo" href="./index.html" title="返回首页"><span class="logo-plus">Y</span>mall</a>
+            <div class="logo-channel">
+                <i class="fa fa-angle-double-right"></i>
+                <span class="logo-channel-content"></span>
+            </div>
         </div>
     </div>
-</div>
-<div class="page-wrap w">
-    <div class="panel">
-        <h1 class="panel-title">收货地址</h1>
-        <div class="panel-body address-con">
+    <div class="page-main w">
+        <!--地址区-->
+        <div class="address-wrap">
+            <!--地址元素-->
+            <div class="address-title">选择收货地址</div>
+            <div class="address-con-wrap clearfix" >
+                <div id="addr-content">
+                    <div class="loading"></div>
+                </div>
+                <div class="addr-add add-new-addr">
+                    <i class="fa fa-plus"></i>
+                    <div>添加新地址</div>
+                </div>
+            </div>
+            <div class="address-oper">
+                <span class="show-all-addr">显示全部地址</span>
+                <span class="add-new-addr" >添加新地址</span>
+            </div>
+        </div>
+        <!--商品列表区-->
+        <div class="prod-wrap">
+            <div class="prod-mainT">
+                确认订单信息
+            </div>
+            <!--订单商品详情-->
+            <div class="prod-tit">
+                <div class="th info">商品信息</div>
+                <div class="th spec">商品属性</div>
+                <div class="th price">单价</div>
+                <div class="th amount">数量</div>
+                <div class="th saleWay">优惠方式</div>
+                <div class="th sum">小计</div>
+            </div>
+            <!--商品元素-->
+            <div class="prod-con" id="product-content">
+                <div class="loading"></div>
+            </div>
+        </div>
+        <!--结算按钮区-->
+        <div class="submit-footer clearfix">
+            <div class="submit-wrap">
+                <div class="submit-detail">
+                    <div>
+                        <strong>实付款 </strong>
+                        <strong class="yen">&yen</strong>
+                        <span id="final-total-price">-</span>
+                    </div>
+                    <div>
+                        <strong>寄送至: </strong>
+                        <span class="submit-address">
+                            <span class="sb-final-province">-</span>
+                            <span class="sb-final-city">-</span>
+                            <span class="sb-final-detail">-</span>
+
+                        </span>
+                    </div>
+                    <div>
+                        <strong>收货人: </strong>
+                        <span class="sb-final-name">-</span>
+                    </div>
+                </div>
+                <div class="submit-oper">
+                    <a href="./cart.html" class="return link"><i class="fa fa-mail-reply-all"></i> 返回购物车</a>
+                    <span class="submit-btn" id="create-order">提交订单</span>
+                </div>
+            </div>
+
         </div>
     </div>
-    <div class="panel">
-        <h1 class="panel-title">商品清单</h1>
-        <div class="panel-body product-con">
-        </div>
-    </div>
-</div>
-<div class="modal-wrap">
 </div>
 <%= require('html-loader!./layout/footer.html') %>
 </body>
+
 </html>
+
+

@@ -1,94 +1,79 @@
-/*最外层容器*/
-.page-wrap {
-    padding: 40px 0;
-    background: #e72955;
+/*
+ * @Author: Avenda
+ * @Date: 2018/10/2
+ */
+body {
+    overflow: hidden;
 }
 
-/*表单框*/
-.user-con {
+.login-page .user-main {
     position: relative;
-    margin: 0 auto;
-    width: 400px;
-    background: #fff;
-}
-
-.user-con .user-title {
-    text-align: center;
-    font-weight: bold;
-    color: #666;
-    padding: 10px 0;
-    font-size: 18px;
-    border-bottom: 1px solid #ddd;
-}
-
-.user-con .user-box {
-    padding: 20px 20px 10px 20px;
+    width: 270px;
+    padding: 40px 30px;
+    background: #f5f5f5;
+    margin: 0 200px 0 auto;
 
 }
-
-/*错误提示*/
-.user-con .user-box .error-item {
+.login-page {
+    padding:  170px 0;
+    background: #ff9838;
     position: relative;
-    padding: 4px 0 4px 40px;
-    margin-bottom: 10px;
-    border: 1px solid red;
-    color: red;
-    background: #fde9e9;
-    display: none;
+    overflow: hidden;
+    width: 120%;
+    margin-left: -10%;
 }
-
-/*错误图标*/
-.user-con .user-box .error-icon {
+.login-page .bg-img {
     position: absolute;
-    left: 14px;
-    top: 50%;
+    margin-left: 295px;
+    top: 23px;
+    background: url("../../image/wallhaven-690174.jpg") round;
+    width: 215px;
+    height: 287px;
+}
+.login-page .bg-img2 {
+    position: absolute;
+    background: url("../../image/bg-blur.jpg") center;
+    width: 683px;
+    height: 900px;
+    top: 0;
+    left: 15%;
+}
+
+.login-page h3{
     font-size: 14px;
-    margin-top: -7px;
+    font-weight: 900;
+    margin-bottom:15px;
+    color: #666;
 }
-
-.user-con .user-item {
+.login-page  .label-default-ico * {
+    color: #ff9838;
+}
+.login-page .user-item {
     position: relative;
-    margin-bottom: 20px;
+    padding-bottom: 30px;
 }
+.login-page .user-item .btn {
+    width: 262px;
+}
+.login-page .error-item {
 
-/*图标*/
-.user-con .user-item .user-label {
     position: absolute;
-    /*为了不让图标挡住下面的border边框*/
-    left: 1px;
-    top: 1px;
-    bottom: 1px;
-    width: 40px;
-    line-height: 36px;
-    background: #f3f3f3;
-    font-size: 18px;
-    color: #d3d3d3;
-    text-align: center;
-    border-right: 1px solid #bdbdbd;
+    margin-top: -30px;
+    /*todo 是否显示错误提示*/
+    display: none;
+    border-radius: 4px;
+
+}
+.login-page .error-item {
+    width: 250px;
 }
 
-.user-con .user-item .user-content {
-    /*input里面height和line-height是不继承的*/
-    height: 18px;
-    line-height: 18px;
-    width: 308px;
-    padding: 10px 0 10px 50px;
-    border: 1px solid #bdbdbd;
-    outline: none;
+.login-page .link-item {
+    position: absolute;
+    margin-top: -20px;
+    right: 30px;
 }
-/*点击登陆*/
-.user-con .btn-submit {
-    width: 100%;
-    padding: 3px 0;
-    text-align: center;
-    font-size: 20px;
-}
-/*注册和找回密码*/
-.user-con .link-item {
-    text-align: right;
-    margin-top: 10px;
+.login-page .link-item .link {
+    margin-right: 10px;
 }
 
-.user-con .link-item .link {
-    margin-left: 10px;
-}

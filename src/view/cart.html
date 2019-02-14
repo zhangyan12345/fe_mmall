@@ -2,22 +2,68 @@
 <html lang="en">
 <head>
     <%= require('html-loader!./layout/head-common.html') %>
-    <title><%= htmlWebpackPlugin.options.title%> - Qmall</title>
+    <title><%= htmlWebpackPlugin.options.title%> - 穷猫商城 - 物美价廉, 你指的拥有</title>
 </head>
 <body>
+<%= require('html-loader!../util/confirm-window/index.html') %>
 <%= require('html-loader!./layout/nav.html') %>
 <%= require('html-loader!./layout/header.html') %>
-<div class="crumb">
+<%= require('html-loader!./layout/alert-window.html') %>
+
+<div class="page-main">
+    <div class="crumb">
+        <div class="w">
+            <div class="crumb-con">
+                <a href="./index.html" class="link">首页</a>
+                <span>></span>
+                <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+            </div>
+        </div>
+    </div>
     <div class="w">
-        <div class="crumb-con">
-            <a href="./index.html" class="link">Qmall</a>
-            <span> ></span>
-            <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+        <div class="cart-frame clearfix">
+            <div class="cart-tit">
+                <div class="th chk">
+                    <div  class="input-check check-all"></div>
+                    <span class="link-text">全选</span>
+                </div>
+                <div class="th info">商品信息</div>
+                <div class="th spec">&nbsp</div>
+                <div class="th price">单价</div>
+                <div class="th amount">数量</div>
+                <div class="th sum">金额</div>
+                <div class="th oper">操作</div>
+            </div>
+            <div class="cart-con">
+
+            </div>
+            <div class="cart-footer">
+                <div class="td chk">
+                    <div class="input-check check-all"></div>
+                    <span class="link-text">全选</span>
+                </div>
+                <ul class="td oper-list">
+                    <li class="oper-item link" id="cart-delete-select">删除</li>
+                    <li class="oper-item link" id="cart-delete-all">清空购物车</li>
+                </ul>
+                <button class="tdr submit-pay" id="cart-submit-pay" disabled>结 算</button>
+                <div class="price-total tdr clearfix">
+                    <span class="high-light " id="cart-price-total">-</span>
+                    <span class=" high-light" style="font-size: 20px">&yen</span>
+                    <span class="link-text ">合计（不含运费）：</span>
+                </div>
+                <div class="count-total tdr clearfix ">
+                    <span class="link-text ">件</span>
+                    <span class=" high-light " id="cart-count-total">1232</span>
+                    <span class="link-text">已选择</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<div class="page-wrap w">
-</div>
+
 <%= require('html-loader!./layout/footer.html') %>
 </body>
 </html>
+
+

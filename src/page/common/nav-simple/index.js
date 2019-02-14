@@ -1,4 +1,4 @@
-/**
- * Created by leizh on 2017/10/29.
- */
 require('./index.css');
+$(".nav-simple .logo-wrap").click(function () {
+    window.location.href = "./index.html";
+});

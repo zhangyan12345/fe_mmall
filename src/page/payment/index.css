@@ -1,30 +1,67 @@
-.page-wrap {
-    padding: 10px 0 25px 0;
-    background: #fff;
-}
+/*
+ * @Author: Avenda
+ * @Date: 2018/10/23
+ */
 
-.payment-tips {
+.pay-bg {
+    background: #00aaef url("../../image/bg-timg.png") center;
+    height: 435px;
+    margin-bottom:  40px;
+}
+.pay-logo {
+
+    margin: 20px 0;
+    overflow: hidden;
+}
+.pay-logo .logo {
+
     height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #666;
-    text-align: center;
-}
+    width: 114px;
+    display: inline-block;
 
-.payment-tips.enhance {
-    color: #c60023;
+    background: url("../../image/icons/payment-logo.png") round;
 }
-
-.img-con {
+.pay-logo .logo-title {
+    display: inline-block;
+    font-weight: 900;
+    color: #574f4d;
+    margin-top: -5px;
+    vertical-align: middle;
+    height: 22px;
+}
+.payment-con {
+text-align: center;
+}
+.payment-con .pay-tips {
+    margin: 10px 0;
+}
+.payment-con .pay-tips *{
+    color: white;
+}
+.payment-con .pay-tips .tips-title {
+    font-weight: 900;
+    font-size: 30px;
+}
+.payment-con .pay-tips .tips-con {
+    font-size: 14px;
+    background: white;
+    color: #00aaef;
+    width: 300px;
     margin: 0 auto;
+    font-weight: 900;
+}
+.payment-con .pay-img {
     width: 300px;
     height: 300px;
-    background: #fff;
-    border: 1px solid #ddd;
-}
 
-.img-con .qr-code {
-    width: 100%;
-    height: 100%;
+    margin: 0 auto;
+}
+.payment-con .pay-img img {
+    width: 300px;
+    height: 300px;
+}
+.payment-con .pay-tips-bottom {
+    font-size: 18px;
+    color: white;
+    margin: 10px 0;
 }

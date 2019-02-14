@@ -1,16 +1,49 @@
+<!--
+  ~ @Author: Avenda
+  ~ @Date: 2018/10/11
+  -->
+
 <div class="pg-content">
+<div class="pg-wrap">
     {{#pageArray}}
-    {{#disabled}}
-        <span class="pg-item disabled" data-value="{{value}}">{{name}}</span>
-    {{/disabled}}
-    {{^disabled}}
-        {{#active}}
-            <span class="pg-item active" data-value="{{value}}">{{name}}</span>
-        {{/active}}
-        {{^active}}
-            <span class="pg-item" data-value="{{value}}">{{name}}</span>
-        {{/active}}
-    {{/disabled}}
+         {{#disabled}}
+
+             {{#isButton}}
+            <span class="pg-item pg-btn btn disabled" data-value="{{value}}">{{name}}</span>
+            {{/isButton}}
+            {{^isButton}}
+            <span class="pg-item disabled" data-value="{{value}}">{{name}}</span>
+            {{/isButton}}
+
+         {{/disabled}}
+         {{^disabled}}
+            {{#active}}
+
+                {{#isButton}}
+                <span class="pg-item pg-btn btn active" data-value="{{value}}">{{name}}</span>
+                {{/isButton}}
+                {{^isButton}}
+                <span class="pg-item active" data-value="{{value}}">{{name}}</span>
+                {{/isButton}}
+
+            {{/active}}
+            {{^active}}
+
+                    {{#isButton}}
+                       <span class="pg-item pg-btn btn" data-value="{{value}}">{{name}}</span>
+                    {{/isButton}}
+                     {{^isButton}}
+                             {{#isBla}}
+                             <span class="isBla">{{name}}</span>
+                             {{/isBla}}
+                              {{^isBla}}
+                              <span class="pg-item" data-value="{{value}}">{{name}}</span>
+                              {{/isBla}}
+                     {{/isButton}}
+
+            {{/active}}
+         {{/disabled}}
     {{/pageArray}}
-    <span class="pg-total">{{pageNum}} / {{pages}}</span>
+    <span class="pg-total">共 {{pages}} 页</span>
+</div>
 </div>

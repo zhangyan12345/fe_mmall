@@ -1,62 +1,122 @@
+/*
+ * @Author: Avenda
+ * @Date: 2018/10/6
+ */
 
 require('./index.css');
-require('page/common/nav/index.js');
-require('page/common/header/index.js');
-var _order = require('service/order-service.js');
-var navSide = require('page/common/nav-side/index.js');
-var _rm = require('util/rm.js');
-var templateHtml = require('./index.string');
+require('page/common/nav-side/index.js');
+var _header = require('page/common/header/index.js');
+
+var _nav            = require('page/common/nav/index.js');
+var _navside        = require('page/common/nav-side/index.js');
+var _mm             = require('util/mm.js');
+var _user           = require('service/user-service.js');
+var _alert          = require('util/alert-window/index.js');
+var _conriemWin     = require('util/confirm-window/index.js');
+var _orderService   = require('service/order-service.js');
+var indexTemp = require('./index.string');
 
 
-var page = {
-    data: {
-        orderNumber: _rm.getUrlParam('orderNumber')
-    },
-    init: function () {
-        this.onLoad();
-        this.bindEvent();
-    },
-    onLoad: function () {
-        //加载侧面导航栏
-        navSide.init({
-            name: 'order-list'
+// 常量池
+var consts              = {
+    detailCon:'.order-detail-con',
+    cancelOrder:'#cancel-order',
+    payNow:'#pay-now'
+};
+// 缓存池
+var cache               = {
+   orderNo : ''
+};
+// 功能池
+var mfuncs              = {
+    // 检查登录
+    checkLogin:function(){
+        _user.checkLogin(function (res) {
 
+        },function (err) {
+            _alert.show(err.status || err);
+            setTimeout(function () {
+                _mm.doLogin();
+            },1500);
         });
-        this.loadDetail();
     },
-    bindEvent: function () {
-        var _this = this;
-        $(document).on('click', '.order-cancel', function () {
-            _rm.confirmTips("确认取消订单？", function () {
-                _order.cancelOrder(_this.data.orderNumber, function (res) {
-                    _this.loadDetail();
-                    _rm.successTips('该订单取消成功');
-                }, function (errMsg) {
-                    _rm.errorTips(errMsg);
-                });
+    // 加载订单详情内容
+    loadDetaiCon:function () {
+        // 请求接口
+        _orderService.getOrderDetail(cache.orderNo,function (res) {
+            console.log(res);
+            var html = '';
+            var detailCon = $(consts.detailCon);
+            // 渲染html
+            html = _mm.renderHtml(indexTemp,res);
+            detailCon.hide().html(html);
+            // 更改oper内容
+            var oper = $('.order-info-wrap .oper');
+            if (res.status === 20) {
+                oper.html('<span class="btn-white" >付款成功</span>')
+            }
+            if (res.status === 0) {
+                oper.html('<span class="btn-white" >已取消</span>')
+            }
+            detailCon.fadeIn(300);
+
+        },function (err) {
+            _alert.show(err.status || err);
+        });
+    },
+    // 取消订单
+    cancelOrder:function () {
+        _conriemWin.show("是否取消当前订单?",function () {
+            _orderService.cancelOrder(cache.orderNo,function (res) {
+                mfuncs.loadDetaiCon();
+            },function (err) {
+                _alert.show(err.status || err);
             });
         });
     },
-    //加载订单数据
-    loadDetail: function () {
-        var _this = this,
-            orderDatailHtml = '',
-            $content = $('.content');
-        _rm.showLoading($content);
-        _order.getOrderDetail(this.data.orderNumber, function (res) {
-            _this.dataFilter(res);
-            orderDatailHtml = _rm.renderHtml(templateHtml, res);
-            $content.html(orderDatailHtml);
-        }, function (errMsg) {
-            _rm.showErrorMessage($content, errMsg);
-        });
-    },
-    dataFilter: function (data) {
-        data.needPay = data.status == 10;
-        data.isCancelable = data.status == 10;
+    // 立即支付
+    payNow:function () {
+        if (cache.orderNo) {
+            window.location.href = './payment.html?orderNo='+cache.orderNo;
+        }
     }
 };
+// 主逻辑
+var orderList           = {
+    init            : function () {
+        this.preLoad();
+        this.doCheck();
+        this.onLoad();
+        this.bindEvent();
+        this.runtime();
+    },
+    preLoad         : function () {
+        // 激活nav按钮
+        _nav.orderActive();
+        // 显示 header 二级子标题
+        _header.showSubtitle("订单详情");
+        // 激活侧边栏按钮
+        _navside.init("order-list");
+        // 提取orderNo
+        cache.orderNo = _mm.getUrlParam("orderNo");
 
-$(function () {
-    page.init();
-});
+    },
+    doCheck         : function () {
+
+    },
+    onLoad          : function () {
+        mfuncs.loadDetaiCon();
+    },
+    bindEvent       : function () {
+        $(document).on('click',consts.cancelOrder,function () {
+            mfuncs.cancelOrder();
+        });
+        $(document).on('click',consts.payNow,function () {
+            mfuncs.payNow();
+        })
+    },
+    runtime         : function () {}
+};
+// 初始化左侧信息
+
+orderList.init();

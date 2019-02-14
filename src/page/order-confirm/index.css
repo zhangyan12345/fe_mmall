@@ -1,235 +1,296 @@
-/*地址部分样式*/
+/*
+ * @Author: Avenda
+ * @Date: 2018/10/19
+ */
 
-.address-item,
-.address-add {
-    width: 200px;
-    padding: 10px;
-    margin: 20px 20px 0 0;
-    float: left;
-    cursor: pointer;
-    border: 3px dashed #ccc;
-}
-
-.address-item.active {
-    border: 3px dashed #c60023;
-}
-
-.address-add:hover,
-.address-item:hover {
-    background: #efefef;
-}
-
-.address-item .address-title {
-    border-bottom: 1px solid #ddd;
-    color: #666;
-    height: 20px;
-    /*超出的部分会隐藏起来*/
-    overflow: hidden;
-    line-height: 20px;
-}
-
-.address-item.active .address-title {
-    color: #c60023;
-    font-weight: bold;
-    border-bottom: 1px solid #c60023;
-}
-
-.address-item .address-detail {
-    height: 40px;
-    line-height: 20px;
-    margin-top: 5px;
-    overflow: hidden;
-    font-size: 12px;
-    color: #666;
-}
-
-.address-item .address-opera {
-    text-align: right;
-    visibility: hidden;
-}
-
-.address-item:hover .address-opera {
-    visibility: visible;
-}
-
-.address-item .address-opera .link {
-    margin-right: 5px;
-}
-
-.address-add .address-new {
-    text-align: center;
-    color: #ccc;
-    padding: 8px 0;
-}
-
-.address-add .address-new .fa {
-    font-size: 50px;
-    line-height: 50px;
-}
-
-.address-add .address-new .text {
-    font-size: 12px;
-}
-
-/*商品清单*/
-.product-table {
-    width: 100%;
-    margin: 10px 0;
-    /*边框重叠就只显示一个*/
-    border-collapse: collapse;
-}
-
-.product-table th,
-.product-table td {
-    border-bottom: 1px solid #eee;
-}
-
-.product-table .cell-img {
-    width: 10%;
-    text-align: center;
-    padding: 10px;
-}
-
-.product-table .cell-img .p-img {
-    width: 80px;
-    height: 80px;
-    border: 1px solid #ddd;
-}
-
-.product-table .cell-info {
-    width: 30%;
-    text-align: left;
-}
-
-.product-table .cell-price {
-    width: 20%;
-    text-align: center;
-}
-
-.product-table .cell-count {
-    width: 20%;
-    text-align: center;
-}
-
-.product-table .cell-total {
-    width: 20%;
-    text-align: center;
-}
-
-/*订单提交*/
-.submit-con {
-    background: #eeeeee;
-    text-align: right;
-}
-
-.submit-con .submit-total {
-    font-weight: bold;
-    color: #c60023;
-    font-size: 18px;
-    vertical-align: middle;
-    margin-right: 20px;
-}
-
-.submit-con .order-submit {
-    height: 60px;
-    line-height: 60px;
-    width: 100px;
-    text-align: center;
-}
-
-/*modal 编辑弹窗*/
-.modal {
-    /*这样就可以实现全屏覆盖*/
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: #eee;
-    background: rgba(0, 0, 0, .4);
-    /*防止有层级过高的挡住dialog*/
-    z-index: 1000;
-    /*让dialog不能左右滚动*/
-    overflow-x: hidden;
-    /*防止内容过长超出可视区范围*/
-    overflow-y: auto;
-}
-
-.modal .modal-container {
-    width: 600px;
-    background: #fff;
-    margin: 100px auto;
-    border-radius: 5px;
-    /*text-align: center;*/
-    padding: 5px;
-}
-
-.modal .modal-container .modal-header {
-    position: relative;
-    padding: 15px;
-    border-bottom: 1px solid #ccc;
-}
-
-.modal .modal-container .modal-header .modal-title {
-    font-size: 14px;
-}
-
-.modal .modal-container .modal-header .close {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.modal .modal-container .modal-body {
-    padding: 15px;
-}
-
-/*form部分*/
-.form .form-line {
-    margin: 5px 0;
-    overflow: hidden;
-}
-
-.form .form-line .label {
+.header .logo {
     display: block;
     float: left;
-    width: 100px;
-    text-align: right;
-    font-size: 13px;
-    height: 30px;
-    line-height: 30px;
-    margin-right: 5px;
-    cursor: pointer;
+    font-size: 50px;
+    line-height: 100px;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #ff9838;
+}
+.header .logo-channel {
+    position: absolute;
+    bottom:  10px;
+    font-weight: 900;
+    left: 0;
+    display: none;
+}
+.header .logo-channel .fa {
+    margin-left: 10px;
+    color: #f76a1e;
+}
+.header .logo-channel .logo-channel-content {
+    color: #666666;
+}
+.header .logo .logo-plus {
+    color: #444444;
+}
+/*共性去*/
+.prod-wrap .prod-tit .th,.prod-con .prod-item .td{
+    display: inline-block;
     vertical-align: middle;
 }
-
-.form .form-line .label .required {
-    color: #c60023;
+.prod-wrap .prod-tit .th:nth-of-type(1),
+.prod-con .prod-item .td:nth-of-type(1) {
+    width: 305px;
 }
-
-.form .form-line .form-item {
-    padding: 0 5px;
-    height: 30px;
-    line-height: 30px;
-    outline: none;
-    margin-right: 10px;
+.prod-wrap .prod-tit .th:nth-of-type(2),
+.prod-con .prod-item .td:nth-of-type(2) {
+    width: 180px;
 }
+.prod-wrap .prod-tit .th:nth-of-type(3),
+.prod-con .prod-item .td:nth-of-type(3) {
+    width: 100px;
+    margin-left: 30px;
+}
+.prod-wrap .prod-tit .th:nth-of-type(4),
+.prod-con .prod-item .td:nth-of-type(4) {
+    width: 100px;
+    margin-left: 30px;
+}
+.prod-wrap .prod-tit .th:nth-of-type(5),
+.prod-con .prod-item .td:nth-of-type(5) {
+    width: 150px;
+    margin-left: 30px;
+}
+.prod-wrap .prod-tit .th:nth-of-type(6),
+.prod-con .prod-item .td:nth-of-type(6) {
 
-.form .form-line .btn {
-    margin-left: 105px;
-    height: 30px;
-    line-height: 30px;
+    width: 130px;
+}
+/*文字居中对齐*/
+.prod-wrap .prod-tit .th,
+.prod-con .prod-item .price,
+.prod-con .prod-item .amount,
+.prod-con .prod-item .saleWay,
+.prod-con .prod-item .sum
+{
+    text-align: center  ;
+    color: #888888;
+}
+/*区域title样式*/
+.prod-wrap .prod-mainT,.address-wrap .address-title {
     font-size: 14px;
+    font-weight: 900;
+    color: #444444;
+    margin-top: 20px;
+}
+/*特性区*/
+.address-wrap .address-con-wrap {
+    margin-right: -20px;
+    padding-bottom: 10px;
+    height: 140px;
+    overflow: hidden;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+
+.address-wrap .addr-item {
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    position: relative;
+    width: 233px;
+    height: 100px;
+    margin-right: 10px;
+    float: left;
+    margin-top: 15px;
+    border: 1px dashed #dddddd;
+    background: white;
+    overflow: hidden;
+}
+.address-wrap .addr-add {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    width: 233px;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 15px;
+    border: 1px dashed #dddddd;
+}
+.address-wrap .addr-add .fa {
+    font-size:60px;
+    height: 100px;
+    line-height: 90px;
+    color: #cccccc;
+}
+.address-wrap .addr-add div {
+    position: absolute;
+    color: #bbbbbb;
+    margin-left: 87px;
+    bottom: 0;
+    margin-bottom: 20px;
+
+}
+
+.address-wrap .addr-item:hover .item-oper{
+    visibility: initial;
+
+}
+.address-wrap .addr-item.select {
+    background: #ffffff url("../../image/icons/addr-border.png");
+    border: 1px solid #f5f5f5;
+}
+.address-wrap .addr-item .item-title {
+    padding: 5px 0;
+    border-bottom: 1px solid #eeeeee;
+    color: #666666;
+}
+.address-wrap .addr-item .item-title .name {
+    font-weight: 900;
+    color: #f76a1e;
+
+}
+.address-wrap .addr-item .item-title * {
+    color: #666;
+}
+.address-wrap .addr-item .item-con {
     margin-top: 10px;
 }
+.address-wrap .addr-item .item-con * {
+    color: #666;
+}
+.address-wrap .addr-item .item-con .phone-number{
+    position: absolute;
+    bottom: 10px;
+    color: #888888;
+}
+.address-wrap .addr-item .item-con .personal-detail {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    /*行数*/
+    -webkit-line-clamp:2;
+}
+.address-wrap .addr-item .item-title .postcode {
+    color: #aaa;
+    margin-left: 10px;
+}
+.address-wrap .addr-item .item-oper{
+    color: #f76a1e;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    visibility: hidden;
+}
+.address-wrap .addr-item .item-oper span {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #f76a1e;
+}
+.address-wrap .addr-item .item-oper span:hover {
+    color: #fab01e;
+}
 
+.address-wrap .address-oper span {
+    color: #ff9838;
+    cursor: pointer;
+    margin-right: 30px;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+.prod-wrap .prod-item {
+    padding-top: 10px;
+    height: 87px;
+    border:1px solid #acd9f1;
+    background-color: #f2faff;
+    margin: 5px 0;
 
+}
+.prod-con .prod-item .info img {
+    float: left;
+    border: 1px solid #dddddd;
+    height: 74px;
+    width: 74px;
+    background: #eeeeee;
+    margin-left: 10px;
+}
+.prod-con .prod-item .info .title {
+    float: left;
+    margin-left: 5px;
+    width: 205px;
+    max-height: 72px;
+    overflow: hidden;
+}
+.prod-wrap .prod-item .sum .single-sum{
+    color: #f76a1e;
+    font-size: 16px;
+}
+.prod-wrap .prod-tit{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #ace5ff;
+    margin-bottom: 10px;
+}
 
+.submit-footer .submit-wrap{
+    float: right;
+    position: relative;
+}
+.submit-wrap .submit-detail {
+    text-align: right;
+    padding: 10px 20px;
+    border: 1px solid #ff9838;
+    background: white;
 
+}
+.submit-wrap .submit-detail div:nth-of-type(1) {
+    text-align: right;
+    margin-bottom: 10px;
+}
+.submit-wrap .submit-detail div:nth-of-type(1) strong:nth-of-type(1) {
+    font-size: 14px;
+    color: #444444;
 
+}
+.submit-wrap .submit-detail div:nth-of-type(1) strong:nth-of-type(2) {
+    font-size: 16px;
+    color: #888888;
+}
+.submit-wrap .submit-detail div:nth-of-type(1) span {
+    font-size: 20px;
+    color: #f76a1e;
+    font-weight: 900;
+}
+.submit-wrap .submit-detail div:nth-of-type(2) {
+    margin-bottom: 5px;
 
-
-
-
+}
+.submit-wrap .submit-detail div:nth-of-type(3) {
+    margin-bottom: 10px;
+}
+.submit-wrap .submit-detail .submit-address span {
+    margin-right: 5px;
+}
+.submit-wrap .submit-oper {
+    text-align: right;
+}
+.submit-wrap .submit-oper .submit-btn {
+    display: inline-block;
+    font-size: 16px;
+    background: #ff9838;
+    color: white;
+    padding: 7px 25px;
+    cursor: pointer;
+}
+.submit-wrap .submit-oper .submit-btn:hover {
+    background: #fab01e;
+}
+.submit-wrap .submit-oper .submit-btn:active {
+    background: #f76a1e;
+}
+.submit-wrap .submit-oper .return {
+    margin-right: 30px;
+}

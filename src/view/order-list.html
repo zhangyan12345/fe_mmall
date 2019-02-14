@@ -2,32 +2,44 @@
 <html lang="en">
 <head>
     <%= require('html-loader!./layout/head-common.html') %>
-    <title><%= htmlWebpackPlugin.options.title%> - Qmall</title>
+    <title><%= htmlWebpackPlugin.options.title%> - 穷猫商城</title>
 </head>
 <body>
+<%= require('html-loader!../util/confirm-window/index.html') %>
+<%= require('html-loader!../util/alert-window/index.html') %>
 <%= require('html-loader!./layout/nav.html') %>
 <%= require('html-loader!./layout/header.html') %>
-<div class="crumb">
-    <div class="w">
-        <div class="crumb-con">
-            <a href="./index.html" class="link">Qmall</a>
-            <span> ></span>
-            <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+<div class="page-wrap">
+    <!--面包屑导航-->
+    <div class="crumb">
+        <div class="w">
+            <div class="crumb-con">
+                <a href="./index.html" class="link">首页</a>
+                <span>></span>
+                <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+            </div>
         </div>
     </div>
-</div>
-<div class="page-wrap w">
-    <%= require('html-loader!./layout/nav-side.html') %>
-    <div class="content with-nav">
-        <div class="panel">
-            <div class="panel-title"><%= htmlWebpackPlugin.options.title%></div>
-            <div class="panel-body">
-                <div class="order-list-con">
+    <!--侧边栏-->
+    <div class="w">
+        <%= require('html-loader!./layout/nav-side.html') %>
+        <div class="content with-nav">
+            <table class="order-list-title">
+                <tr>
+                    <th class="cell">商品</th>
+                    <th class="cell">数量</th>
+                    <th class="cell">总价</th>
+                    <th class="cell">服务</th>
+                    <th class="cell">实付款</th>
+                    <th class="cell">交易详情</th>
+                    <th class="cell">交易操作</th>
+                </tr>
+            </table>
+            <div class="order-list-con">
+                <div class="loading"></div>
+            </div>
+            <div class="pagination">
 
-                </div>
-                <div class="pagination">
-
-                </div>
             </div>
         </div>
     </div>
@@ -35,3 +47,5 @@
 <%= require('html-loader!./layout/footer.html') %>
 </body>
 </html>
+
+

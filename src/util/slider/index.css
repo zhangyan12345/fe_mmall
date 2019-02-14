@@ -1,45 +1,81 @@
 .banner {
-    position: relative;
-    overflow: auto;
+    position: relative; overflow: auto;
 }
-
 .banner li {
     list-style: none;
 }
-
 .banner ul li {
     float: left;
 }
-
-/*引导小圆点的样式，从官网或者自己喜欢的网页拿下来*/
-.banner .dots {
-    text-align: center;
+.banner-slider {
+    overflow: hidden;
+}
+.banner-slider .banner-img {
+}
+.banner-slider ul {
+}
+.banner-slider ul li {
+    width: 33.3334% !important;
+ }
+.banner-slider .dots {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 20px;
+    text-align: center;
 }
-
-.banner .dots li {
+.banner-slider .dots li {
     display: inline-block;
     width: 10px;
     height: 10px;
     margin: 0 4px;
-
     text-indent: -999em;
-
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 6px;
-
     cursor: pointer;
-    opacity: .4;
-
-    -webkit-transition: background .5s, opacity .5s;
-    -moz-transition: background .5s, opacity .5s;
-    transition: background .5s, opacity .5s;
+    opacity: .8;
+    -webkit-transition: background .5s,opacity .5s;
+    -moz-transition: background .5s,opacity .5s ;
+    -ms-transition: background .5s,opacity .5s ;
+    -o-transition: background .5s,opacity .5s ;
+    transition: background .5s,opacity .5s ;
 }
+.banner-slider .dot {
 
-.banner .dots li.active {
-    background: #fff;
-    opacity: 1;
+}
+.banner-slider .dot.active {
+    background: white;
+}
+.banner-slider .unslider-arrow {
+
+}
+.banner-slider .unslider-arrow{
+    width: 30px;
+    text-align: center;
+    height: 100%;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -ms-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+
+}
+.banner-slider .unslider-arrow:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+.banner-slider .unslider-arrow.prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.banner-slider .unslider-arrow.next {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.banner-slider i {
+    margin-top: 460%;
+    color: white;
+    font-size: 30px;
+
 }
