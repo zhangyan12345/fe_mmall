@@ -7,33 +7,20 @@ const HtmlWebpackPlugin   = require('html-webpack-plugin');
 // 环境变量配置，dev / online
 const WEBPACK_ENV         = process.env.WEBPACK_ENV || 'dev'; console.log("+++++"+ WEBPACK_ENV + "+++++")
 // uglifyjs-webpack-plugin (压缩js)
-const UglifyJsPlugin      = require('uglifyjs-webpack-plugin');
-// 图片压缩
-var ImageminPlugin        = require('imagemin-webpack-plugin').default;
-var imageminMozjpeg       = require('imagemin-mozjpeg');
-// 获取html-webpack-plugin参数的方法
 var getHtmlConfig         = function (name, title) {
     return {
-        // 根文件
-        template    : './src/view/'+name+'.html',
-        // 输出文件
-        filename    : 'view/'+name+'.html',
-        // 是否开启注入
-        inject      : true,
-        // 标题
-        title       : title,
-
-        // 是否应用哈希
-        hash        : true,
-        minify: {
-            removeComments: true,   // 去除注释,
-            collapseWhitespace:true, // 去空格
-            minifyCSS:true, //压缩css
-        },
-        // ico图标
-        favicon     :'./favicon.ico',
-        //注入入口模块中的对应名字模块和公共模块
-        chunks      : [name,'common']
+        //html的原始模板
+        template: './src/view/' + name + '.html',
+        //文件输出目录
+        filename: 'view/' + name + '.html',
+        favicon: './favicon.ico',
+        title: title,
+        //true的话就可以不用手写js和css的引入
+        inject: true,
+        //会在js和css后面加入版本号
+        hash: true,
+        //不配置的话，默认会把全部chunks都打包进来
+        chunks: ['common', name]
     };
 };
 // 生产环境配置文件
@@ -81,38 +68,17 @@ var config    = {
       }
     },
     plugins: [
-        // 独立通用模块(全局代码) js/base.js
+        //独立通用模块到js/base.js
         new webpack.optimize.CommonsChunkPlugin({
-            // 加入全局代码, 注意 全局代码的引用所有页面都要加,而且要放在其他引用前面
-            name        : 'common',
-            filename    : "js/base.js",
-            // (给 chunk 一个不同的名字)
-            // minChunks: Infinity,
-            // (随着 entry chunk 越来越多，
-            // 这个配置保证没其它的模  块会打包进 vendor chunk)
+            //引用的名字,与上面的common对应，形成全局的公共模块
+            name: 'common',
+            //输出的名字
+            filename: 'js/base.js'
         }),
-        // 把CSS单独打包到文件
-        // new ExtractTextPlugin("css/[name].css"),
-        new ExtractTextPlugin({
-            filename: 'css/[name].css',
-        }),
-        // uglifyjs-webpack-plugin压缩js
-        new UglifyJsPlugin({
-            parallel: 6
-        }),
-        // uglifyjs-webpack-plugin压缩js
-        new ImageminPlugin({
-            test: /\.(jpe?g|png|gif|svg)$/i,
-            pngquant: {
-                quality: '60-85'
-            },
-            plugins: [
-                imageminMozjpeg({
-                    quality: 60,
-                    progressive: true
-                })
-            ]
-        }),
+        //webpack-dev-server浏览器自动刷新
+        new webpack.HotModuleReplacementPlugin(),
+        //css单独打包到文件里
+        new ExtractTextPlugin("css/[name].css"),
         // html模板的处理,将entry中的模块注入进来
         new HtmlWebpackPlugin(getHtmlConfig('index', '穷猫商城 - 你的壹号仓库')),
         new HtmlWebpackPlugin(getHtmlConfig('list', '商品列表')),
@@ -169,5 +135,8 @@ var config    = {
     }
 };
 /// 开发环境注入dev-server端口
-config.entry.common.push('webpack-dev-server/client?http://localhost:8088/');
+if ('dev' === WEBPACK_ENV) {
+    config.entry.common.push('webpack-dev-server/client?http://localhost:8088/');
+}
+
 module.exports = config;
