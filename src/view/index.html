@@ -1,678 +1,719 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <%= require('html-loader!./layout/head-common.html') %>
-    <title><%= htmlWebpackPlugin.options.title%></title>
+    <title>
+        <%= htmlWebpackPlugin.options.title%>
+    </title>
 </head>
+
 <body>
-<%= require('html-loader!./layout/nav.html') %>
-<%= require('html-loader!./layout/header.html') %>
-<%= require('html-loader!./layout/alert-window.html') %>
-<div class="fs">
-    <!--左上角logo遮罩-->
-    <div class="w-sub">
-        <div class="logo-wrap">
-            <a class="logo" href="./index.html"><span class="logo-plus">Q</span>mall</a>
+    <%= require('html-loader!./layout/nav.html') %>
+    <%= require('html-loader!./layout/header.html') %>
+    <%= require('html-loader!./layout/alert-window.html') %>
+    <div class="fs">
+        <!--左上角logo遮罩-->
+        <div class="w-sub">
+            <div class="logo-wrap">
+                <a class="logo" href="./index.html"><span class="logo-plus">Q</span>mall</a>
+            </div>
         </div>
-    </div>
-    <!--导航弹出菜单-->
-    <div class="wrapper">
+        <!--导航弹出菜单-->
+        <div class="wrapper">
             <div class="keywords-sub">
                 <div class="keywords-sub-content">
-                        <!--todo -->
+                    <!--todo -->
 
-                        <!--todo -->
+                    <!--todo -->
                 </div>
             </div>
-    </div>
-    <!--导航. 轮播. 右侧banner-->
-    <div class="w">
-        <ul class="keywords-list" id="keywords-list">
-          <!--模板生成内容-->
-        </ul>
-        <div class="banner">
-            <div class="layout" id="banner-main-content">
-                <!--&lt;!&ndash;模板引擎渲染&ndash;&gt;-->
-                <!--<div class="loading2"></div>-->
-                <!--&lt;!&ndash;模板引擎渲染&ndash;&gt;-->
+        </div>
+        <!--导航. 轮播. 右侧banner-->
+        <div class="w">
+            <ul class="keywords-list" id="keywords-list">
+                <!--模板生成内容-->
+            </ul>
+            <div class="banner">
+                <div class="layout" id="banner-main-content">
+                    <!--&lt;!&ndash;模板引擎渲染&ndash;&gt;-->
+                    <!--<div class="loading2"></div>-->
+                    <!--&lt;!&ndash;模板引擎渲染&ndash;&gt;-->
 
-                <div class="banner-slider">
-                    <ul>
-                        <li>
-                            <a href="./list.html?categoryId=100021" target="_blank">
-                                <img class="banner-img" src="<%= require('../image/banner/banner-main-1.jpg') %>"  alt="" />
+                    <div class="banner-slider">
+                        <ul>
+                            <li>
+                                <a href="./list.html?categoryId=100021" target="_blank">
+                                    <img class="banner-img" src="<%= require('../image/banner/banner-main-1.jpg') %>"
+                                        alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./list.html?categoryId=100003" target="_blank">
+                                    <img class="banner-img" src="<%= require('../image/banner/banner-main-2.jpg') %>"
+                                        alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./detail.html?productId=2374" target="_blank">
+                                    <img class="banner-img" src="<%= require('../image/banner/banner-main-3.jpg') %>"
+                                        alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="unslider-arrow prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a href="#" class="unslider-arrow next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-right">
+                <div class="layout">
+                    <a href="./list.html?categoryId=100004">
+                        <div class="img-item top"></div>
+                    </a>
+                    <a href="./list.html?categoryId=100005">
+                        <div class="img-item middle"></div>
+                    </a>
+                    <a href="./list.html?categoryId=100011">
+                        <div class="img-item bottom"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-search">
+        <div class="w">
+            <div class="logo-top">
+                <span>Q</span>mall
+            </div>
+            <div class="search">
+                <input type="text" class="search-input" id="search-input-top" placeholder="请输入商品名称">
+                <button class="btn-search" id="btn-search-top">搜 索</button>
+            </div>
+        </div>
+    </div>
+    <div class="floor">
+        <div class="w">
+            <div class="floor-line">
+                <div class="floor-title f1">
+                    <h2>家用电器</h2>
+                </div>
+                <div class="floor-content">
+                    <ul class="product-wrap">
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=32">
+                                <!--onerror="this.style.opacity='0'"-->
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor1-1.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    Midea/美的 BCD-535WKZM(E)
+                                </span>
                             </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                矢量双变频， 纤薄机身， 智能操控
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                2785元
+                            </span>
                         </li>
-                        <li>
-                            <a href="./list.html?categoryId=100003" target="_blank">
-                                <img class="banner-img" src="<%= require('../image/banner/banner-main-2.jpg') %>" alt="" />
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag hot">
+                                <a>热销</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=33">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor1-2.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    小米
+                                </span>
                             </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                人工智能， 儿童模式， 海量影视
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                3639元
+                            </span>
                         </li>
-                        <li>
-                            <a href="./detail.html?productId=2374" target="_blank">
-                                <img class="banner-img" src="<%= require('../image/banner/banner-main-3.jpg') %>" alt="" />
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag hot">
+                                <a>热销</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=34">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor1-3.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    Haier/海尔 EG10014B39GU1 
+                                </span>
                             </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                变频节能，智能洗涤，精确控制
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                2999.00元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=35">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor1-4.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    海尔 KFR-32GW
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                无感吹风，远程智控，深度自清洁
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                9299.00元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=36">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor1-5.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    苏泊尔电热水器
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                E+热水增容， 加长防电墙， 全胆/半胆模式
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                1199.00元
+                            </span>
                         </li>
                     </ul>
-                    <a href="#" class="unslider-arrow prev">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                    <a href="#" class="unslider-arrow next">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
+                </div>
+            </div>
+            <div class="floor-line">
+                <a href="./list.html?categoryId=100002">
+                    <img src="<%= require('../image/floor/banner-blank.png') %>" data-src="<%= require('../image/floor/banner-f2.jpg') %>"
+                        alt="数码3C" class="floor-banner">
+                </a>
+                <div class="floor-title f2">
+                    <h2>数码3C</h2>
+                </div>
+                <div class="floor-content">
+                    <ul class="product-wrap">
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag hot">
+                                <a>热销</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=31">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor2-1.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    小米8 青春版 4GB+64GB
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                潮流镜面渐变色 , 2400万自拍旗舰
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                1399元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=60">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor2-2.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    Apple MacBook Pro 15.4英寸
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                IPS屏， 背光键盘， 全金属
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                4574.00元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=61">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor2-3.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    酷比魔方 KNOTE8
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                轻薄金属机身， 二合一平板， 加速散热
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                3169.00元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag hot">
+                                <a>热销</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=38">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor2-4.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    佳能 80D (18-135,50mm)
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                自动对焦， 全像素双核CMOS， 内置WiFi
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                5163.00元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=39">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor2-5.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    佳能 EF 70-200MM F/4L IS USM
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                顶级透光率， USM红圈镜头， 成像
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                6541.00元
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="floor-line">
+                <a href="./list.html?categoryId=100003">
+                    <img src="<%= require('../image/floor/banner-blank.png') %>" data-src="<%= require('../image/floor/banner-f3.jpg') %>"
+                        alt="箱包" class="floor-banner">
+                </a>
+                <div class="floor-title f3">
+                    <h2>服装箱包</h2>
+                </div>
+                <div class="floor-content">
+                    <ul class="product-wrap">
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=40">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor3-1.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    2018秋装新款初秋冷系女装毛呢连衣裙早秋套装裙子秋冬时尚两件套
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                阿依莉旗舰店
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                278.00元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=43">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor3-2.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    冬季男士帽子韩版潮时尚毛线帽保暖针织冬天防寒棉帽青年户外骑车
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                米黛洛旗舰店
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                29.90元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=44">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor3-3.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    铝框行李箱万向轮拉杆箱旅行箱女男韩版复古密码箱子24寸学生28寸
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                卡米梵旗舰店
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                328.00元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=45">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor3-4.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    小米世家大容量女士手提旅行包商务出差行李包穿拉杆包防水尼龙包
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                小米世家旗舰店
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                75.00元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=100020">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor3-5.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    雪中飞保暖内衣男加厚加绒冬季V领女士棉毛衫男士秋衣秋裤套装
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                雪中飞内衣旗舰
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                159.00元
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="floor-line">
+                <a href="./list.html?categoryId=100004">
+                    <img src="<%= require('../image/floor/banner-blank.png') %>" data-src="<%= require('../image/floor/banner-f4.jpg') %>"
+                        alt="食品" class="floor-banner">
+                </a>
+                <div class="floor-title f4">
+                    <h2>食品生鲜</h2>
+                </div>
+                <div class="floor-content">
+                    <ul class="product-wrap">
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=47">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor4-1.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    三只松鼠能栗开口甘栗120g
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                新加坡中商超本地供货 免费送货上门
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                25.50元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=48">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor4-2.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    网易味央黑猪肉汤排骨优享款3份装1050g
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                冷冻土猪肉生鲜五花猪腿肉
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                109.00元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=59">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor4-3.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    崇明荷叶糯米鸡500g 方便速食点心
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                半成品菜加热即食熟食零食小吃
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                24.50 元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=50">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor4-4.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    广州酒家 手制叉烧包2袋
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                方便速冻食品早餐面包广式早茶点心
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                39.60元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=51">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor4-5.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    印尼进口食品Richeese丽芝士
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                nabati奶酪味威化饼干350g罐装
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                23.80元
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="floor-line">
+                <a href="./list.html?categoryId=100005">
+                    <img src="<%= require('../image/floor/banner-blank.png') %>" data-src="<%= require('../image/floor/banner-f5.jpg') %>"
+                        alt="酒水饮料" class="floor-banner">
+                </a>
+                <div class="floor-title f5">
+                    <h2>酒水饮料</h2>
+                </div>
+                <div class="floor-content">
+                    <ul class="product-wrap">
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=52">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor5-1.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    蓝色经典 梦之蓝M6 52度500ml*2瓶
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                洋河官方旗舰店 绵柔型白酒
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                1538.00元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=53">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor5-2.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    百特醇酿干红法国原瓶进口红酒法国葡萄酒波尔多红酒
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                2支装礼盒
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                199.00元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=53">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor5-3.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    Nestle/雀巢咖啡丝滑拿铁摩卡榛果焦糖268ml*15瓶
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                2支装礼盒
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                199.00元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=55">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor5-4.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    RIO/锐澳微醺预调鸡尾酒G洋酒果酒330ml*10罐
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                2支装礼盒
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                199.00元
+                            </span>
+                        </li>
+                        <li class="product-item">
+                            <!--标签-->
+                            <div class="product-tag">
+                                <a>新品</a>
+                            </div>
+                            <!--图片和标题-->
+                            <a href="./detail.html?productId=56">
+                                <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor5-5.jpg') %>"
+                                    class="product-img" />
+                                <span class="product-title title-main">
+                                    进口洋酒威士忌酒原瓶原装BLACK
+                                </span>
+                            </a>
+                            <!--副标题-->
+                            <p class="product-title">
+                                2支装礼盒
+                            </p>
+                            <!--价格-->
+                            <span class="product-title">
+                                199.00元
+                            </span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="banner-right">
-            <div class="layout">
-                <a href="./list.html?categoryId=100004"><div class="img-item top"></div></a>
-                <a href="./list.html?categoryId=100005"><div class="img-item middle"></div></a>
-                <a href="./list.html?categoryId=100011"><div class="img-item bottom"></div></a>
-            </div>
-        </div>
     </div>
-</div>
-<div class="top-search">
-   <div class="w">
-       <div class="logo-top">
-           <span>Q</span>mall
-       </div>
-       <div class="search">
-           <input type="text" class="search-input" id="search-input-top" placeholder="请输入商品名称">
-           <button class="btn-search" id="btn-search-top">搜 索</button>
-       </div>
-   </div>
-</div>
-<div class="floor">
-    <div class="w">
-        <div class="floor-line">
-            <div class="floor-title f1">
-                <h2>家用电器</h2>
-            </div>
-            <div class="floor-content">
-                <ul class="product-wrap">
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100006">
-                            <!--onerror="this.style.opacity='0'"-->
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor1-1.jpg') %>" class="product-img"/>
-                            <span class="product-title title-main">
-                           容声 BCD-529WD11HP
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            矢量双变频， 纤薄机身， 智能操控
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       2785元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag hot">
-                            <a>热销</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100007">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor1-2.jpg') %>"   class="product-img" />
-                            <span class="product-title title-main">
-                           创维 65M9
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            人工智能， 儿童模式， 海量影视
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       3639元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag hot">
-                            <a>热销</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100008">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor1-3.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           西门子 WM12L2C08W
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            变频节能，智能洗涤，精确控制
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       2999.00元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100009">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>"  data-src="<%= require('../image/floor/floor1-4.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           美的 KFR-72LW/WYSN8A1
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            无感吹风，远程智控，深度自清洁
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       9299.00元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100010">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor1-5.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           美的 F60-21WB1
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            E+热水增容， 加长防电墙， 全胆/半胆模式
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       1199.00元
-                   </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="floor-line">
-            <a href="./list.html?categoryId=100009">
-                <img src="<%= require('../image/floor/banner-blank.png') %>" data-src="<%= require('../image/floor/banner-f2.jpg') %>" alt="数码3C" class="floor-banner">
-            </a>
-            <div class="floor-title f2">
-                <h2>数码3C</h2>
-            </div>
-            <div class="floor-content">
-                <ul class="product-wrap">
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag hot">
-                            <a>热销</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100012">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor2-1.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           小米8 青春版 4GB+64GB
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            潮流镜面渐变色 , 2400万自拍旗舰
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       1399元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100011">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor2-2.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           戴尔 灵越13 5000(5370) Ins13-5370-1505
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            IPS屏， 背光键盘， 全金属
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       4574.00元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100013">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor2-3.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           酷比魔方 KNOTE8
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            轻薄金属机身， 二合一平板， 加速散热
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       3169.00元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag hot">
-                            <a>热销</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100014">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor2-4.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           佳能 80D (18-135,50mm)
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            自动对焦， 全像素双核CMOS， 内置WiFi
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       5163.00元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100015">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor2-5.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           佳能 EF 70-200MM F/4L IS USM
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            顶级透光率， USM红圈镜头， 成像
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       6541.00元
-                   </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="floor-line">
-            <a href="./list.html?categoryId=100003">
-                <img src="<%= require('../image/floor/banner-blank.png') %>" data-src="<%= require('../image/floor/banner-f3.jpg') %>" alt="箱包" class="floor-banner">
-            </a>
-            <div class="floor-title f3">
-                <h2>服装箱包</h2>
-            </div>
-            <div class="floor-content">
-                <ul class="product-wrap">
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100016">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor3-1.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           2018秋装新款初秋冷系女装毛呢连衣裙早秋套装裙子秋冬时尚两件套
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            阿依莉旗舰店
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       278.00元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100017">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor3-2.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           冬季男士帽子韩版潮时尚毛线帽保暖针织冬天防寒棉帽青年户外骑车
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            米黛洛旗舰店
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       29.90元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100018">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor3-3.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           铝框行李箱万向轮拉杆箱旅行箱女男韩版复古密码箱子24寸学生28寸
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            卡米梵旗舰店
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       328.00元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100019">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor3-4.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                          小米世家大容量女士手提旅行包商务出差行李包穿拉杆包防水尼龙包
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            小米世家旗舰店
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       75.00元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100020">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor3-5.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                          雪中飞保暖内衣男加厚加绒冬季V领女士棉毛衫男士秋衣秋裤套装
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            雪中飞内衣旗舰
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       159.00元
-                   </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="floor-line">
-            <a href="./list.html?categoryId=100004">
-                <img src="<%= require('../image/floor/banner-blank.png') %>" data-src="<%= require('../image/floor/banner-f4.jpg') %>" alt="食品" class="floor-banner">
-            </a>
-            <div class="floor-title f4">
-                <h2>食品生鲜</h2>
-            </div>
-            <div class="floor-content">
-                <ul class="product-wrap">
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100021">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor4-1.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           三只松鼠能栗开口甘栗120g
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            新加坡中商超本地供货 免费送货上门
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       25.50元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100022">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor4-2.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           网易味央黑猪肉汤排骨优享款3份装1050g
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            冷冻土猪肉生鲜五花猪腿肉
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       109.00元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100023">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor4-3.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           崇明荷叶糯米鸡500g 方便速食点心
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            半成品菜加热即食熟食零食小吃
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       24.50 元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100024">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor4-4.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           广州酒家 手制叉烧包2袋
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            方便速冻食品早餐面包广式早茶点心
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       39.60元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100025">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor4-5.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           印尼进口食品Richeese丽芝士
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            nabati奶酪味威化饼干350g罐装
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       23.80元
-                   </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="floor-line">
-            <a href="./list.html?keyword=酒">
-                <img src="<%= require('../image/floor/banner-blank.png') %>" data-src="<%= require('../image/floor/banner-f5.jpg') %>" alt="酒水饮料" class="floor-banner">
-            </a>
-            <div class="floor-title f5">
-                <h2>酒水饮料</h2>
-            </div>
-            <div class="floor-content">
-                <ul class="product-wrap">
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100026">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor5-1.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           蓝色经典 梦之蓝M6 52度500ml*2瓶
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            洋河官方旗舰店 绵柔型白酒
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       1538.00元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100027">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor5-2.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                           百特醇酿干红法国原瓶进口红酒法国葡萄酒波尔多红酒
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            2支装礼盒
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       199.00元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100028">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor5-3.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                            Nestle/雀巢咖啡丝滑拿铁摩卡榛果焦糖268ml*15瓶
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            2支装礼盒
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       199.00元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100029">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor5-4.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                            RIO/锐澳微醺预调鸡尾酒G洋酒果酒330ml*10罐
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            2支装礼盒
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       199.00元
-                   </span>
-                    </li>
-                    <li class="product-item">
-                        <!--标签-->
-                        <div class="product-tag">
-                            <a>新品</a>
-                        </div>
-                        <!--图片和标题-->
-                        <a href="./detail.html?productId=100030">
-                            <img src="<%= require('../image/icons/img-loading.gif') %>" data-src="<%= require('../image/floor/floor5-5.jpg') %>" class="product-img" />
-                            <span class="product-title title-main">
-                            进口洋酒威士忌酒原瓶原装BLACK
-                       </span>
-                        </a>
-                        <!--副标题-->
-                        <p class="product-title">
-                            2支装礼盒
-                        </p>
-                        <!--价格-->
-                        <span class="product-title">
-                       199.00元
-                   </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 
-<%= require('html-loader!./layout/footer.html') %>
+    <%= require('html-loader!./layout/footer.html') %>
 </body>
+
 </html>
-
-
