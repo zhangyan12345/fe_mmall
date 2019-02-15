@@ -298,7 +298,8 @@ var devConfig       = {
 // 默认开发环境配置
 var config          = devConfig;
 // 切换到生产配置
-if ('online'===WEBPACK_ENV) {
+console.log(1212121212121+'++++++++++++++'+WEBPACK_ENV)
+if ('online'===WEBPACK_ENV) { 
     config = onlineConfig;
 }
 /// 开发环境注入dev-server端口
