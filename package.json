@@ -1,5 +1,5 @@
 {
-  "name": "Qmail_va",
+  "name": "Qmail",
   "version": "1.0.0",
   "description": "myFirstProject",
   "main": "index.js",
@@ -37,8 +37,7 @@
   "scripts": {
     "dev_linux": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8088",
     "dev": "set WEBPACK_ENV=dev&& webpack-dev-server --inline --port 8088",
-    "dist_linux": "WEBPACK_ENV=online webpack",
-    "dist": "set WEBPACK_ENV=online&& webpack",
+    "dist": "WEBPACK_ENV=online webpack",
     "build": "webpack"
   },
   "repository": {
