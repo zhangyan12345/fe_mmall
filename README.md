@@ -8,11 +8,11 @@ www.qiongmaomall.top
 前后端完全分离, 瀑布开发
 
 #### 技术选型
-ide: webstorm 
+ide: vscode IDEA 
 
-服务器: 腾讯云centos 6.8
+服务器: 阿里云centos 7.4
 
-管理工具和代理: nginx git charles 
+管理工具和代理: nginx git  
 
 主要技术: 
 
