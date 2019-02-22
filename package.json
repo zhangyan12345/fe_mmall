@@ -40,10 +40,6 @@
     "dist": "WEBPACK_ENV=online webpack",
     "build": "webpack"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@gitee.com:avenda/ymail_va.git"
-  },
-  "author": "Avenda",
+  "author": "zy",
   "license": "ISC"
 }
